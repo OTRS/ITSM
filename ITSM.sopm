@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_package version="1.0">
+    <CVS>$Id: ITSM.sopm,v 1.1.1.1 2010-04-27 22:30:41 ub Exp $</CVS>
+    <Name>ITSM</Name>
+    <Version>0.0.0</Version>
+    <Framework>2.4.x</Framework>
+    <Vendor>OTRS AG</Vendor>
+    <URL>http://otrs.org/</URL>
+    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <Description Lang="en">The OTRS::ITSM bundle package.</Description>
+    <Description Lang="de">Das OTRS::ITSM Bundle Paket.</Description>
+    <Filelist>
+        <File Permission="644" Location="Kernel/Config/Files/FrameworkITSM.xml"/>
+        <File Permission="644" Location="var/packagesetup/ITSM/GeneralCatalog.opm"/>
+        <File Permission="644" Location="var/packagesetup/ITSM/ImportExport.opm"/>
+        <File Permission="644" Location="var/packagesetup/ITSM/ITSMChangeManagement.opm"/>
+        <File Permission="644" Location="var/packagesetup/ITSM/ITSMConfigurationManagement.opm"/>
+        <File Permission="644" Location="var/packagesetup/ITSM/ITSMCore.opm"/>
+        <File Permission="644" Location="var/packagesetup/ITSM/ITSMIncidentProblemManagement.opm"/>
+        <File Permission="644" Location="var/packagesetup/ITSM/ITSMServiceLevelManagement.opm"/>
+        <File Permission="644" Location="var/packagesetup/ITSM.pm"/>
+    </Filelist>
+    <CodeInstall Type="post"><![CDATA[
+
+        # define function name
+        my $FunctionName = 'CodeInstall';
+
+        # create the package name
+        my $CodeModule = 'var::packagesetup::' . $Param{Structure}->{Name}->{Content};
+
+        # load the module
+        if ( $Self->{MainObject}->Require($CodeModule) ) {
+
+            # create new instance
+            my $CodeObject = $CodeModule->new( %{$Self} );
+
+            if ($CodeObject) {
+
+                # start methode
+                if ( !$CodeObject->$FunctionName(%{$Self}) ) {
+                    $Self->{LogObject}->Log(
+                        Priority => 'error',
+                        Message  => "Could not call method $FunctionName() on $CodeModule.pm."
+                    );
+                }
+            }
+
+            # error handling
+            else {
+                $Self->{LogObject}->Log(
+                    Priority => 'error',
+                    Message  => "Could not call method new() on $CodeModule.pm."
+                );
+            }
+        }
+
+    ]]></CodeInstall>
+    <CodeUpgrade Type="post"><![CDATA[
+
+        # define function name
+        my $FunctionName = 'CodeUpgrade';
+
+        # create the package name
+        my $CodeModule = 'var::packagesetup::' . $Param{Structure}->{Name}->{Content};
+
+        # The code module has just recently been copied to it's location in the file system.
+        # In a persistent Perl environment an old version of the module might still be loaded,
+        # as watchdogs like Apache2::Reload haven't had a chance to reload it.
+        # So we need to make sure that the new version is being loaded.
+        # Kernel::System::Main::Require() checks the relative file path, so we need to remove that from %INC.
+        # This is only needed in persistent Perl environment, but does no harm in a CGI environment.
+        my $CodeModulePath = $CodeModule;
+        $CodeModulePath =~ s/::/\//g;
+        $CodeModulePath .= '.pm';
+        delete $INC{$CodeModulePath};
+
+        # load the module
+        if ( $Self->{MainObject}->Require($CodeModule) ) {
+
+            # create new instance
+            my $CodeObject = $CodeModule->new( %{$Self} );
+
+            if ($CodeObject) {
+
+                # start methode
+                if ( !$CodeObject->$FunctionName(%{$Self}) ) {
+                    $Self->{LogObject}->Log(
+                        Priority => 'error',
+                        Message  => "Could not call method $FunctionName() on $CodeModule.pm."
+                    );
+                }
+            }
+
+            # error handling
+            else {
+                $Self->{LogObject}->Log(
+                    Priority => 'error',
+                    Message  => "Could not call method new() on $CodeModule.pm."
+                );
+            }
+        }
+
+    ]]></CodeUpgrade>
+    <CodeUninstall Type="pre"><![CDATA[
+
+        # define function name
+        my $FunctionName = 'CodeUninstall';
+
+        # create the package name
+        my $CodeModule = 'var::packagesetup::' . $Param{Structure}->{Name}->{Content};
+
+        # load the module
+        if ( $Self->{MainObject}->Require($CodeModule) ) {
+
+            # create new instance
+            my $CodeObject = $CodeModule->new( %{$Self} );
+
+            if ($CodeObject) {
+
+                # start methode
+                if ( !$CodeObject->$FunctionName(%{$Self}) ) {
+                    $Self->{LogObject}->Log(
+                        Priority => 'error',
+                        Message  => "Could not call method $FunctionName() on $CodeModule.pm."
+                    );
+                }
+            }
+
+            # error handling
+            else {
+                $Self->{LogObject}->Log(
+                    Priority => 'error',
+                    Message  => "Could not call method new() on $CodeModule.pm."
+                );
+            }
+        }
+
+    ]]></CodeUninstall>
+    <IntroInstall Type="pre" Title="Installation Information" Lang="en"><![CDATA[
+
+        <br>
+        <b>WELCOME</b>
+        <br>
+        <br>
+        You are about to run the OTRS package ITSM.
+        This package will install OTRS::ITSM 2.0.2 on your system.
+        <br>
+        <br>
+        If you already installed some OTRS:ITSM packages on your system, please make sure first
+        that the OTRS::ITSM packages are at least of version 1.3.1 or higher!
+        <br>
+        <br>
+        After a successful installation, the following packages will be installed and shown by the package manager:
+        <br>
+        <ul>
+        <li>GeneralCatalog 2.0.2</li>
+        <li>ITSMCore 2.0.2</li>
+        <li>ITSMIncidentProblemManagement 2.0.2</li>
+        <li>ITSMConfigurationManagement 2.0.2</li>
+        <li>ITSMChangeManagement 2.0.2</li>
+        <li>ITSMServiceLevelManagement 2.0.2</li>
+        <li>ImportExport 2.0.2</li>
+        </ul>
+        <br>
+        <br>
+        <b>ATTENTION</b>
+        <br>
+        <br>
+        Make sure your database accepts packages over 15 MB in size.
+        A MySQL database for example accepts packages up to 1 MB by default.
+        In this case, the value for max_allowed_packet must be increased.
+        The recommended maximum size accepted is 20 MB.
+        <br>
+        <br>
+        The installation can take several minutes!
+        <br>
+        Do not stop the installation process once it is running!
+        <br>
+        <br>
+        As the installation process can take a while, it might be possible that the browser gets a timeout error.
+        If this happens, the installation will proceed in the background without any problems.
+        <br>
+        <br>
+        <b>NOTICE</b>
+        <br>
+        <br>
+        After a successfull installation, please note the following information:
+        <br>
+        <br>
+        In order to grant users access to the service menu, you need to add them as member to the group 'itsm-service'.
+        <br>
+        <br>
+        In order to grant users access to the config item menu, you need to add them as member to the group 'itsm-configitem'.
+        <br>
+        <br>
+        In order to grant users access to the change menu, you need to add them as member to the group 'itsm-change'.
+        <br>
+        <br>
+        The menu items that are added by this package will be visible after you log-in to the system again.
+        <br>
+        <br>
+        The statistics that are installed by this package will be available in the menu item 'Stats'.
+        <br>
+        <br>
+        ((enjoy))<br>
+        <br>
+
+    ]]></IntroInstall>
+    <IntroInstall Type="pre" Title="Installation Information" Lang="de"><![CDATA[
+
+        <br>
+        <b>WILLKOMMEN</b>
+        <br>
+        <br>
+        Sie sind im Begriff das OTRS-Paket ITSM auszuführen.
+        Dieses Paket installiert OTRS::ITSM 2.0.2 auf Ihrem System.
+        <br>
+        <br>
+        Wenn auf Ihrem System bereits OTRS::ITSM-Pakete installiert
+        sein sollten, dann stellen Sie zunächst sicher das die OTRS::ITSM-Pakete mindestens der Version 1.3.1
+        entsprechen!
+        <br>
+        <br>
+        Nach erfolgreicher Installation sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
+        <br>
+        <ul>
+        <li>GeneralCatalog 2.0.2</li>
+        <li>ITSMCore 2.0.2</li>
+        <li>ITSMIncidentProblemManagement 2.0.2</li>
+        <li>ITSMConfigurationManagement 2.0.2</li>
+        <li>ITSMChangeManagement 2.0.2</li>
+        <li>ITSMServiceLevelManagement 2.0.2</li>
+        <li>ImportExport 2.0.2</li>
+        </ul>
+        <br>
+        <br>
+        <b>ACHTUNG</b>
+        <br>
+        <br>
+        Vergewissern Sie sich, dass ihre Datenbank Pakete mit einer Größe von mehr als 15 MB akzeptiert.
+        Eine MySQL Datenbank akzeptiert beispielsweise standardmäßig Pakete mit einer Größe von maximal 1 MB.
+        In diesem Fall muss der Wert für max_allowed_packet erhöht werden.
+        Empfohlen werden 20 MB.
+        <br>
+        <br>
+        Die Installation kann mehrere Minuten in Anspruch nehmen!
+        <br>
+        Brechen Sie die den Installations-Vorgang nicht ab!
+        <br>
+        <br>
+        Unter Umständen kann es möglich sein das die Installation so lange dauert,
+        das der Browser einen Timeout-Error anzeigt.
+        Sollte dies der Fall sein, läuft die Installation problemlos im Hintergrund weiter.
+        <br>
+        <br>
+        <b>HINWEIS</b>
+        <br>
+        <br>
+        Nach erfolgreicher Installation beachten Sie bitte die folgenden Informationen:
+        <br>
+        <br>
+        Um Benutzern Zugriff auf das Service-Menü zu gewähren, müssen diese Mitglied der neuen Gruppe 'itsm-service' sein.
+        <br>
+        <br>
+        Um Benutzern Zugriff auf das ConfigItem-Menü zu gewähren, müssen diese Mitglied der neuen Gruppe 'itsm-configitem' sein.
+        <br>
+        <br>
+        Um Benutzern Zugriff auf das Change-Menü zu gewähren, müssen diese Mitglied der neuen Gruppe 'itsm-change' sein.
+        <br>
+        <br>
+        Die von diesem Paket hinzugefügten Menü-Punkte sind erst nach einem erneuten Anmeldevorgang im System sichtbar.
+        <br>
+        <br>
+        Im Menü-Punkt 'Statistik' sind die von diesem Paket installierten Statistiken verfügbar.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroInstall>
+    <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="en"><![CDATA[
+
+        <br>
+        <b>WELCOME</b>
+        <br>
+        <br>
+        You are about to upgrade the OTRS package ITSM.<br>
+        This package will upgrade your system to OTRS::ITSM 2.0.2.
+        <br>
+        <br>
+        After a successful upgrade, the following packages will be installed and shown by the package manager:
+        <br>
+        <ul>
+        <li>GeneralCatalog 2.0.2</li>
+        <li>ITSMCore 2.0.2</li>
+        <li>ITSMIncidentProblemManagement 2.0.2</li>
+        <li>ITSMConfigurationManagement 2.0.2</li>
+        <li>ITSMChangeManagement 2.0.2</li>
+        <li>ITSMServiceLevelManagement 2.0.2</li>
+        <li>ImportExport 2.0.2</li>
+        </ul>
+        <br>
+        <br>
+        <b>ATTENTION</b>
+        <br>
+        <br>
+        Make sure your database accepts packages over 15 MB in size.
+        A MySQL database for example accepts packages up to 1 MB by default.
+        In this case, the value for max_allowed_packet must be increased.
+        The recommended maximum size accepted is 20 MB.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroUpgrade>
+    <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="de"><![CDATA[
+
+        <br>
+        <b>WILLKOMMEN</b>
+        <br>
+        <br>
+        Sie sind im Begriff das OTRS-Paket ITSM zu aktualisieren.
+        Dieses Paket aktualisiert Ihr System auf OTRS::ITSM 2.0.2.
+        <br>
+        <br>
+        Nach erfolgreicher Aktualisierung sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
+        <br>
+        <ul>
+        <li>GeneralCatalog 2.0.2</li>
+        <li>ITSMCore 2.0.2</li>
+        <li>ITSMIncidentProblemManagement 2.0.2</li>
+        <li>ITSMConfigurationManagement 2.0.2</li>
+        <li>ITSMChangeManagement 2.0.2</li>
+        <li>ITSMServiceLevelManagement 2.0.2</li>
+        <li>ImportExport 2.0.2</li>
+        </ul>
+        <br>
+        <br>
+        <b>ACHTUNG</b>
+        <br>
+        <br>
+        Vergewissern Sie sich, dass ihre Datenbank Pakete mit einer Größe von mehr als 15 MB akzeptiert.
+        Eine MySQL Datenbank akzeptiert beispielsweise standardmäßig Pakete mit einer Größe von maximal 1 MB.
+        In diesem Fall muss der Wert für max_allowed_packet erhöht werden.
+        Empfohlen werden 20 MB.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroUpgrade>
+    <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="en"><![CDATA[
+
+        <br>
+        <b>ATTENTION</b>
+        <br>
+        <br>
+        If you uninstall this package, the follwowing packages will be uninstalled automatically:
+        <ul>
+        <li>GeneralCatalog 2.0.2</li>
+        <li>ITSMCore 2.0.2</li>
+        <li>ITSMIncidentProblemManagement 2.0.2</li>
+        <li>ITSMConfigurationManagement 2.0.2</li>
+        <li>ITSMChangeManagement 2.0.2</li>
+        <li>ITSMServiceLevelManagement 2.0.2</li>
+        <li>ImportExport 2.0.2</li>
+        </ul>
+        <br>
+        All database tables that were created during installation will be deleted.
+        All data from these tables will be irrevocably lost!
+        <br>
+        <br>
+        The groups 'itsm-service', 'itsm-configitem', 'itsm-change', 'itsm-change-builder' and 'itsm-change-manager'
+        that were created during package installation will be deactivated.
+        You can activate these groups again in the admin area.
+        <br>
+        <br>
+        All links to config item objects, change objects and workorder objects will be irrevocably deleted!
+        <br>
+        <br>
+        The statistics that are associated with these packages, will no longer be available if the package is uninstalled.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroUninstall>
+    <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="de"><![CDATA[
+
+        <br>
+        <b>ACHTUNG</b>
+        <br>
+        <br>
+        Wenn Sie dieses Paket deinstallieren, werden die folgenden Pakete automatisch gelöscht:
+        <ul>
+        <li>GeneralCatalog 2.0.2</li>
+        <li>ITSMCore 2.0.2</li>
+        <li>ITSMIncidentProblemManagement 2.0.2</li>
+        <li>ITSMConfigurationManagement 2.0.2</li>
+        <li>ITSMChangeManagement 2.0.2</li>
+        <li>ITSMServiceLevelManagement 2.0.2</li>
+        <li>ImportExport 2.0.2</li>
+        </ul>
+        <br>
+        Bei der Deinstallation werden die von diesen Paketen angelegten Datenbank-Tabellen gelöscht.
+        Alle darin enthaltenen Daten gehen unwiderruflich verloren!
+        <br>
+        <br>
+        Die von diesen Paketen angelegten Gruppen 'itsm-service', 'itsm-configitem', 'itsm-change',
+        'itsm-change-builder' and 'itsm-change-manager'werden deaktiviert.
+        Sie können jederzeit im Admin-Bereich wieder aktiviert werden.
+        <br>
+        <br>
+        Alle Verknüpfungen zu ConfigItem-Objekten, Change-Objekten und Workorder-Objekten werden unwiderruflich gelöscht!
+        <br>
+        <br>
+        Nach der Deinstallation sind die zu diesen Paketen zugehörigen Statistiken nicht mehr verfügbar.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroUninstall>
+</otrs_package>
