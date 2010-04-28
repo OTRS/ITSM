@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.0">
-    <CVS>$Id: ITSM.sopm,v 1.1.1.1 2010-04-27 22:30:41 ub Exp $</CVS>
+    <CVS>$Id: ITSM.sopm,v 1.2 2010-04-28 00:08:47 ub Exp $</CVS>
     <Name>ITSM</Name>
     <Version>0.0.0</Version>
     <Framework>2.4.x</Framework>
@@ -412,7 +412,7 @@
         <br>
         <br>
         Die von diesen Paketen angelegten Gruppen 'itsm-service', 'itsm-configitem', 'itsm-change',
-        'itsm-change-builder' and 'itsm-change-manager'werden deaktiviert.
+        'itsm-change-builder' und 'itsm-change-manager' werden deaktiviert.
         Sie können jederzeit im Admin-Bereich wieder aktiviert werden.
         <br>
         <br>
