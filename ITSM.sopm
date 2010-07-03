@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.0">
-    <CVS>$Id: ITSM.sopm,v 1.2.2.1 2010-06-22 17:51:01 ub Exp $</CVS>
+    <CVS>$Id: ITSM.sopm,v 1.2.2.2 2010-07-03 09:32:49 ub Exp $</CVS>
     <Name>ITSM</Name>
     <Version>0.0.0</Version>
     <Framework>2.4.x</Framework>
@@ -359,7 +359,7 @@
         <b>ATTENTION</b>
         <br>
         <br>
-        If you uninstall this package, the follwowing packages will be uninstalled automatically:
+        If you uninstall this package, the following packages will be uninstalled automatically:
         <ul>
         <li>GeneralCatalog 2.0.3</li>
         <li>ITSMCore 2.0.3</li>
