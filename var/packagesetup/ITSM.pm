@@ -1,12 +1,12 @@
 # --
 # ITSM.pm - code to excecute during package installation
-# Copyright (C) 2001-2008 OTRS AG, http://otrs.org/
+# Copyright (C) 2001-2010 OTRS AG, http://otrs.org/
 # --
-# $Id: ITSM.pm,v 1.1.1.1 2010-04-27 22:30:41 ub Exp $
+# $Id: ITSM.pm,v 1.2 2010-07-26 23:41:19 ub Exp $
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see http://www.gnu.org/licenses/gpl-2.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see L<http://www.gnu.org/licenses/agpl.txt>.
 # --
 
 package var::packagesetup::ITSM;
@@ -17,7 +17,7 @@ use warnings;
 use Kernel::System::Package;
 
 use vars qw(@ISA $VERSION);
-$VERSION = qw($Revision: 1.1.1.1 $) [1];
+$VERSION = qw($Revision: 1.2 $) [1];
 
 =head1 NAME
 
@@ -87,7 +87,7 @@ sub new {
     bless( $Self, $Type );
 
     # check needed objects
-    for my $Object ( qw(ConfigObject EncodeObject LogObject MainObject TimeObject DBObject) ) {
+    for my $Object (qw(ConfigObject EncodeObject LogObject MainObject TimeObject DBObject)) {
         $Self->{$Object} = $Param{$Object} || die "Got no $Object!";
     }
 
@@ -133,7 +133,7 @@ sub new {
     ];
 
     # define the version of the included packages
-    $Self->{PackageVersion} = '2.0.2';
+    $Self->{PackageVersion} = '2.0.91';
 
     # define miminum required itsm version (if installed already)
     $Self->{MinimumITSMVersion} = '1.3.1';
@@ -176,8 +176,8 @@ sub CodeInstall {
 
         # uninstall this package
         $Self->_UninstallPackage(
-            PackageList     => [ 'ITSM' ],
-            PackageVersion  => $Self->{PackageVersion},
+            PackageList    => ['ITSM'],
+            PackageVersion => $Self->{PackageVersion},
         );
 
         return;
@@ -216,8 +216,8 @@ sub CodeUpgrade {
 
         # uninstall this package
         $Self->_UninstallPackage(
-            PackageList     => [ 'ITSM' ],
-            PackageVersion  => $Self->{PackageVersion},
+            PackageList    => ['ITSM'],
+            PackageVersion => $Self->{PackageVersion},
         );
 
         return;
@@ -242,13 +242,12 @@ sub CodeUninstall {
 
     # uninstall the packages
     $Self->_UninstallPackage(
-        PackageList     => \@ReversePackageList,
-        PackageVersion  => $Self->{PackageVersion},
+        PackageList    => \@ReversePackageList,
+        PackageVersion => $Self->{PackageVersion},
     );
 
     return 1;
 }
-
 
 =begin Internal:
 
@@ -268,7 +267,8 @@ sub _InstallITSMPackages {
     for my $PackageName ( @{ $Self->{PackageNames} } ) {
 
         # create the file location
-        my $FileLocation = $Self->{ConfigObject}->Get('Home') . $Self->{PackagePath} . $PackageName . '.opm';
+        my $FileLocation
+            = $Self->{ConfigObject}->Get('Home') . $Self->{PackagePath} . $PackageName . '.opm';
 
         # read the content of the OPM file
         my $FileContent = $Self->{MainObject}->FileRead(
@@ -413,7 +413,8 @@ sub _UninstallPackage {
         for my $RepositoryPackage (@RepositoryList) {
 
             next REPOSITORYPACKAGE if $RepositoryPackage->{Name}->{Content} ne $Package;
-            next REPOSITORYPACKAGE if $RepositoryPackage->{Version}->{Content} ne $Param{PackageVersion};
+            next REPOSITORYPACKAGE
+                if $RepositoryPackage->{Version}->{Content} ne $Param{PackageVersion};
 
             # get package content from repository
             my $PackageContent = $Self->{PackageObject}->RepositoryGet(
@@ -480,7 +481,7 @@ sub _CheckVersion {
 
     $Self->{LogObject}->Log(
         Priority => 'error',
-        Message => 'Invalid Type!',
+        Message  => 'Invalid Type!',
     );
     return;
 }
@@ -493,16 +494,16 @@ sub _CheckVersion {
 
 =head1 TERMS AND CONDITIONS
 
-This Software is part of the OTRS project (http://otrs.org/).
+This Software is part of the OTRS project (L<http://otrs.org/>).
 
 This software comes with ABSOLUTELY NO WARRANTY. For details, see
 the enclosed file COPYING for license information (GPL). If you
-did not receive this file, see http://www.gnu.org/licenses/gpl-2.0.txt.
+did not receive this file, see L<http://www.gnu.org/licenses/gpl-2.0.txt>.
 
 =cut
 
 =head1 VERSION
 
-$Revision: 1.1.1.1 $ $Date: 2010-04-27 22:30:41 $
+$Revision: 1.2 $ $Date: 2010-07-26 23:41:19 $
 
 =cut
