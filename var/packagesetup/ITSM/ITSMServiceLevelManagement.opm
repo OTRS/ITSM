@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMServiceLevelManagement</Name>
-    <Version>2.0.92</Version>
+    <Version>2.0.93</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>http://otrs.org/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <ChangeLog Date="2010-09-07 16:38:51" Version="2.0.93">Build for OTRS::ITSM 2.1.0 beta3.</ChangeLog>
     <ChangeLog Date="2010-08-17 07:32:42" Version="2.0.92">Build for OTRS::ITSM 2.1.0 beta2.</ChangeLog>
     <ChangeLog Date="2010-07-27 02:48:07" Version="2.0.91">Build for OTRS::ITSM 2.1.0 beta1.</ChangeLog>
     <ChangeLog Date="2010-07-04 12:15:22" Version="2.0.71">Build for OTRS::ITSM 2.1.0 alpha1.</ChangeLog>
@@ -22,7 +23,7 @@
         &lt;br&gt;
         &lt;b&gt;REQUIRED OTRS PACKAGES&lt;/b&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 2.0.92&lt;/li&gt;
+        &lt;li&gt;ITSMCore 2.0.93&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br&gt;
         ((enjoy))&lt;br&gt;
@@ -40,7 +41,7 @@
         &lt;br&gt;
         &lt;b&gt;BENÖTIGTE OTRS-PAKETE&lt;/b&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 2.0.92&lt;/li&gt;
+        &lt;li&gt;ITSMCore 2.0.93&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br&gt;
         ((enjoy))&lt;br&gt;
@@ -110,7 +111,7 @@
         &lt;br&gt;
         &lt;b&gt;REQUIRED OTRS PACKAGES&lt;/b&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 2.0.92&lt;/li&gt;
+        &lt;li&gt;ITSMCore 2.0.93&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br&gt;
         ((enjoy))&lt;br&gt;
@@ -128,14 +129,14 @@
         &lt;br&gt;
         &lt;b&gt;BENÖTIGTE OTRS-PAKETE&lt;/b&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 2.0.92&lt;/li&gt;
+        &lt;li&gt;ITSMCore 2.0.93&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br&gt;
         ((enjoy))&lt;br&gt;
         &lt;br&gt;
 
     </IntroUpgrade>
-    <PackageRequired Version="2.0.92">ITSMCore</PackageRequired>
+    <PackageRequired Version="2.0.93">ITSMCore</PackageRequired>
     <CodeInstall Type="post">
 
         # define function name
@@ -287,7 +288,7 @@
         }
 
     </CodeReinstall>
-    <BuildDate>2010-08-17 07:32:42</BuildDate>
+    <BuildDate>2010-09-07 16:38:51</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="Kernel/Config/Files/FrameworkITSMStats.xml" Permission="644" Encode="Base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSIgPz4KPG90cnNfY29uZmlnIHZlcnNpb249IjEuMCIgaW5pdD0iRnJhbWV3b3JrIj4KICAgIDxDVlM+JElkOiBGcmFtZXdvcmtJVFNNU3RhdHMueG1sLHYgMS45IDIwMTAvMDMvMTUgMTE6NTQ6NDUgdWIgRXhwICQ8L0NWUz4KICAgIDxDVlM+JE9sZElkOiBGcmFtZXdvcmsueG1sLHYgMS4yNDIuMi42IDIwMTAvMDMvMDkgMDk6Mzc6NDYgZHogRXhwICQ8L0NWUz4KICAgIDxDb25maWdJdGVtIE5hbWU9IlN0YXRzOjpUaW1lVHlwZSIgUmVxdWlyZWQ9IjEiIFZhbGlkPSIxIj4KICAgICAgICA8RGVzY3JpcHRpb24gTGFuZz0iZW4iPlNlbGVjdGlvbiBvZiB0aGUgdGltZSB0eXBlIHdoaWNoIHNob3VsZCBiZSBzaG93bi48L0Rlc2NyaXB0aW9uPgogICAgICAgIDxEZXNjcmlwdGlvbiBMYW5nPSJkZSI+QXVzd2FobCwgd2VsY2hlIERhcnN0ZWxsdW5nIGb8ciBkYXMgWmVpdGVsZW1lbnQgdmVyd2VuZGV0IHdlcmRlbiBzb2xsLjwvRGVzY3JpcHRpb24+CiAgICAgICAgPEdyb3VwPkZyYW1ld29yazwvR3JvdXA+CiAgICAgICAgPFN1Ykdyb3VwPkZyb250ZW5kOjpBZ2VudDo6U3RhdHM8L1N1Ykdyb3VwPgogICAgICAgIDxTZXR0aW5nPgogICAgICAgICAgICA8T3B0aW9uIFNlbGVjdGVkSUQ9IkV4dGVuZGVkIj4KICAgICAgICAgICAgICAgIDxJdGVtIEtleT0iTm9ybWFsIj5ub3JtYWw8L0l0ZW0+CiAgICAgICAgICAgICAgICA8SXRlbSBLZXk9IkV4dGVuZGVkIj5leHRlbmRlZDwvSXRlbT4KICAgICAgICAgICAgPC9PcHRpb24+CiAgICAgICAgPC9TZXR0aW5nPgogICAgPC9Db25maWdJdGVtPgo8L290cnNfY29uZmlnPgo=</File>
