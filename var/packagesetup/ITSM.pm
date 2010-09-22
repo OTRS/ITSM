@@ -2,7 +2,7 @@
 # ITSM.pm - code to excecute during package installation
 # Copyright (C) 2001-2010 OTRS AG, http://otrs.org/
 # --
-# $Id: ITSM.pm,v 1.2.2.3 2010-09-07 15:23:48 ub Exp $
+# $Id: ITSM.pm,v 1.2.2.4 2010-09-22 13:13:01 ub Exp $
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -18,7 +18,7 @@ use Kernel::System::Config;
 use Kernel::System::Package;
 
 use vars qw(@ISA $VERSION);
-$VERSION = qw($Revision: 1.2.2.3 $) [1];
+$VERSION = qw($Revision: 1.2.2.4 $) [1];
 
 =head1 NAME
 
@@ -134,7 +134,7 @@ sub new {
     ];
 
     # define the version of the included packages
-    $Self->{PackageVersion} = '2.0.93';
+    $Self->{PackageVersion} = '2.0.94';
 
     # define miminum required itsm version (if installed already)
     $Self->{MinimumITSMVersion} = '1.3.1';
@@ -505,6 +505,6 @@ did not receive this file, see L<http://www.gnu.org/licenses/gpl-2.0.txt>.
 
 =head1 VERSION
 
-$Revision: 1.2.2.3 $ $Date: 2010-09-07 15:23:48 $
+$Revision: 1.2.2.4 $ $Date: 2010-09-22 13:13:01 $
 
 =cut
