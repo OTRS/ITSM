@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.0">
-    <CVS>$Id: ITSM.sopm,v 1.15 2011-08-25 16:31:09 ub Exp $</CVS>
+    <CVS>$Id: ITSM.sopm,v 1.16 2011-09-21 21:25:37 ep Exp $</CVS>
     <Name>ITSM</Name>
     <Version>0.0.0</Version>
     <Framework>3.0.x</Framework>
@@ -217,7 +217,7 @@
         <br>
         <br>
         Wenn auf Ihrem System bereits OTRS::ITSM-Pakete installiert
-        sein sollten, dann stellen Sie zunächst sicher das die OTRS::ITSM-Pakete mindestens der Version 1.3.1
+        sein sollten, dann stellen Sie zunächst sicher, dass die OTRS::ITSM-Pakete mindestens der Version 1.3.1
         entsprechen!
         <br>
         <br>
@@ -249,7 +249,7 @@
         <br>
         <br>
         Unter Umständen kann es möglich sein das die Installation so lange dauert,
-        das der Browser einen Timeout-Error anzeigt.
+        dass der Browser einen Timeout-Error anzeigt.
         Sollte dies der Fall sein, läuft die Installation problemlos im Hintergrund weiter.
         <br>
         <br>
