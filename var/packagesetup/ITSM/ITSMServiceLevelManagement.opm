@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMServiceLevelManagement</Name>
-    <Version>3.0.5</Version>
+    <Version>3.0.91</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>http://otrs.org/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
-    <ChangeLog Date="2011-08-26 09:07:53" Version="3.0.5">Build for OTRS::ITSM 3.0.5.</ChangeLog>
-    <ChangeLog Date="2011-06-09 10:39:50" Version="3.0.4">Build for OTRS::ITSM 3.0.4.</ChangeLog>
-    <ChangeLog Date="2011-05-05 08:39:00" Version="3.0.3">Build for OTRS::ITSM 3.0.3.</ChangeLog>
-    <ChangeLog Date="2011-04-07 21:21:05" Version="3.0.2">Build for OTRS::ITSM 3.0.2.</ChangeLog>
-    <ChangeLog Date="2011-03-10 18:28:38" Version="3.0.1">Build for OTRS::ITSM 3.0.1.</ChangeLog>
-    <ChangeLog Date="2011-03-03 23:25:46" Version="2.1.96">Build for OTRS::ITSM 3.0.0 rc1.</ChangeLog>
-    <ChangeLog Date="2011-02-24 17:40:41" Version="2.1.95">Build for OTRS::ITSM 3.0.0 beta5.</ChangeLog>
-    <ChangeLog Date="2011-02-11 02:55:20" Version="2.1.94">Build for OTRS::ITSM 3.0.0 beta4.</ChangeLog>
-    <ChangeLog Date="2011-01-27 20:38:06" Version="2.1.93">Build for OTRS::ITSM 3.0.0 beta3.</ChangeLog>
-    <ChangeLog Date="2011-01-13 14:45:13" Version="2.1.92">Build for OTRS::ITSM 3.0.0 beta2.</ChangeLog>
-    <ChangeLog Date="2010-12-22 23:21:57" Version="2.1.91">Build for OTRS::ITSM 3.0.0 beta1.</ChangeLog>
+    <ChangeLog Date="2011-11-21 14:04:16" Version="3.0.91">Build for OTRS::ITSM 3.1.0 beta1.</ChangeLog>
     <Description Lang="en">The OTRS::ITSM Service Level Management package.</Description>
     <Description Lang="de">Das OTRS::ITSM Service Level Management Paket.</Description>
     <Description Lang="es">El paquete OTRS::ITSM Service Level Management.</Description>
-    <Framework>3.0.x</Framework>
+    <Framework>3.1.x</Framework>
     <IntroInstall Lang="en" Title="Install Information" Type="pre">
 
         &lt;br/&gt;
@@ -31,7 +21,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 3.0.5&lt;/li&gt;
+        &lt;li&gt;ITSMCore 3.0.91&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -49,7 +39,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 3.0.5&lt;/li&gt;
+        &lt;li&gt;ITSMCore 3.0.91&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -67,7 +57,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 3.0.5&lt;/li&gt;
+        &lt;li&gt;ITSMCore 3.0.91&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -163,7 +153,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 3.0.5&lt;/li&gt;
+        &lt;li&gt;ITSMCore 3.0.91&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -181,7 +171,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 3.0.5&lt;/li&gt;
+        &lt;li&gt;ITSMCore 3.0.91&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -199,14 +189,14 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 3.0.5&lt;/li&gt;
+        &lt;li&gt;ITSMCore 3.0.91&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
         &lt;br/&gt;
 
     </IntroUpgrade>
-    <PackageRequired Version="3.0.5">ITSMCore</PackageRequired>
+    <PackageRequired Version="3.0.91">ITSMCore</PackageRequired>
     <CodeInstall Type="post">
 
         # define function name
@@ -358,7 +348,7 @@
         }
 
     </CodeReinstall>
-    <BuildDate>2011-08-26 09:07:53</BuildDate>
+    <BuildDate>2011-11-21 14:04:16</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="var/stats/ITSMStats-001-Ticket.xml" Permission="644" Encode="Base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KCjxvdHJzX3N0YXRzPgo8Q2FjaGU+MDwvQ2FjaGU+CjxEZXNjcmlwdGlvbj5Ub3RhbCBudW1iZXIgb2YgYWxsIHRpY2tldHMgZXZlciBjcmVhdGVkIHBlciBUaWNrZXQtVHlwZSBhbmQgUHJpb3JpdHkuCgpYLUF4aXM6IFRpY2tldC1UeXBlClktQXhpczogUHJpb3JpdHkKClJlc3RyaWN0aW9uczoKICAgIC1ub25lPC9EZXNjcmlwdGlvbj4KPEZpbGU+PC9GaWxlPgo8Rm9ybWF0PkNTVjwvRm9ybWF0Pgo8Rm9ybWF0PlByaW50PC9Gb3JtYXQ+CjxHcmFwaFNpemU+PC9HcmFwaFNpemU+CjxPYmplY3Q+VGlja2V0PC9PYmplY3Q+CjxPYmplY3RNb2R1bGU+S2VybmVsOjpTeXN0ZW06OlN0YXRzOjpEeW5hbWljOjpUaWNrZXQ8L09iamVjdE1vZHVsZT4KPFBlcm1pc3Npb24+c3RhdHM8L1Blcm1pc3Npb24+CjxTdGF0VHlwZT5keW5hbWljPC9TdGF0VHlwZT4KPFN1bUNvbD4xPC9TdW1Db2w+CjxTdW1Sb3c+MTwvU3VtUm93Pgo8VGl0bGU+VG90YWwgbnVtYmVyIG9mIGFsbCB0aWNrZXRzIGV2ZXIgY3JlYXRlZCBwZXIgVGlja2V0LVR5cGUgYW5kIFByaW9yaXR5LjwvVGl0bGU+CjxVc2VBc1ZhbHVlU2VyaWVzIEVsZW1lbnQ9IlByaW9yaXR5SURzIiBGaXhlZD0iMSI+CjwvVXNlQXNWYWx1ZVNlcmllcz4KPFVzZUFzWHZhbHVlIEVsZW1lbnQ9IlR5cGVJRHMiIEZpeGVkPSIxIj4KPC9Vc2VBc1h2YWx1ZT4KPFZhbGlkPjE8L1ZhbGlkPgo8L290cnNfc3RhdHM+Cg==</File>
