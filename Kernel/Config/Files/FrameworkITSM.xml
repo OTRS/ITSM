@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_config version="1.0" init="Changes">
-    <CVS>$Id: FrameworkITSM.xml,v 1.11 2012-10-24 08:26:23 mb Exp $</CVS>
+    <CVS>$Id: FrameworkITSM.xml,v 1.12 2012-10-24 09:18:39 ub Exp $</CVS>
+    <CVS>$OldId: Framework.xml,v 1.416 2011/01/12 22:57:22 cg Exp $</CVS>
     <ConfigItem Name="Package::RepositoryList" Required="0" Valid="1" ConfigLevel="200">
         <Description Translatable="1">Defines the list of online repositories. Another installations can be used as repositoriy, for example: Key="http://example.com/otrs/public.pl?Action=PublicRepository;File=" and Content="Some Name".</Description>
         <Group>Framework</Group>
