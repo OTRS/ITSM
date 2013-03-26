@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.0">
-    <CVS>$Id: ITSM.sopm,v 1.36 2013-03-26 14:22:39 ub Exp $</CVS>
+    <CVS>$Id: ITSM.sopm,v 1.37 2013-03-26 14:34:02 ub Exp $</CVS>
     <Name>ITSM</Name>
     <Version>0.0.0</Version>
     <Framework>3.2.x</Framework>
     <Vendor>OTRS AG</Vendor>
     <URL>http://otrs.org/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
-    <Description Lang="en">The OTRS::ITSM bundle package.</Description>
-    <Description Lang="de">Das OTRS::ITSM Bundle Paket.</Description>
+    <Description Lang="en">The OTRS ITSM bundle package.</Description>
+    <Description Lang="de">Das OTRS ITSM Bundle Paket.</Description>
     <Filelist>
         <File Permission="644" Location="Kernel/Config/Files/FrameworkITSM.xml"/>
         <File Permission="644" Location="var/packagesetup/ITSM/GeneralCatalog.opm"/>
@@ -143,11 +143,11 @@
         <br>
         <br>
         You are about to run the OTRS package ITSM.
-        This package will install OTRS::ITSM 3.2.3 on your system.
+        This package will install OTRS ITSM 3.2.3 on your system.
         <br>
         <br>
         If you already installed some OTRS:ITSM packages on your system, please make sure first
-        that the OTRS::ITSM packages are at least of version 1.3.1 or higher!
+        that the OTRS ITSM packages are at least of version 1.3.1 or higher!
         <br>
         <br>
         After a successful installation, the following packages will be installed and shown by the package manager:
@@ -213,11 +213,11 @@
         <br>
         <br>
         Sie sind im Begriff das OTRS-Paket ITSM auszuführen.
-        Dieses Paket installiert OTRS::ITSM 3.2.3 auf Ihrem System.
+        Dieses Paket installiert OTRS ITSM 3.2.3 auf Ihrem System.
         <br>
         <br>
-        Wenn auf Ihrem System bereits OTRS::ITSM-Pakete installiert
-        sein sollten, dann stellen Sie zunächst sicher, dass die OTRS::ITSM-Pakete mindestens der Version 1.3.1
+        Wenn auf Ihrem System bereits OTRS ITSM-Pakete installiert
+        sein sollten, dann stellen Sie zunächst sicher, dass die OTRS ITSM-Pakete mindestens der Version 1.3.1
         entsprechen!
         <br>
         <br>
@@ -286,7 +286,7 @@
         <br>
         <br>
         You are about to upgrade the OTRS package ITSM.<br>
-        This package will upgrade your system to OTRS::ITSM 3.2.3.
+        This package will upgrade your system to OTRS ITSM 3.2.3.
         <br>
         <br>
         After a successful upgrade, the following packages will be installed and shown by the package manager:
@@ -323,7 +323,7 @@
         <br>
         <br>
         Sie sind im Begriff das OTRS-Paket ITSM zu aktualisieren.
-        Dieses Paket aktualisiert Ihr System auf OTRS::ITSM 3.2.3.
+        Dieses Paket aktualisiert Ihr System auf OTRS ITSM 3.2.3.
         <br>
         <br>
         Nach erfolgreicher Aktualisierung sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
