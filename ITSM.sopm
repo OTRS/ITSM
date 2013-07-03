@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.0">
-    <CVS>$Id: ITSM.sopm,v 1.16.2.3 2013-05-22 08:35:30 mh Exp $</CVS>
+    <CVS>$Id: ITSM.sopm,v 1.16.2.4 2013-07-03 10:15:31 ub Exp $</CVS>
     <Name>ITSM</Name>
     <Version>0.0.0</Version>
     <Framework>3.0.x</Framework>
@@ -143,7 +143,7 @@
         <br>
         <br>
         You are about to run the OTRS package ITSM.
-        This package will install OTRS::ITSM 3.0.8 on your system.
+        This package will install OTRS::ITSM 3.0.9 on your system.
         <br>
         <br>
         If you already installed some OTRS:ITSM packages on your system, please make sure first
@@ -153,13 +153,13 @@
         After a successful installation, the following packages will be installed and shown by the package manager:
         <br>
         <ul>
-        <li>GeneralCatalog 3.0.8</li>
-        <li>ITSMCore 3.0.8</li>
-        <li>ITSMIncidentProblemManagement 3.0.8</li>
-        <li>ITSMConfigurationManagement 3.0.8</li>
-        <li>ITSMChangeManagement 3.0.8</li>
-        <li>ITSMServiceLevelManagement 3.0.8</li>
-        <li>ImportExport 3.0.8</li>
+        <li>GeneralCatalog 3.0.9</li>
+        <li>ITSMCore 3.0.9</li>
+        <li>ITSMIncidentProblemManagement 3.0.9</li>
+        <li>ITSMConfigurationManagement 3.0.9</li>
+        <li>ITSMChangeManagement 3.0.9</li>
+        <li>ITSMServiceLevelManagement 3.0.9</li>
+        <li>ImportExport 3.0.9</li>
         </ul>
         <br>
         <br>
@@ -213,7 +213,7 @@
         <br>
         <br>
         Sie sind im Begriff das OTRS-Paket ITSM auszuführen.
-        Dieses Paket installiert OTRS::ITSM 3.0.8 auf Ihrem System.
+        Dieses Paket installiert OTRS::ITSM 3.0.9 auf Ihrem System.
         <br>
         <br>
         Wenn auf Ihrem System bereits OTRS::ITSM-Pakete installiert
@@ -224,13 +224,13 @@
         Nach erfolgreicher Installation sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
         <br>
         <ul>
-        <li>GeneralCatalog 3.0.8</li>
-        <li>ITSMCore 3.0.8</li>
-        <li>ITSMIncidentProblemManagement 3.0.8</li>
-        <li>ITSMConfigurationManagement 3.0.8</li>
-        <li>ITSMChangeManagement 3.0.8</li>
-        <li>ITSMServiceLevelManagement 3.0.8</li>
-        <li>ImportExport 3.0.8</li>
+        <li>GeneralCatalog 3.0.9</li>
+        <li>ITSMCore 3.0.9</li>
+        <li>ITSMIncidentProblemManagement 3.0.9</li>
+        <li>ITSMConfigurationManagement 3.0.9</li>
+        <li>ITSMChangeManagement 3.0.9</li>
+        <li>ITSMServiceLevelManagement 3.0.9</li>
+        <li>ImportExport 3.0.9</li>
         </ul>
         <br>
         <br>
@@ -286,19 +286,19 @@
         <br>
         <br>
         You are about to upgrade the OTRS package ITSM.<br>
-        This package will upgrade your system to OTRS::ITSM 3.0.8.
+        This package will upgrade your system to OTRS::ITSM 3.0.9.
         <br>
         <br>
         After a successful upgrade, the following packages will be installed and shown by the package manager:
         <br>
         <ul>
-        <li>GeneralCatalog 3.0.8</li>
-        <li>ITSMCore 3.0.8</li>
-        <li>ITSMIncidentProblemManagement 3.0.8</li>
-        <li>ITSMConfigurationManagement 3.0.8</li>
-        <li>ITSMChangeManagement 3.0.8</li>
-        <li>ITSMServiceLevelManagement 3.0.8</li>
-        <li>ImportExport 3.0.8</li>
+        <li>GeneralCatalog 3.0.9</li>
+        <li>ITSMCore 3.0.9</li>
+        <li>ITSMIncidentProblemManagement 3.0.9</li>
+        <li>ITSMConfigurationManagement 3.0.9</li>
+        <li>ITSMChangeManagement 3.0.9</li>
+        <li>ITSMServiceLevelManagement 3.0.9</li>
+        <li>ImportExport 3.0.9</li>
         </ul>
         <br>
         <br>
@@ -323,19 +323,19 @@
         <br>
         <br>
         Sie sind im Begriff das OTRS-Paket ITSM zu aktualisieren.
-        Dieses Paket aktualisiert Ihr System auf OTRS::ITSM 3.0.8.
+        Dieses Paket aktualisiert Ihr System auf OTRS::ITSM 3.0.9.
         <br>
         <br>
         Nach erfolgreicher Aktualisierung sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
         <br>
         <ul>
-        <li>GeneralCatalog 3.0.8</li>
-        <li>ITSMCore 3.0.8</li>
-        <li>ITSMIncidentProblemManagement 3.0.8</li>
-        <li>ITSMConfigurationManagement 3.0.8</li>
-        <li>ITSMChangeManagement 3.0.8</li>
-        <li>ITSMServiceLevelManagement 3.0.8</li>
-        <li>ImportExport 3.0.8</li>
+        <li>GeneralCatalog 3.0.9</li>
+        <li>ITSMCore 3.0.9</li>
+        <li>ITSMIncidentProblemManagement 3.0.9</li>
+        <li>ITSMConfigurationManagement 3.0.9</li>
+        <li>ITSMChangeManagement 3.0.9</li>
+        <li>ITSMServiceLevelManagement 3.0.9</li>
+        <li>ImportExport 3.0.9</li>
         </ul>
         <br>
         <br>
@@ -361,13 +361,13 @@
         <br>
         If you uninstall this package, the following packages will be uninstalled automatically:
         <ul>
-        <li>GeneralCatalog 3.0.8</li>
-        <li>ITSMCore 3.0.8</li>
-        <li>ITSMIncidentProblemManagement 3.0.8</li>
-        <li>ITSMConfigurationManagement 3.0.8</li>
-        <li>ITSMChangeManagement 3.0.8</li>
-        <li>ITSMServiceLevelManagement 3.0.8</li>
-        <li>ImportExport 3.0.8</li>
+        <li>GeneralCatalog 3.0.9</li>
+        <li>ITSMCore 3.0.9</li>
+        <li>ITSMIncidentProblemManagement 3.0.9</li>
+        <li>ITSMConfigurationManagement 3.0.9</li>
+        <li>ITSMChangeManagement 3.0.9</li>
+        <li>ITSMServiceLevelManagement 3.0.9</li>
+        <li>ImportExport 3.0.9</li>
         </ul>
         <br>
         All database tables that were created during installation will be deleted.
@@ -398,13 +398,13 @@
         <br>
         Wenn Sie dieses Paket deinstallieren, werden die folgenden Pakete automatisch gelöscht:
         <ul>
-        <li>GeneralCatalog 3.0.8</li>
-        <li>ITSMCore 3.0.8</li>
-        <li>ITSMIncidentProblemManagement 3.0.8</li>
-        <li>ITSMConfigurationManagement 3.0.8</li>
-        <li>ITSMChangeManagement 3.0.8</li>
-        <li>ITSMServiceLevelManagement 3.0.8</li>
-        <li>ImportExport 3.0.8</li>
+        <li>GeneralCatalog 3.0.9</li>
+        <li>ITSMCore 3.0.9</li>
+        <li>ITSMIncidentProblemManagement 3.0.9</li>
+        <li>ITSMConfigurationManagement 3.0.9</li>
+        <li>ITSMChangeManagement 3.0.9</li>
+        <li>ITSMServiceLevelManagement 3.0.9</li>
+        <li>ImportExport 3.0.9</li>
         </ul>
         <br>
         Bei der Deinstallation werden die von diesen Paketen angelegten Datenbank-Tabellen gelöscht.
