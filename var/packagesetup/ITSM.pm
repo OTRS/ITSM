@@ -2,8 +2,6 @@
 # ITSM.pm - code to excecute during package installation
 # Copyright (C) 2001-2013 OTRS AG, http://otrs.org/
 # --
-# $Id: ITSM.pm,v 1.37 2013-06-18 10:01:28 ub Exp $
-# --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
 # did not receive this file, see L<http://www.gnu.org/licenses/agpl.txt>.
@@ -17,8 +15,7 @@ use warnings;
 use Kernel::System::Package;
 use Kernel::System::SysConfig;
 
-use vars qw(@ISA $VERSION);
-$VERSION = qw($Revision: 1.37 $) [1];
+use vars qw(@ISA);
 
 =head1 NAME
 
@@ -502,9 +499,5 @@ the enclosed file COPYING for license information (GPL). If you
 did not receive this file, see L<http://www.gnu.org/licenses/gpl-2.0.txt>.
 
 =cut
-
-=head1 VERSION
-
-$Revision: 1.37 $ $Date: 2013-06-18 10:01:28 $
 
 =cut
