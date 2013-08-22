@@ -247,7 +247,7 @@ sub CodeUninstall {
     return 1;
 }
 
-=begin Internal
+=begin Internal:
 
 =item _InstallITSMPackages()
 
@@ -486,7 +486,7 @@ sub _CheckVersion {
 
 1;
 
-=end Internal
+=end Internal:
 
 =back
 
