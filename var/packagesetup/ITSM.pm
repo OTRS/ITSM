@@ -484,9 +484,9 @@ sub _CheckVersion {
     return;
 }
 
-=end Internal
-
 1;
+
+=end Internal
 
 =back
 
