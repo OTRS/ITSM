@@ -131,7 +131,7 @@ sub new {
     ];
 
     # define the version of the included packages
-    $Self->{PackageVersion} = '3.2.91';
+    $Self->{PackageVersion} = '3.2.92';
 
     # define miminum required itsm version (if installed already)
     $Self->{MinimumITSMVersion} = '1.3.1';
