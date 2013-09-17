@@ -15,8 +15,6 @@ use warnings;
 use Kernel::System::Package;
 use Kernel::System::SysConfig;
 
-use vars qw(@ISA);
-
 =head1 NAME
 
 ITSM.pm - code to excecute during package installation
