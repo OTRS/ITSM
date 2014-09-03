@@ -111,6 +111,13 @@ sub new {
         }
     }
 
+    # always discard the config object before package code is executed,
+    # to make sure that the config object will be created newly, so that it
+    # will use the recently written new config from the package
+    $Kernel::OM->ObjectsDiscard(
+        Objects => [ 'Kernel::Config' ],
+    );
+
     # create additional objects
     $Self->{PackageObject} = Kernel::System::Package->new( %{$Self} );
 
@@ -129,7 +136,7 @@ sub new {
     ];
 
     # define the version of the included packages
-    $Self->{PackageVersion} = '3.3.8';
+    $Self->{PackageVersion} = '3.3.91';
 
     # define miminum required itsm version (if installed already)
     $Self->{MinimumITSMVersion} = '1.3.1';
