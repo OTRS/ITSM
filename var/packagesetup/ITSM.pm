@@ -12,8 +12,13 @@ package var::packagesetup::ITSM;    ## no critic
 use strict;
 use warnings;
 
-use Kernel::System::Package;
-use Kernel::System::SysConfig;
+our @ObjectDependencies = (
+    'Kernel::Config',
+    'Kernel::System::Log',
+    'Kernel::System::Main',
+    'Kernel::System::Package',
+    'Kernel::System::SysConfig',
+);
 
 =head1 NAME
 
@@ -33,45 +38,9 @@ All functions
 
 create an object
 
-    use Kernel::Config;
-    use Kernel::System::Encode;
-    use Kernel::System::Log;
-    use Kernel::System::DB;
-    use Kernel::System::Main;
-    use Kernel::System::Time;
-    use var::packagesetup::ITSM;
-
-    my $ConfigObject = Kernel::Config->new();
-    my $EncodeObject = Kernel::System::Encode->new(
-        ConfigObject => $ConfigObject,
-    );
-    my $LogObject    = Kernel::System::Log->new(
-        ConfigObject => $ConfigObject,
-        EncodeObject => $EncodeObject,
-    );
-    my $MainObject = Kernel::System::Main->new(
-        ConfigObject => $ConfigObject,
-        EncodeObject => $EncodeObject,
-        LogObject    => $LogObject,
-    );
-    my $TimeObject = Kernel::System::Time->new(
-        ConfigObject => $ConfigObject,
-        LogObject    => $LogObject,
-    );
-    my $DBObject = Kernel::System::DB->new(
-        ConfigObject => $ConfigObject,
-        EncodeObject => $EncodeObject,
-        LogObject    => $LogObject,
-        MainObject   => $MainObject,
-    );
-    my $CodeObject = var::packagesetup::ITSM->new(
-        ConfigObject => $ConfigObject,
-        EncodeObject => $EncodeObject,
-        LogObject    => $LogObject,
-        MainObject   => $MainObject,
-        TimeObject   => $TimeObject,
-        DBObject     => $DBObject,
-    );
+    use Kernel::System::ObjectManager;
+    local $Kernel::OM = Kernel::System::ObjectManager->new();
+    my $CodeObject = $Kernel::OM->Get('var::packagesetup::ITSM');
 
 =cut
 
@@ -82,16 +51,8 @@ sub new {
     my $Self = {};
     bless( $Self, $Type );
 
-    # check needed objects
-    for my $Object (qw(ConfigObject EncodeObject LogObject MainObject TimeObject DBObject)) {
-        $Self->{$Object} = $Param{$Object} || die "Got no $Object!";
-    }
-
-    # create needed sysconfig object
-    $Self->{SysConfigObject} = Kernel::System::SysConfig->new( %{$Self} );
-
     # rebuild ZZZ* files
-    $Self->{SysConfigObject}->WriteDefault();
+    $Kernel::OM->Get('Kernel::System::SysConfig')->WriteDefault();
 
     # define the ZZZ files
     my @ZZZFiles = (
@@ -115,11 +76,8 @@ sub new {
     # to make sure that the config object will be created newly, so that it
     # will use the recently written new config from the package
     $Kernel::OM->ObjectsDiscard(
-        Objects => [ 'Kernel::Config' ],
+        Objects => ['Kernel::Config'],
     );
-
-    # create additional objects
-    $Self->{PackageObject} = Kernel::System::Package->new( %{$Self} );
 
     # define path to the packages
     $Self->{PackagePath} = '/var/packagesetup/ITSM/';
@@ -172,7 +130,7 @@ sub CodeInstall {
     else {
 
         # error handling
-        $Self->{LogObject}->Log(
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
             Priority => 'error',
             Message  => "Installation failed! See syslog for details.",
         );
@@ -212,7 +170,7 @@ sub CodeUpgrade {
     else {
 
         # error handling
-        $Self->{LogObject}->Log(
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
             Priority => 'error',
             Message  => "Installation failed! See syslog for details.",
         );
@@ -271,10 +229,12 @@ sub _InstallITSMPackages {
 
         # create the file location
         my $FileLocation
-            = $Self->{ConfigObject}->Get('Home') . $Self->{PackagePath} . $PackageName . '.opm';
+            = $Kernel::OM->Get('Kernel::Config')->Get('Home')
+            . $Self->{PackagePath}
+            . $PackageName . '.opm';
 
         # read the content of the OPM file
-        my $FileContent = $Self->{MainObject}->FileRead(
+        my $FileContent = $Kernel::OM->Get('Kernel::System::Main')->FileRead(
             Location        => $FileLocation,
             Mode            => 'binmode',
             Result          => 'SCALAR',
@@ -284,7 +244,7 @@ sub _InstallITSMPackages {
         next PACKAGE if !${$FileContent};
 
         # install/upgrade the package
-        $Self->{PackageObject}->PackageInstall(
+        $Kernel::OM->Get('Kernel::System::Package')->PackageInstall(
             String => ${$FileContent},
         );
     }
@@ -307,7 +267,7 @@ sub _CheckRequirements {
     my %ITSMPackage = map { $_ => 1 } @{ $Self->{PackageNames} };
 
     # get list of all installed packages
-    my @RepositoryList = $Self->{PackageObject}->RepositoryList();
+    my @RepositoryList = $Kernel::OM->Get('Kernel::System::Package')->RepositoryList();
 
     PACKAGE:
     for my $Package (@RepositoryList) {
@@ -326,7 +286,7 @@ sub _CheckRequirements {
         next PACKAGE if $CheckVersion;
 
         # error handling
-        $Self->{LogObject}->Log(
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
             Priority => 'error',
             Message  => "Package '$Package->{Name}->{Content}' "
                 . "version $Package->{Version}->{Content} is installed. "
@@ -341,12 +301,15 @@ sub _CheckRequirements {
     for my $File ( @{ $Self->{PackageNames} } ) {
 
         # create file location
-        my $Location = $Self->{ConfigObject}->Get('Home') . $Self->{PackagePath} . $File . '.opm';
+        my $Location
+            = $Kernel::OM->Get('Kernel::Config')->Get('Home')
+            . $Self->{PackagePath}
+            . $File . '.opm';
 
         if ( !-f $Location ) {
 
             # error handling
-            $Self->{LogObject}->Log(
+            $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
                 Message  => "Could not find file $File!",
             );
@@ -355,7 +318,7 @@ sub _CheckRequirements {
         }
 
         # read the content of the file
-        my $FileContent = $Self->{MainObject}->FileRead(
+        my $FileContent = $Kernel::OM->Get('Kernel::System::Main')->FileRead(
             Location        => $Location,
             Mode            => 'binmode',
             Result          => 'SCALAR',
@@ -368,7 +331,7 @@ sub _CheckRequirements {
         }
 
         # error handling
-        $Self->{LogObject}->Log(
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
             Priority => 'error',
             Message  => "Could not read file $File correctly!",
         );
@@ -396,7 +359,7 @@ sub _UninstallPackage {
     # check needed stuff
     for my $Attribute (qw(PackageList PackageVersion)) {
         if ( !$Param{$Attribute} ) {
-            $Self->{LogObject}->Log(
+            $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
                 Message  => "Need $Attribute!",
             );
@@ -408,7 +371,7 @@ sub _UninstallPackage {
     my @PackageList = @{ $Param{PackageList} };
 
     # get list of all installed packages
-    my @RepositoryList = $Self->{PackageObject}->RepositoryList();
+    my @RepositoryList = $Kernel::OM->Get('Kernel::System::Package')->RepositoryList();
 
     for my $Package (@PackageList) {
 
@@ -420,13 +383,13 @@ sub _UninstallPackage {
                 if $RepositoryPackage->{Version}->{Content} ne $Param{PackageVersion};
 
             # get package content from repository
-            my $PackageContent = $Self->{PackageObject}->RepositoryGet(
+            my $PackageContent = $Kernel::OM->Get('Kernel::System::Package')->RepositoryGet(
                 Name    => $RepositoryPackage->{Name}->{Content},
                 Version => $RepositoryPackage->{Version}->{Content},
             );
 
             # uninstall the package
-            $Self->{PackageObject}->PackageUninstall(
+            $Kernel::OM->Get('Kernel::System::Package')->PackageUninstall(
                 String => $PackageContent,
             );
         }
@@ -453,7 +416,7 @@ sub _CheckVersion {
     # check needed stuff
     for (qw(Version1 Version2 Type)) {
         if ( !defined $Param{$_} ) {
-            $Self->{LogObject}->Log(
+            $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
                 Message  => "$_ not defined!",
             );
@@ -482,7 +445,7 @@ sub _CheckVersion {
         return;
     }
 
-    $Self->{LogObject}->Log(
+    $Kernel::OM->Get('Kernel::System::Log')->Log(
         Priority => 'error',
         Message  => 'Invalid Type!',
     );
