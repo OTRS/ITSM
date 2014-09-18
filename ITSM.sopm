@@ -57,7 +57,7 @@
         <br>
         <br>
         You are about to run the OTRS package ITSM.
-        This package will install OTRS ITSM 3.3.91 on your system.
+        This package will install OTRS ITSM 3.3.92 on your system.
         <br>
         <br>
         If you already installed some OTRS:ITSM packages on your system, please make sure first
@@ -67,23 +67,23 @@
         After a successful installation, the following packages will be installed and shown by the package manager:
         <br>
         <ul>
-        <li>GeneralCatalog 3.3.91</li>
-        <li>ITSMCore 3.3.91</li>
-        <li>ITSMIncidentProblemManagement 3.3.91</li>
-        <li>ITSMConfigurationManagement 3.3.91</li>
-        <li>ITSMChangeManagement 3.3.91</li>
-        <li>ITSMServiceLevelManagement 3.3.91</li>
-        <li>ImportExport 3.3.91</li>
+        <li>GeneralCatalog 3.3.92</li>
+        <li>ITSMCore 3.3.92</li>
+        <li>ITSMIncidentProblemManagement 3.3.92</li>
+        <li>ITSMConfigurationManagement 3.3.92</li>
+        <li>ITSMChangeManagement 3.3.92</li>
+        <li>ITSMServiceLevelManagement 3.3.92</li>
+        <li>ImportExport 3.3.92</li>
         </ul>
         <br>
         <br>
         <b>ATTENTION</b>
         <br>
         <br>
-        Make sure your database accepts packages over 15 MB in size.
+        Make sure your database accepts packages over 20 MB in size.
         A MySQL database for example accepts packages up to 1 MB by default.
         In this case, the value for max_allowed_packet must be increased.
-        The recommended maximum size accepted is 20 MB.
+        The recommended maximum size accepted is 50 MB.
         <br>
         <br>
         The installation can take several minutes!
@@ -127,7 +127,7 @@
         <br>
         <br>
         Sie sind im Begriff das OTRS-Paket ITSM auszuführen.
-        Dieses Paket installiert OTRS ITSM 3.3.91 auf Ihrem System.
+        Dieses Paket installiert OTRS ITSM 3.3.92 auf Ihrem System.
         <br>
         <br>
         Wenn auf Ihrem System bereits OTRS ITSM-Pakete installiert
@@ -138,23 +138,23 @@
         Nach erfolgreicher Installation sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
         <br>
         <ul>
-        <li>GeneralCatalog 3.3.91</li>
-        <li>ITSMCore 3.3.91</li>
-        <li>ITSMIncidentProblemManagement 3.3.91</li>
-        <li>ITSMConfigurationManagement 3.3.91</li>
-        <li>ITSMChangeManagement 3.3.91</li>
-        <li>ITSMServiceLevelManagement 3.3.91</li>
-        <li>ImportExport 3.3.91</li>
+        <li>GeneralCatalog 3.3.92</li>
+        <li>ITSMCore 3.3.92</li>
+        <li>ITSMIncidentProblemManagement 3.3.92</li>
+        <li>ITSMConfigurationManagement 3.3.92</li>
+        <li>ITSMChangeManagement 3.3.92</li>
+        <li>ITSMServiceLevelManagement 3.3.92</li>
+        <li>ImportExport 3.3.92</li>
         </ul>
         <br>
         <br>
         <b>ACHTUNG</b>
         <br>
         <br>
-        Vergewissern Sie sich, dass ihre Datenbank Pakete mit einer Größe von mehr als 15 MB akzeptiert.
+        Vergewissern Sie sich, dass ihre Datenbank Pakete mit einer Größe von mehr als 20 MB akzeptiert.
         Eine MySQL Datenbank akzeptiert beispielsweise standardmäßig Pakete mit einer Größe von maximal 1 MB.
         In diesem Fall muss der Wert für max_allowed_packet erhöht werden.
-        Empfohlen werden 20 MB.
+        Empfohlen werden 50 MB.
         <br>
         <br>
         Die Installation kann mehrere Minuten in Anspruch nehmen!
@@ -200,29 +200,29 @@
         <br>
         <br>
         You are about to upgrade the OTRS package ITSM.<br>
-        This package will upgrade your system to OTRS ITSM 3.3.91.
+        This package will upgrade your system to OTRS ITSM 3.3.92.
         <br>
         <br>
         After a successful upgrade, the following packages will be installed and shown by the package manager:
         <br>
         <ul>
-        <li>GeneralCatalog 3.3.91</li>
-        <li>ITSMCore 3.3.91</li>
-        <li>ITSMIncidentProblemManagement 3.3.91</li>
-        <li>ITSMConfigurationManagement 3.3.91</li>
-        <li>ITSMChangeManagement 3.3.91</li>
-        <li>ITSMServiceLevelManagement 3.3.91</li>
-        <li>ImportExport 3.3.91</li>
+        <li>GeneralCatalog 3.3.92</li>
+        <li>ITSMCore 3.3.92</li>
+        <li>ITSMIncidentProblemManagement 3.3.92</li>
+        <li>ITSMConfigurationManagement 3.3.92</li>
+        <li>ITSMChangeManagement 3.3.92</li>
+        <li>ITSMServiceLevelManagement 3.3.92</li>
+        <li>ImportExport 3.3.92</li>
         </ul>
         <br>
         <br>
         <b>ATTENTION</b>
         <br>
         <br>
-        Make sure your database accepts packages over 15 MB in size.
+        Make sure your database accepts packages over 20 MB in size.
         A MySQL database for example accepts packages up to 1 MB by default.
         In this case, the value for max_allowed_packet must be increased.
-        The recommended maximum size accepted is 20 MB.
+        The recommended maximum size accepted is 50 MB.
         <br>
         <br>
         ((enjoy))
@@ -237,29 +237,29 @@
         <br>
         <br>
         Sie sind im Begriff das OTRS-Paket ITSM zu aktualisieren.
-        Dieses Paket aktualisiert Ihr System auf OTRS ITSM 3.3.91.
+        Dieses Paket aktualisiert Ihr System auf OTRS ITSM 3.3.92.
         <br>
         <br>
         Nach erfolgreicher Aktualisierung sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
         <br>
         <ul>
-        <li>GeneralCatalog 3.3.91</li>
-        <li>ITSMCore 3.3.91</li>
-        <li>ITSMIncidentProblemManagement 3.3.91</li>
-        <li>ITSMConfigurationManagement 3.3.91</li>
-        <li>ITSMChangeManagement 3.3.91</li>
-        <li>ITSMServiceLevelManagement 3.3.91</li>
-        <li>ImportExport 3.3.91</li>
+        <li>GeneralCatalog 3.3.92</li>
+        <li>ITSMCore 3.3.92</li>
+        <li>ITSMIncidentProblemManagement 3.3.92</li>
+        <li>ITSMConfigurationManagement 3.3.92</li>
+        <li>ITSMChangeManagement 3.3.92</li>
+        <li>ITSMServiceLevelManagement 3.3.92</li>
+        <li>ImportExport 3.3.92</li>
         </ul>
         <br>
         <br>
         <b>ACHTUNG</b>
         <br>
         <br>
-        Vergewissern Sie sich, dass ihre Datenbank Pakete mit einer Größe von mehr als 15 MB akzeptiert.
+        Vergewissern Sie sich, dass ihre Datenbank Pakete mit einer Größe von mehr als 20 MB akzeptiert.
         Eine MySQL Datenbank akzeptiert beispielsweise standardmäßig Pakete mit einer Größe von maximal 1 MB.
         In diesem Fall muss der Wert für max_allowed_packet erhöht werden.
-        Empfohlen werden 20 MB.
+        Empfohlen werden 50 MB.
         <br>
         <br>
         ((enjoy))
@@ -275,13 +275,13 @@
         <br>
         If you uninstall this package, the following packages will be uninstalled automatically:
         <ul>
-        <li>GeneralCatalog 3.3.91</li>
-        <li>ITSMCore 3.3.91</li>
-        <li>ITSMIncidentProblemManagement 3.3.91</li>
-        <li>ITSMConfigurationManagement 3.3.91</li>
-        <li>ITSMChangeManagement 3.3.91</li>
-        <li>ITSMServiceLevelManagement 3.3.91</li>
-        <li>ImportExport 3.3.91</li>
+        <li>GeneralCatalog 3.3.92</li>
+        <li>ITSMCore 3.3.92</li>
+        <li>ITSMIncidentProblemManagement 3.3.92</li>
+        <li>ITSMConfigurationManagement 3.3.92</li>
+        <li>ITSMChangeManagement 3.3.92</li>
+        <li>ITSMServiceLevelManagement 3.3.92</li>
+        <li>ImportExport 3.3.92</li>
         </ul>
         <br>
         All database tables that were created during installation will be deleted.
@@ -312,13 +312,13 @@
         <br>
         Wenn Sie dieses Paket deinstallieren, werden die folgenden Pakete automatisch gelöscht:
         <ul>
-        <li>GeneralCatalog 3.3.91</li>
-        <li>ITSMCore 3.3.91</li>
-        <li>ITSMIncidentProblemManagement 3.3.91</li>
-        <li>ITSMConfigurationManagement 3.3.91</li>
-        <li>ITSMChangeManagement 3.3.91</li>
-        <li>ITSMServiceLevelManagement 3.3.91</li>
-        <li>ImportExport 3.3.91</li>
+        <li>GeneralCatalog 3.3.92</li>
+        <li>ITSMCore 3.3.92</li>
+        <li>ITSMIncidentProblemManagement 3.3.92</li>
+        <li>ITSMConfigurationManagement 3.3.92</li>
+        <li>ITSMChangeManagement 3.3.92</li>
+        <li>ITSMServiceLevelManagement 3.3.92</li>
+        <li>ImportExport 3.3.92</li>
         </ul>
         <br>
         Bei der Deinstallation werden die von diesen Paketen angelegten Datenbank-Tabellen gelöscht.
