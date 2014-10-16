@@ -57,7 +57,7 @@
         <br>
         <br>
         You are about to run the OTRS package ITSM.
-        This package will install OTRS ITSM 3.3.93 on your system.
+        This package will install OTRS ITSM 3.3.94 on your system.
         <br>
         <br>
         If you already installed some OTRS:ITSM packages on your system, please make sure first
@@ -67,13 +67,13 @@
         After a successful installation, the following packages will be installed and shown by the package manager:
         <br>
         <ul>
-        <li>GeneralCatalog 3.3.93</li>
-        <li>ITSMCore 3.3.93</li>
-        <li>ITSMIncidentProblemManagement 3.3.93</li>
-        <li>ITSMConfigurationManagement 3.3.93</li>
-        <li>ITSMChangeManagement 3.3.93</li>
-        <li>ITSMServiceLevelManagement 3.3.93</li>
-        <li>ImportExport 3.3.93</li>
+        <li>GeneralCatalog 3.3.94</li>
+        <li>ITSMCore 3.3.94</li>
+        <li>ITSMIncidentProblemManagement 3.3.94</li>
+        <li>ITSMConfigurationManagement 3.3.94</li>
+        <li>ITSMChangeManagement 3.3.94</li>
+        <li>ITSMServiceLevelManagement 3.3.94</li>
+        <li>ImportExport 3.3.94</li>
         </ul>
         <br>
         <br>
@@ -127,7 +127,7 @@
         <br>
         <br>
         Sie sind im Begriff das OTRS-Paket ITSM auszuführen.
-        Dieses Paket installiert OTRS ITSM 3.3.93 auf Ihrem System.
+        Dieses Paket installiert OTRS ITSM 3.3.94 auf Ihrem System.
         <br>
         <br>
         Wenn auf Ihrem System bereits OTRS ITSM-Pakete installiert
@@ -138,13 +138,13 @@
         Nach erfolgreicher Installation sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
         <br>
         <ul>
-        <li>GeneralCatalog 3.3.93</li>
-        <li>ITSMCore 3.3.93</li>
-        <li>ITSMIncidentProblemManagement 3.3.93</li>
-        <li>ITSMConfigurationManagement 3.3.93</li>
-        <li>ITSMChangeManagement 3.3.93</li>
-        <li>ITSMServiceLevelManagement 3.3.93</li>
-        <li>ImportExport 3.3.93</li>
+        <li>GeneralCatalog 3.3.94</li>
+        <li>ITSMCore 3.3.94</li>
+        <li>ITSMIncidentProblemManagement 3.3.94</li>
+        <li>ITSMConfigurationManagement 3.3.94</li>
+        <li>ITSMChangeManagement 3.3.94</li>
+        <li>ITSMServiceLevelManagement 3.3.94</li>
+        <li>ImportExport 3.3.94</li>
         </ul>
         <br>
         <br>
@@ -200,19 +200,19 @@
         <br>
         <br>
         You are about to upgrade the OTRS package ITSM.<br>
-        This package will upgrade your system to OTRS ITSM 3.3.93.
+        This package will upgrade your system to OTRS ITSM 3.3.94.
         <br>
         <br>
         After a successful upgrade, the following packages will be installed and shown by the package manager:
         <br>
         <ul>
-        <li>GeneralCatalog 3.3.93</li>
-        <li>ITSMCore 3.3.93</li>
-        <li>ITSMIncidentProblemManagement 3.3.93</li>
-        <li>ITSMConfigurationManagement 3.3.93</li>
-        <li>ITSMChangeManagement 3.3.93</li>
-        <li>ITSMServiceLevelManagement 3.3.93</li>
-        <li>ImportExport 3.3.93</li>
+        <li>GeneralCatalog 3.3.94</li>
+        <li>ITSMCore 3.3.94</li>
+        <li>ITSMIncidentProblemManagement 3.3.94</li>
+        <li>ITSMConfigurationManagement 3.3.94</li>
+        <li>ITSMChangeManagement 3.3.94</li>
+        <li>ITSMServiceLevelManagement 3.3.94</li>
+        <li>ImportExport 3.3.94</li>
         </ul>
         <br>
         <br>
@@ -237,19 +237,19 @@
         <br>
         <br>
         Sie sind im Begriff das OTRS-Paket ITSM zu aktualisieren.
-        Dieses Paket aktualisiert Ihr System auf OTRS ITSM 3.3.93.
+        Dieses Paket aktualisiert Ihr System auf OTRS ITSM 3.3.94.
         <br>
         <br>
         Nach erfolgreicher Aktualisierung sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
         <br>
         <ul>
-        <li>GeneralCatalog 3.3.93</li>
-        <li>ITSMCore 3.3.93</li>
-        <li>ITSMIncidentProblemManagement 3.3.93</li>
-        <li>ITSMConfigurationManagement 3.3.93</li>
-        <li>ITSMChangeManagement 3.3.93</li>
-        <li>ITSMServiceLevelManagement 3.3.93</li>
-        <li>ImportExport 3.3.93</li>
+        <li>GeneralCatalog 3.3.94</li>
+        <li>ITSMCore 3.3.94</li>
+        <li>ITSMIncidentProblemManagement 3.3.94</li>
+        <li>ITSMConfigurationManagement 3.3.94</li>
+        <li>ITSMChangeManagement 3.3.94</li>
+        <li>ITSMServiceLevelManagement 3.3.94</li>
+        <li>ImportExport 3.3.94</li>
         </ul>
         <br>
         <br>
@@ -275,13 +275,13 @@
         <br>
         If you uninstall this package, the following packages will be uninstalled automatically:
         <ul>
-        <li>GeneralCatalog 3.3.93</li>
-        <li>ITSMCore 3.3.93</li>
-        <li>ITSMIncidentProblemManagement 3.3.93</li>
-        <li>ITSMConfigurationManagement 3.3.93</li>
-        <li>ITSMChangeManagement 3.3.93</li>
-        <li>ITSMServiceLevelManagement 3.3.93</li>
-        <li>ImportExport 3.3.93</li>
+        <li>GeneralCatalog 3.3.94</li>
+        <li>ITSMCore 3.3.94</li>
+        <li>ITSMIncidentProblemManagement 3.3.94</li>
+        <li>ITSMConfigurationManagement 3.3.94</li>
+        <li>ITSMChangeManagement 3.3.94</li>
+        <li>ITSMServiceLevelManagement 3.3.94</li>
+        <li>ImportExport 3.3.94</li>
         </ul>
         <br>
         All database tables that were created during installation will be deleted.
@@ -312,13 +312,13 @@
         <br>
         Wenn Sie dieses Paket deinstallieren, werden die folgenden Pakete automatisch gelöscht:
         <ul>
-        <li>GeneralCatalog 3.3.93</li>
-        <li>ITSMCore 3.3.93</li>
-        <li>ITSMIncidentProblemManagement 3.3.93</li>
-        <li>ITSMConfigurationManagement 3.3.93</li>
-        <li>ITSMChangeManagement 3.3.93</li>
-        <li>ITSMServiceLevelManagement 3.3.93</li>
-        <li>ImportExport 3.3.93</li>
+        <li>GeneralCatalog 3.3.94</li>
+        <li>ITSMCore 3.3.94</li>
+        <li>ITSMIncidentProblemManagement 3.3.94</li>
+        <li>ITSMConfigurationManagement 3.3.94</li>
+        <li>ITSMChangeManagement 3.3.94</li>
+        <li>ITSMServiceLevelManagement 3.3.94</li>
+        <li>ImportExport 3.3.94</li>
         </ul>
         <br>
         Bei der Deinstallation werden die von diesen Paketen angelegten Datenbank-Tabellen gelöscht.
