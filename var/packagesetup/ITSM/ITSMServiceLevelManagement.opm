@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMServiceLevelManagement</Name>
-    <Version>4.0.2</Version>
+    <Version>4.0.3</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>http://otrs.org/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <ChangeLog Date="2014-12-11 16:44:52" Version="4.0.3">Build for OTRS::ITSM 4 patch level 3.</ChangeLog>
     <ChangeLog Date="2014-11-28 21:03:00" Version="4.0.2">Build for OTRS::ITSM 4 patch level 2.</ChangeLog>
     <ChangeLog Date="2014-11-20 17:27:03" Version="4.0.1">Build for OTRS::ITSM 4.</ChangeLog>
     <ChangeLog Date="2014-11-13 19:44:22" Version="3.3.96">Build for OTRS::ITSM 4 rc1.</ChangeLog>
@@ -28,7 +29,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -46,7 +47,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -64,7 +65,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -160,7 +161,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -178,7 +179,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -196,14 +197,14 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.2&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.3&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
         &lt;br/&gt;
 
     </IntroUpgrade>
-    <PackageRequired Version="4.0.2">ITSMCore</PackageRequired>
+    <PackageRequired Version="4.0.3">ITSMCore</PackageRequired>
     <CodeInstall Type="post">
 
         # create the package name
@@ -243,7 +244,7 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeReinstall();
 
     </CodeReinstall>
-    <BuildDate>2014-11-28 21:03:00</BuildDate>
+    <BuildDate>2014-12-11 16:44:52</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="var/stats/ITSMStats-001-Ticket.xml" Permission="644" Encode="Base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KCjxvdHJzX3N0YXRzPgo8Q2FjaGU+MDwvQ2FjaGU+CjxEZXNjcmlwdGlvbj5Ub3RhbCBudW1iZXIgb2YgYWxsIHRpY2tldHMgZXZlciBjcmVhdGVkIHBlciBUaWNrZXQtVHlwZSBhbmQgUHJpb3JpdHkuCgpYLUF4aXM6IFRpY2tldC1UeXBlClktQXhpczogUHJpb3JpdHkKClJlc3RyaWN0aW9uczoKICAgIC1ub25lPC9EZXNjcmlwdGlvbj4KPEZpbGU+PC9GaWxlPgo8Rm9ybWF0PkNTVjwvRm9ybWF0Pgo8Rm9ybWF0PlByaW50PC9Gb3JtYXQ+CjxHcmFwaFNpemU+PC9HcmFwaFNpemU+CjxPYmplY3Q+VGlja2V0PC9PYmplY3Q+CjxPYmplY3RNb2R1bGU+S2VybmVsOjpTeXN0ZW06OlN0YXRzOjpEeW5hbWljOjpUaWNrZXQ8L09iamVjdE1vZHVsZT4KPFBlcm1pc3Npb24+c3RhdHM8L1Blcm1pc3Npb24+CjxTdGF0VHlwZT5keW5hbWljPC9TdGF0VHlwZT4KPFN1bUNvbD4xPC9TdW1Db2w+CjxTdW1Sb3c+MTwvU3VtUm93Pgo8VGl0bGU+VG90YWwgbnVtYmVyIG9mIGFsbCB0aWNrZXRzIGV2ZXIgY3JlYXRlZCBwZXIgVGlja2V0LVR5cGUgYW5kIFByaW9yaXR5LjwvVGl0bGU+CjxVc2VBc1ZhbHVlU2VyaWVzIEVsZW1lbnQ9IlByaW9yaXR5SURzIiBGaXhlZD0iMSI+CjwvVXNlQXNWYWx1ZVNlcmllcz4KPFVzZUFzWHZhbHVlIEVsZW1lbnQ9IlR5cGVJRHMiIEZpeGVkPSIxIj4KPC9Vc2VBc1h2YWx1ZT4KPFZhbGlkPjE8L1ZhbGlkPgo8L290cnNfc3RhdHM+Cg==</File>
