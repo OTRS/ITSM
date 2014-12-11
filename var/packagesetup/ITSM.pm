@@ -228,8 +228,7 @@ sub _InstallITSMPackages {
     for my $PackageName ( @{ $Self->{PackageNames} } ) {
 
         # create the file location
-        my $FileLocation
-            = $Kernel::OM->Get('Kernel::Config')->Get('Home')
+        my $FileLocation = $Kernel::OM->Get('Kernel::Config')->Get('Home')
             . $Self->{PackagePath}
             . $PackageName . '.opm';
 
@@ -301,8 +300,7 @@ sub _CheckRequirements {
     for my $File ( @{ $Self->{PackageNames} } ) {
 
         # create file location
-        my $Location
-            = $Kernel::OM->Get('Kernel::Config')->Get('Home')
+        my $Location = $Kernel::OM->Get('Kernel::Config')->Get('Home')
             . $Self->{PackagePath}
             . $File . '.opm';
 
