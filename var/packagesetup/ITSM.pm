@@ -94,7 +94,7 @@ sub new {
     ];
 
     # define the version of the included packages
-    $Self->{PackageVersion} = '4.0.4';
+    $Self->{PackageVersion} = '4.0.5';
 
     # define miminum required itsm version (if installed already)
     $Self->{MinimumITSMVersion} = '1.3.1';
@@ -412,11 +412,11 @@ sub _CheckVersion {
     my ( $Self, %Param ) = @_;
 
     # check needed stuff
-    for (qw(Version1 Version2 Type)) {
-        if ( !defined $Param{$_} ) {
+    for my $Attribute (qw(Version1 Version2 Type)) {
+        if ( !defined $Param{$Attribute} ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
-                Message  => "$_ not defined!",
+                Message  => "$Attribute not defined!",
             );
             return;
         }
@@ -424,9 +424,9 @@ sub _CheckVersion {
     for my $Type (qw(Version1 Version2)) {
         my @Parts = split( /\./, $Param{$Type} );
         $Param{$Type} = 0;
-        for ( 0 .. 4 ) {
-            if ( defined $Parts[$_] ) {
-                $Param{$Type} .= sprintf( "%04d", $Parts[$_] );
+        for my $Position ( 0 .. 4 ) {
+            if ( defined $Parts[$Position] ) {
+                $Param{$Type} .= sprintf( "%04d", $Parts[$Position] );
             }
             else {
                 $Param{$Type} .= '0000';
