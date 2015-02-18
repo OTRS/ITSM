@@ -1,6 +1,6 @@
 # --
 # ITSM.pm - code to excecute during package installation
-# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
+# Copyright (C) 2001-2015 OTRS AG, http://otrs.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -263,8 +263,7 @@ sub _InstallITSMPackages {
     for my $PackageName ( @{ $Self->{PackageNames} } ) {
 
         # create the file location
-        my $FileLocation
-            = $Self->{ConfigObject}->Get('Home') . $Self->{PackagePath} . $PackageName . '.opm';
+        my $FileLocation = $Self->{ConfigObject}->Get('Home') . $Self->{PackagePath} . $PackageName . '.opm';
 
         # read the content of the OPM file
         my $FileContent = $Self->{MainObject}->FileRead(
