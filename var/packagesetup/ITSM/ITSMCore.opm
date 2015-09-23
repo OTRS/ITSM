@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMCore</Name>
-    <Version>4.0.12</Version>
+    <Version>4.0.13</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>http://otrs.org/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <ChangeLog Date="2015-09-23 17:07:27" Version="4.0.13">Build for OTRS::ITSM 4 patch level 13.</ChangeLog>
     <ChangeLog Date="2015-09-09 20:50:24" Version="4.0.12">Build for OTRS::ITSM 4 patch level 12.</ChangeLog>
     <ChangeLog Date="2015-07-29 20:47:54" Version="4.0.11">Build for OTRS::ITSM 4 patch level 11.</ChangeLog>
     <ChangeLog Date="2015-07-04 18:03:30" Version="4.0.10">Build for OTRS::ITSM 4 patch level 10.</ChangeLog>
@@ -37,7 +38,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 4.0.12&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 4.0.13&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -56,7 +57,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 4.0.12&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 4.0.13&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -75,7 +76,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 4.0.12&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 4.0.13&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -195,7 +196,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 4.0.12&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 4.0.13&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -214,7 +215,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 4.0.12&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 4.0.13&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -233,7 +234,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 4.0.12&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 4.0.13&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -241,7 +242,7 @@
         &lt;br/&gt;
 
     </IntroUpgrade>
-    <PackageRequired Version="4.0.12">GeneralCatalog</PackageRequired>
+    <PackageRequired Version="4.0.13">GeneralCatalog</PackageRequired>
     <CodeInstall Type="post">
 
         # create the package name
@@ -308,7 +309,7 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeReinstall();
 
     </CodeReinstall>
-    <BuildDate>2015-09-09 20:50:24</BuildDate>
+    <BuildDate>2015-09-23 17:07:27</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="bin/otrs.AddService.pl" Permission="755" Encode="Base64">IyEvdXNyL2Jpbi9wZXJsCiMgLS0KIyBiaW4vb3Rycy5BZGRTZXJ2aWNlLnBsIC0gYWRkIG5ldyBTZXJ2aWNlcwojIENvcHlyaWdodCAoQykgMjAwMS0yMDE1IE9UUlMgQUcsIGh0dHA6Ly9vdHJzLmNvbS8KIyAtLQojICRvcmlnaW46IGh0dHBzOi8vZ2l0aHViLmNvbS9PVFJTL290cnMvYmxvYi8xYjI2MWFkMDZmOGRlNDE5MDUxMGYyOGI4YTI2MGJkNjI2NjcwNWNjL2Jpbi9vdHJzLkFkZFNlcnZpY2UucGwKIyAtLQojIFRoaXMgcHJvZ3JhbSBpcyBmcmVlIHNvZnR3YXJlOyB5b3UgY2FuIHJlZGlzdHJpYnV0ZSBpdCBhbmQvb3IgbW9kaWZ5CiMgaXQgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgQUZGRVJPIEdlbmVyYWwgUHVibGljIExpY2Vuc2UgYXMgcHVibGlzaGVkIGJ5CiMgdGhlIEZyZWUgU29mdHdhcmUgRm91bmRhdGlvbjsgZWl0aGVyIHZlcnNpb24gMyBvZiB0aGUgTGljZW5zZSwgb3IKIyBhbnkgbGF0ZXIgdmVyc2lvbi4KIwojIFRoaXMgcHJvZ3JhbSBpcyBkaXN0cmlidXRlZCBpbiB0aGUgaG9wZSB0aGF0IGl0IHdpbGwgYmUgdXNlZnVsLAojIGJ1dCBXSVRIT1VUIEFOWSBXQVJSQU5UWTsgd2l0aG91dCBldmVuIHRoZSBpbXBsaWVkIHdhcnJhbnR5IG9mCiMgTUVSQ0hBTlRBQklMSVRZIG9yIEZJVE5FU1MgRk9SIEEgUEFSVElDVUxBUiBQVVJQT1NFLiAgU2VlIHRoZQojIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGZvciBtb3JlIGRldGFpbHMuCiMKIyBZb3Ugc2hvdWxkIGhhdmUgcmVjZWl2ZWQgYSBjb3B5IG9mIHRoZSBHTlUgQWZmZXJvIEdlbmVyYWwgUHVibGljIExpY2Vuc2UKIyBhbG9uZyB3aXRoIHRoaXMgcHJvZ3JhbTsgaWYgbm90LCB3cml0ZSB0byB0aGUgRnJlZSBTb2Z0d2FyZQojIEZvdW5kYXRpb24sIEluYy4sIDUxIEZyYW5rbGluIFN0LCBGaWZ0aCBGbG9vciwgQm9zdG9uLCBNQSAgMDIxMTAtMTMwMSBVU0EKIyBvciBzZWUgaHR0cDovL3d3dy5nbnUub3JnL2xpY2Vuc2VzL2FncGwudHh0LgojIC0tCgp1c2Ugc3RyaWN0Owp1c2Ugd2FybmluZ3M7Cgp1c2UgRmlsZTo6QmFzZW5hbWU7CnVzZSBGaW5kQmluIHF3KCRSZWFsQmluKTsKdXNlIGxpYiBkaXJuYW1lKCRSZWFsQmluKTsKdXNlIGxpYiBkaXJuYW1lKCRSZWFsQmluKSAuICcvS2VybmVsL2NwYW4tbGliJzsKdXNlIGxpYiBkaXJuYW1lKCRSZWFsQmluKSAuICcvQ3VzdG9tJzsKCnVzZSBHZXRvcHQ6OlN0ZDsKCnVzZSBLZXJuZWw6OlN5c3RlbTo6T2JqZWN0TWFuYWdlcjsKIyAtLS0KIyBJVFNNCiMgLS0tCnVzZSBLZXJuZWw6OlN5c3RlbTo6VmFyaWFibGVDaGVjayBxdyg6YWxsKTsKIyAtLS0KCm15ICVQYXJhbTsKCiMgY3JlYXRlIG9iamVjdCBtYW5hZ2VyCmxvY2FsICRLZXJuZWw6Ok9NID0gS2VybmVsOjpTeXN0ZW06Ok9iamVjdE1hbmFnZXItPm5ldygKICAgICdLZXJuZWw6OlN5c3RlbTo6TG9nJyA9PiB7CiAgICAgICAgTG9nUHJlZml4ID0+ICdPVFJTLW90cnMuQWRkU2VydmljZScsCiAgICB9LAopOwoKbXkgJE5vT3B0aW9ucyA9ICRBUkdWWzBdID8gMCA6IDE7CgojIGdldCBvcHRpb25zCm15ICVPcHRzOwojIC0tLQojIElUU00KIyAtLS0KI2dldG9wdHMoICdobjpwOmM6JywgXCVPcHRzICk7CmdldG9wdHMoICdobjpwOmM6Qzp0OicsIFwlT3B0cyApOwojIC0tLQoKaWYgKCAkT3B0c3tofSB8fCAkTm9PcHRpb25zICkgewojIC0tLQojIElUU00KIyAtLS0KIyAgICBwcmludCBTVERFUlIgIlVzYWdlOiAkRmluZEJpbjo6U2NyaXB0IC1uIDxOYW1lPiAtcCA8UGFyZW50PiAtYyA8Q29tbWVudD5cbiI7CiAgICBwcmludCBTVERFUlIgIlVzYWdlOiAkRmluZEJpbjo6U2NyaXB0IC1uIDxOYW1lPiAtcCA8UGFyZW50PiAtYyA8Q29tbWVudD4gLUMgPENyaXRpY2FsaXR5PiAtdCA8VHlwZT5cblxuIjsKIyAtLS0KICAgIGV4aXQ7Cn0KCmlmICggISRPcHRze259ICkgewogICAgcHJpbnQgU1RERVJSICJFUlJPUjogTmVlZCAtbiA8TmFtZT5cbiI7CiAgICBleGl0IDE7Cn0KCm15ICRTZXJ2aWNlTmFtZTsKCiMgbG9va3VwIHBhcmVudCBzZXJ2aWNlIGlmIGdpdmVuCmlmICggJE9wdHN7cH0gKSB7CiAgICAkUGFyYW17UGFyZW50SUR9ID0gJEtlcm5lbDo6T00tPkdldCgnS2VybmVsOjpTeXN0ZW06OlNlcnZpY2UnKS0+U2VydmljZUxvb2t1cCgKICAgICAgICBOYW1lICAgPT4gJE9wdHN7cH0sCiAgICAgICAgVXNlcklEID0+IDEsCiAgICApOwogICAgaWYgKCAhJFBhcmFte1BhcmVudElEfSApIHsKICAgICAgICBwcmludCBTVERFUlIgIkVSUk9SOiBDYW4ndCBhZGQgU2VydmljZTogUGFyZW50ICckT3B0c3twfScgZG9lcyBub3QgZXhpc3QhXG4iOwogICAgICAgIGV4aXQgMTsKICAgIH0KICAgICRTZXJ2aWNlTmFtZSA9ICRPcHRze3B9IC4gJzo6JzsKfQoKJFNlcnZpY2VOYW1lIC49ICRPcHRze259OwoKIyBjaGVjayBpZiBzZXJ2aWNlIGFscmVhZHkgZXhpc3RzCm15ICVTZXJ2aWNlTGlzdCA9ICRLZXJuZWw6Ok9NLT5HZXQoJ0tlcm5lbDo6U3lzdGVtOjpTZXJ2aWNlJyktPlNlcnZpY2VMaXN0KAogICAgVmFsaWQgID0+IDAsCiAgICBVc2VySUQgPT4gMSwKKTsKbXkgJVJldmVyc2UgPSByZXZlcnNlICVTZXJ2aWNlTGlzdDsKaWYgKCAkUmV2ZXJzZXskU2VydmljZU5hbWV9ICkgewogICAgcHJpbnQgU1RERVJSICJFUlJPUjogQ2FuJ3QgYWRkIFNlcnZpY2U6IFNlcnZpY2UgJyRTZXJ2aWNlTmFtZScgYWxyZWFkeSBleGlzdHMhXG4iOwogICAgZXhpdCAxOwp9CiMgLS0tCiMgSVRTTQojIC0tLQoKIyBnZXQgdGhlIGR5bmFtaWMgZmllbGQgY29uZmlnIGZvciBJVFNNQ3JpdGljYWxpdHkKbXkgJER5bmFtaWNGaWVsZENvbmZpZ0FycmF5UmVmID0gJEtlcm5lbDo6T00tPkdldCgnS2VybmVsOjpTeXN0ZW06OkR5bmFtaWNGaWVsZCcpLT5EeW5hbWljRmllbGRMaXN0R2V0KAogICAgVmFsaWQgICAgICAgPT4gMSwKICAgIE9iamVjdFR5cGUgID0+IFsgJ1RpY2tldCcgXSwKICAgIEZpZWxkRmlsdGVyID0+IHsKICAgICAgICBJVFNNQ3JpdGljYWxpdHkgPT4gMSwKICAgIH0sCik7CgojIGdldCB0aGUgZHluYW1pYyBmaWVsZCB2YWx1ZXMgZm9yIElUU01Dcml0aWNhbGl0eQpteSAlUG9zc2libGVWYWx1ZXM7CkRZTkFNSUNGSUVMRDoKZm9yIG15ICREeW5hbWljRmllbGRDb25maWcgKCBAeyAkRHluYW1pY0ZpZWxkQ29uZmlnQXJyYXlSZWYgfSApIHsKICAgIG5leHQgRFlOQU1JQ0ZJRUxEIGlmICFJc0hhc2hSZWZXaXRoRGF0YSgkRHluYW1pY0ZpZWxkQ29uZmlnKTsKCiAgICAjIGdldCBQb3NzaWJsZVZhbHVlcwogICAgJFBvc3NpYmxlVmFsdWVzeyAkRHluYW1pY0ZpZWxkQ29uZmlnLT57TmFtZX0gfSA9ICAkRHluYW1pY0ZpZWxkQ29uZmlnLT57Q29uZmlnfS0+e1Bvc3NpYmxlVmFsdWVzfSB8fCB7fTsKfQoKbXkgJUNyaXRpY2FsaXR5ID0gJXsgJFBvc3NpYmxlVmFsdWVze0lUU01Dcml0aWNhbGl0eX0gfTsKCiRQYXJhbXtDcml0aWNhbGl0eX0gPSAkQ3JpdGljYWxpdHl7ICRPcHRze0N9IHx8ICcnIH07CmlmICggIWRlZmluZWQgJFBhcmFte0NyaXRpY2FsaXR5fSApIHsKICAgIGlmICggISRPcHRze0N9ICkgewogICAgICAgIHByaW50IFNUREVSUiAiRXJyb3I6IENhbid0IGFkZCBTZXJ2aWNlOiBObyBjcml0aWNhbGl0eSBnaXZlbiB2aWEgLUMgb3B0aW9uIVxuIjsKICAgIH0KICAgIGVsc2lmICggIWRlZmluZWQgJFBhcmFte0NyaXRpY2FsaXR5fSApIHsKICAgICAgICBwcmludCBTVERFUlIgIkVycm9yOiBDYW4ndCBhZGQgU2VydmljZTogQ3JpdGljYWxpdHkgJyRPcHRze0N9JyB1bmtub3duIVxuIjsKICAgIH0KICAgIHByaW50ICJcbkF2YWlsYWJsZSBvcHRpb25zIGFyZTpcblxuIjsKICAgIGZvciBteSAkQ3JpdGljYWxpdHkgKCBzb3J0IGtleXMgJUNyaXRpY2FsaXR5ICkgewogICAgICAgIHByaW50ICJcdCckQ3JpdGljYWxpdHknXG4iOwogICAgfQogICAgZXhpdCAxOwp9CgojIGdldCBzZXJ2aWNlIHR5cGUgbGlzdApteSAkU2VydmljZVR5cGVMaXN0ID0gJEtlcm5lbDo6T00tPkdldCgnS2VybmVsOjpTeXN0ZW06OkdlbmVyYWxDYXRhbG9nJyktPkl0ZW1MaXN0KAogICAgQ2xhc3MgPT4gJ0lUU006OlNlcnZpY2U6OlR5cGUnLAopOwoKbXkgJVNlcnZpY2VUeXBlID0gcmV2ZXJzZSAleyRTZXJ2aWNlVHlwZUxpc3R9OwokUGFyYW17VHlwZUlEfSA9ICRTZXJ2aWNlVHlwZXsgJE9wdHN7dH0gfHwgJycgfTsKaWYgKCAhZGVmaW5lZCAkUGFyYW17VHlwZUlEfSApIHsKICAgIGlmICggISRPcHRze3R9ICkgewogICAgICAgIHByaW50IFNUREVSUiAiRXJyb3I6IENhbid0IGFkZCBTZXJ2aWNlOiBObyBzZXJ2aWNlIHR5cGUgZ2l2ZW4gdmlhIC10IG9wdGlvbiFcbiI7CiAgICB9CiAgICBlbHNpZiAoICFkZWZpbmVkICRQYXJhbXtUeXBlSUR9ICkgewogICAgICAgIHByaW50IFNUREVSUiAiRXJyb3I6IENhbid0IGFkZCBTZXJ2aWNlOiBTZXJ2aWNlIHR5cGUgJyRPcHRze3R9JyB1bmtub3duIVxuIjsKICAgIH0KICAgIHByaW50ICJcbkF2YWlsYWJsZSBvcHRpb25zIGFyZTpcblxuIjsKICAgIGZvciBteSAkU2VydmljZVR5cGUgKCBzb3J0IGtleXMgJVNlcnZpY2VUeXBlICkgewogICAgICAgIHByaW50ICJcdCckU2VydmljZVR5cGUnXG4iOwogICAgfQogICAgZXhpdCAxOwp9CgojIC0tLQoKIyB1c2VyIGlkIG9mIHRoZSBwZXJzb24gYWRkaW5nIHRoZSByZWNvcmQKJFBhcmFte1VzZXJJRH0gPSAnMSc7CgojIFZhbGlkcmVjb3JkCiRQYXJhbXtWYWxpZElEfSA9ICcxJzsKJFBhcmFte05hbWV9ICAgID0gJE9wdHN7bn0gfHwgJyc7CiRQYXJhbXtDb21tZW50fSA9ICRPcHRze2N9OwoKaWYgKCBteSAkSUQgPSAkS2VybmVsOjpPTS0+R2V0KCdLZXJuZWw6OlN5c3RlbTo6U2VydmljZScpLT5TZXJ2aWNlQWRkKCVQYXJhbSkgKSB7CiAgICBwcmludCAiU2VydmljZSAnJFNlcnZpY2VOYW1lJyBhZGRlZC4gSUQgaXMgJyRJRCdcbiI7Cn0KZWxzZSB7CiAgICBwcmludCBTVERFUlIgIkVSUk9SOiBDYW4ndCBhZGQgU2VydmljZVxuIjsKICAgIGV4aXQgMTsKfQoKZXhpdCgwKTsK</File>
