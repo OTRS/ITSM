@@ -6,7 +6,7 @@
         <SubGroup>Core::Package</SubGroup>
         <Setting>
             <Hash>
-                <Item Key="http://ftp.otrs.org/pub/otrs/itsm/bundle4/">[--OTRS::ITSM 4 Bundle--] http://ftp.otrs.org/</Item>
+                <Item Key="http://ftp.otrs.org/pub/otrs/itsm/bundle5/">[--OTRS::ITSM 5 Bundle--] http://ftp.otrs.org/</Item>
             </Hash>
         </Setting>
     </ConfigItem>
