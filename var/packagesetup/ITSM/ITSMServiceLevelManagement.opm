@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMServiceLevelManagement</Name>
-    <Version>5.0.6</Version>
+    <Version>5.0.7</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>http://otrs.org/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <ChangeLog Date="2016-02-11 11:06:51" Version="5.0.7">Build for OTRS::ITSM 5 patch level 7.</ChangeLog>
     <ChangeLog Date="2016-01-14 00:47:12" Version="5.0.6">Build for OTRS::ITSM 5 patch level 6.</ChangeLog>
     <ChangeLog Date="2015-12-08 18:36:40" Version="5.0.5">Build for OTRS::ITSM 5 patch level 5.</ChangeLog>
     <ChangeLog Date="2015-11-25 16:19:10" Version="5.0.4">Build for OTRS::ITSM 5 patch level 4.</ChangeLog>
@@ -30,7 +31,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.6&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.7&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -48,7 +49,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.6&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.7&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -66,7 +67,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.6&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.7&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -162,7 +163,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.6&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.7&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -180,7 +181,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.6&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.7&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -198,14 +199,14 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.6&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.7&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
         &lt;br/&gt;
 
     </IntroUpgrade>
-    <PackageRequired Version="5.0.6">ITSMCore</PackageRequired>
+    <PackageRequired Version="5.0.7">ITSMCore</PackageRequired>
     <CodeInstall Type="post">
 
         # create the package name
@@ -245,7 +246,7 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeReinstall();
 
     </CodeReinstall>
-    <BuildDate>2016-01-14 00:47:12</BuildDate>
+    <BuildDate>2016-02-11 11:06:51</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="var/stats/ITSMStats-001-Ticket.xml" Permission="644" Encode="Base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KCjxvdHJzX3N0YXRzPgo8Q2FjaGU+MDwvQ2FjaGU+CjxEZXNjcmlwdGlvbj5Ub3RhbCBudW1iZXIgb2YgYWxsIHRpY2tldHMgZXZlciBjcmVhdGVkIHBlciBUaWNrZXQtVHlwZSBhbmQgUHJpb3JpdHkuCgpYLUF4aXM6IFRpY2tldC1UeXBlClktQXhpczogUHJpb3JpdHkKClJlc3RyaWN0aW9uczoKICAgIC1ub25lPC9EZXNjcmlwdGlvbj4KPEZpbGU+PC9GaWxlPgo8Rm9ybWF0PkNTVjwvRm9ybWF0Pgo8Rm9ybWF0PkV4Y2VsPC9Gb3JtYXQ+CjxGb3JtYXQ+UHJpbnQ8L0Zvcm1hdD4KPEZvcm1hdD5EMzo6QmFyQ2hhcnQ8L0Zvcm1hdD4KPEZvcm1hdD5EMzo6TGluZUNoYXJ0PC9Gb3JtYXQ+CjxGb3JtYXQ+RDM6OlN0YWNrZWRBcmVhQ2hhcnQ8L0Zvcm1hdD4KPEdyYXBoU2l6ZT48L0dyYXBoU2l6ZT4KPE9iamVjdD5UaWNrZXQ8L09iamVjdD4KPE9iamVjdE1vZHVsZT5LZXJuZWw6OlN5c3RlbTo6U3RhdHM6OkR5bmFtaWM6OlRpY2tldDwvT2JqZWN0TW9kdWxlPgo8UGVybWlzc2lvbj5zdGF0czwvUGVybWlzc2lvbj4KPFN0YXRUeXBlPmR5bmFtaWM8L1N0YXRUeXBlPgo8U3VtQ29sPjE8L1N1bUNvbD4KPFN1bVJvdz4xPC9TdW1Sb3c+CjxUaXRsZT5Ub3RhbCBudW1iZXIgb2YgYWxsIHRpY2tldHMgZXZlciBjcmVhdGVkIHBlciBUaWNrZXQtVHlwZSBhbmQgUHJpb3JpdHkuPC9UaXRsZT4KPFVzZUFzVmFsdWVTZXJpZXMgRWxlbWVudD0iUHJpb3JpdHlJRHMiIEZpeGVkPSIxIj4KPC9Vc2VBc1ZhbHVlU2VyaWVzPgo8VXNlQXNYdmFsdWUgRWxlbWVudD0iVHlwZUlEcyIgRml4ZWQ9IjEiPgo8L1VzZUFzWHZhbHVlPgo8VmFsaWQ+MTwvVmFsaWQ+Cjwvb3Ryc19zdGF0cz4K</File>
