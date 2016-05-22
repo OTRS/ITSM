@@ -9,6 +9,7 @@
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">The OTRS::ITSM bundle package.</Description>
     <Description Lang="de">Das OTRS::ITSM Bundle Paket.</Description>
+    <Description Lang="hu">Az összes OTRS::ITSM csomag egyben.</Description>
     <Filelist>
         <File Permission="644" Location="Kernel/Config/Files/FrameworkITSM.xml"/>
         <File Permission="644" Location="var/packagesetup/ITSM/GeneralCatalog.opm"/>
@@ -56,11 +57,11 @@
         <b>WELCOME</b>
         <br>
         <br>
-        You are about to run the OTRS package ITSM.
+        You are about to install the OTRS package ITSM.
         This package will install OTRS::ITSM 5.0.10 on your system.
         <br>
         <br>
-        If you already installed some OTRS:ITSM packages on your system, please make sure first
+        If you already installed some OTRS::ITSM packages on your system, please make sure first
         that the OTRS::ITSM packages are at least of version 1.3.1 or higher!
         <br>
         <br>
@@ -126,7 +127,7 @@
         <b>WILLKOMMEN</b>
         <br>
         <br>
-        Sie sind im Begriff das OTRS-Paket ITSM auszuführen.
+        Sie sind im Begriff das OTRS-Paket ITSM zu installieren.
         Dieses Paket installiert OTRS::ITSM 5.0.10 auf Ihrem System.
         <br>
         <br>
@@ -190,6 +191,83 @@
         <br>
         ((enjoy))
         <br>
+        <br>
+
+    ]]></IntroInstall>
+    <IntroInstall Type="pre" Title="Telepítési információk" Lang="hu"><![CDATA[
+
+        <br>
+        <b>ÜDVÖZÖLJÜK</b>
+        <br>
+        <br>
+        Ön az OTRS::ITSM csomag telepítésére készül.
+        Ez a csomag az OTRS::ITSM 5.0.10 verzióját fogja telepíteni a rendszerre.
+        <br>
+        <br>
+        Ha már telepítette valamelyik OTRS::ITSM csomagot a rendszerre, akkor először győződjön
+        meg arról, hogy az OTRS::ITSM csomagok legalább 1.3.1 verziójúak vagy újabbak!
+        <br>
+        <br>
+        Egy sikeres telepítés után a következő csomagokat fogja telepíteni és megjeleníteni a
+        csomagkezelő:
+        <br>
+        <ul>
+        <li>GeneralCatalog 5.0.10</li>
+        <li>ITSMCore 5.0.10</li>
+        <li>ITSMIncidentProblemManagement 5.0.10</li>
+        <li>ITSMConfigurationManagement 5.0.10</li>
+        <li>ITSMChangeManagement 5.0.10</li>
+        <li>ITSMServiceLevelManagement 5.0.10</li>
+        <li>ImportExport 5.0.10</li>
+        </ul>
+        <br>
+        <br>
+        <b>FIGYELEM</b>
+        <br>
+        <br>
+        Győződjön meg arról, hogy az adatbázisa elfogadja-e a 20 MB-nál nagyobb méretű csomagokat.
+        Például egy MySQL adatbázis alapértelmezetten legfeljebb 1 MB méretű csomagot fogad el.
+        Ebben az esetben a max_allowed_packet értékét kell megnövelni.
+        A javasolt legnagyobb elfogadott méret 50 MB.
+        <br>
+        <br>
+        A telepítés több percig is eltarthat!
+        <br>
+        Ne szakítsa meg a telepítési folyamatot, ha már egyszer elindult!
+        <br>
+        <br>
+        Mivel a telepítési folyamat eltarthat egy ideig, ezért lehetséges, hogy a böngésző
+        időtúllépési korlát hibát fog kapni.
+        Ha ez történne, attól a telepítés még folytatódni fog a háttérben mindenféle probléma
+        nélkül.
+        <br>
+        <br>
+        <b>MEGJEGYZÉS</b>
+        <br>
+        <br>
+        Egy sikeres telepítés után vegye figyelembe a következő információkat:
+        <br>
+        <br>
+        Annak érdekében, hogy hozzáférést adjon a felhasználóknak a szolgáltatásmenühöz, hozzá
+        kell adnia őket tagként az „itsm-service” csoporthoz.
+        <br>
+        <br>
+        Annak érdekében, hogy hozzáférést adjon a felhasználóknak a konfigurációelem-menühöz,
+        hozzá kell adnia őket tagként az „itsm-configitem” csoporthoz.
+        <br>
+        <br>
+        Annak érdekében, hogy hozzáférést adjon a felhasználóknak a változásmenühöz, hozzá kell
+        adnia őket tagként az „itsm-change” csoporthoz.
+        <br>
+        <br>
+        A csomag által hozzáadott menüpontok azután lesznek láthatók, miután ismét bejelentkezik
+        a rendszerbe.
+        <br>
+        <br>
+        A csomag által telepített statisztikák a „Statisztikák” menüpontban lesznek elérhetők.
+        <br>
+        <br>
+        ((enjoy))<br>
         <br>
 
     ]]></IntroInstall>
@@ -267,6 +345,44 @@
         <br>
 
     ]]></IntroUpgrade>
+    <IntroUpgrade Type="pre" Title="Frissítési információk" Lang="hu"><![CDATA[
+
+        <br>
+        <b>ÜDVÖZÖLJÜK</b>
+        <br>
+        <br>
+        Ön az OTRS::ITSM csomag frissítésére készül.
+        Ez a csomag frissíteni fogja a rendszerét az OTRS::ITSM 5.0.10 verziójára.
+        <br>
+        <br>
+        Egy sikeres frissítés után a következő csomagokat fogja telepíteni és megjeleníteni a
+        csomagkezelő:
+        <br>
+        <ul>
+        <li>GeneralCatalog 5.0.10</li>
+        <li>ITSMCore 5.0.10</li>
+        <li>ITSMIncidentProblemManagement 5.0.10</li>
+        <li>ITSMConfigurationManagement 5.0.10</li>
+        <li>ITSMChangeManagement 5.0.10</li>
+        <li>ITSMServiceLevelManagement 5.0.10</li>
+        <li>ImportExport 5.0.10</li>
+        </ul>
+        <br>
+        <br>
+        <b>FIGYELEM</b>
+        <br>
+        <br>
+        Győződjön meg arról, hogy az adatbázisa elfogadja-e a 20 MB-nál nagyobb méretű csomagokat.
+        Például egy MySQL adatbázis alapértelmezetten legfeljebb 1 MB méretű csomagot fogad el.
+        Ebben az esetben a max_allowed_packet értékét kell megnövelni.
+        A javasolt legnagyobb elfogadott méret 50 MB.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroUpgrade>
     <IntroUninstall Type="pre" Title="Uninstallation Information" Lang="en"><![CDATA[
 
         <br>
@@ -334,6 +450,45 @@
         <br>
         <br>
         Nach der Deinstallation sind die zu diesen Paketen zugehörigen Statistiken nicht mehr verfügbar.
+        <br>
+        <br>
+        ((enjoy))
+        <br>
+        <br>
+
+    ]]></IntroUninstall>
+    <IntroUninstall Type="pre" Title="Eltávolítási információk" Lang="hu"><![CDATA[
+
+        <br>
+        <b>FIGYELEM</b>
+        <br>
+        <br>
+        Ha eltávolítja ezt a csomagot, akkor a következő csomagok lesznek automatikusan eltávolítva:
+        <ul>
+        <li>GeneralCatalog 5.0.10</li>
+        <li>ITSMCore 5.0.10</li>
+        <li>ITSMIncidentProblemManagement 5.0.10</li>
+        <li>ITSMConfigurationManagement 5.0.10</li>
+        <li>ITSMChangeManagement 5.0.10</li>
+        <li>ITSMServiceLevelManagement 5.0.10</li>
+        <li>ImportExport 5.0.10</li>
+        </ul>
+        <br>
+        A telepítés során létrehozott összes adatbázistábla törlésre kerül.
+        Az ezekben a táblákban lévő összes adat visszavonhatatlanul el fog veszni!
+        <br>
+        <br>
+        A csomagtelepítés során létrehozott „itsm-service”, „itsm-configitem”, „itsm-change”,
+        „itsm-change-builder” és „itsm-change-manager” csoport ki lesz kapcsolva.
+        Ezeket a csoportokat az adminisztrációs területen tudja ismét bekapcsolni.
+        <br>
+        <br>
+        A konfigurációelem-objektumokra, változásobjektumokra és munkamegrendelés-objektumokra
+        mutató összes hivatkozás visszavonhatatlanul törölve lesz!
+        <br>
+        <br>
+        Az ehhez a csomaghoz hozzárendelt statisztikák többé nem lesznek elérhetők, ha a csomag
+        eltávolításra kerül.
         <br>
         <br>
         ((enjoy))
