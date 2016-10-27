@@ -10,15 +10,15 @@
     <Description Lang="en">The OTRS::ITSM bundle package.</Description>
     <Description Lang="de">Das OTRS::ITSM Bundle Paket.</Description>
     <Filelist>
-        <File Permission="644" Location="Kernel/Config/Files/FrameworkITSM.xml"/>
-        <File Permission="644" Location="var/packagesetup/ITSM/GeneralCatalog.opm"/>
-        <File Permission="644" Location="var/packagesetup/ITSM/ImportExport.opm"/>
-        <File Permission="644" Location="var/packagesetup/ITSM/ITSMChangeManagement.opm"/>
-        <File Permission="644" Location="var/packagesetup/ITSM/ITSMConfigurationManagement.opm"/>
-        <File Permission="644" Location="var/packagesetup/ITSM/ITSMCore.opm"/>
-        <File Permission="644" Location="var/packagesetup/ITSM/ITSMIncidentProblemManagement.opm"/>
-        <File Permission="644" Location="var/packagesetup/ITSM/ITSMServiceLevelManagement.opm"/>
-        <File Permission="644" Location="var/packagesetup/ITSM.pm"/>
+        <File Permission="644" Location="Kernel/Config/Files/FrameworkITSM.xml" />
+        <File Permission="644" Location="var/packagesetup/ITSM/GeneralCatalog.opm" />
+        <File Permission="644" Location="var/packagesetup/ITSM/ImportExport.opm" />
+        <File Permission="644" Location="var/packagesetup/ITSM/ITSMChangeManagement.opm" />
+        <File Permission="644" Location="var/packagesetup/ITSM/ITSMConfigurationManagement.opm" />
+        <File Permission="644" Location="var/packagesetup/ITSM/ITSMCore.opm" />
+        <File Permission="644" Location="var/packagesetup/ITSM/ITSMIncidentProblemManagement.opm" />
+        <File Permission="644" Location="var/packagesetup/ITSM/ITSMServiceLevelManagement.opm" />
+        <File Permission="644" Location="var/packagesetup/ITSM.pm" />
     </Filelist>
     <CodeInstall Type="post"><![CDATA[
 
