@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMServiceLevelManagement</Name>
-    <Version>4.0.19</Version>
+    <Version>4.0.20</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>http://otrs.org/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
-    <ChangeLog Date="2016-10-27 16:46:53" Version="4.0.19">Build for OTRS::ITSM 4 patch level 19.</ChangeLog>
+    <ChangeLog Date="2016-12-10 22:01:03" Version="4.0.20">Build for OTRS::ITSM 4 patch level 20.</ChangeLog>
+    <ChangeLog Date="2016-10-27 16:46:54" Version="4.0.19">Build for OTRS::ITSM 4 patch level 19.</ChangeLog>
     <ChangeLog Date="2016-08-04 12:00:30" Version="4.0.18">Build for OTRS::ITSM 4 patch level 18.</ChangeLog>
     <ChangeLog Date="2016-05-11 19:21:12" Version="4.0.17">Build for OTRS::ITSM 4 patch level 17.</ChangeLog>
     <ChangeLog Date="2016-02-11 11:48:21" Version="4.0.16">Build for OTRS::ITSM 4 patch level 16.</ChangeLog>
@@ -33,7 +34,7 @@
     <Description Lang="en">The OTRS::ITSM Service Level Management package.</Description>
     <Description Lang="de">Das OTRS::ITSM Service Level Management Paket.</Description>
     <Description Lang="es">El paquete OTRS::ITSM Service Level Management.</Description>
-    <Framework Minimum="4.0.19">4.0.x</Framework>
+    <Framework Minimum="4.0.20">4.0.x</Framework>
     <IntroInstall Lang="en" Title="Install Information" Type="pre">
 
         &lt;br/&gt;
@@ -45,7 +46,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.19&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.20&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -63,7 +64,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.19&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.20&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -81,7 +82,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.19&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.20&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -177,7 +178,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.19&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.20&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -195,7 +196,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.19&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.20&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -213,14 +214,14 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.19&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.20&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
         &lt;br/&gt;
 
     </IntroUpgrade>
-    <PackageRequired Version="4.0.19">ITSMCore</PackageRequired>
+    <PackageRequired Version="4.0.20">ITSMCore</PackageRequired>
     <CodeInstall Type="post">
 
         # create the package name
@@ -260,7 +261,7 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeReinstall();
 
     </CodeReinstall>
-    <BuildDate>2016-10-27 16:46:54</BuildDate>
+    <BuildDate>2016-12-10 22:01:03</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="var/stats/ITSMStats-001-Ticket.xml" Permission="644" Encode="Base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KCjxvdHJzX3N0YXRzPgo8Q2FjaGU+MDwvQ2FjaGU+CjxEZXNjcmlwdGlvbj5Ub3RhbCBudW1iZXIgb2YgYWxsIHRpY2tldHMgZXZlciBjcmVhdGVkIHBlciBUaWNrZXQtVHlwZSBhbmQgUHJpb3JpdHkuCgpYLUF4aXM6IFRpY2tldC1UeXBlClktQXhpczogUHJpb3JpdHkKClJlc3RyaWN0aW9uczoKICAgIC1ub25lPC9EZXNjcmlwdGlvbj4KPEZpbGU+PC9GaWxlPgo8Rm9ybWF0PkNTVjwvRm9ybWF0Pgo8Rm9ybWF0PlByaW50PC9Gb3JtYXQ+CjxHcmFwaFNpemU+PC9HcmFwaFNpemU+CjxPYmplY3Q+VGlja2V0PC9PYmplY3Q+CjxPYmplY3RNb2R1bGU+S2VybmVsOjpTeXN0ZW06OlN0YXRzOjpEeW5hbWljOjpUaWNrZXQ8L09iamVjdE1vZHVsZT4KPFBlcm1pc3Npb24+c3RhdHM8L1Blcm1pc3Npb24+CjxTdGF0VHlwZT5keW5hbWljPC9TdGF0VHlwZT4KPFN1bUNvbD4xPC9TdW1Db2w+CjxTdW1Sb3c+MTwvU3VtUm93Pgo8VGl0bGU+VG90YWwgbnVtYmVyIG9mIGFsbCB0aWNrZXRzIGV2ZXIgY3JlYXRlZCBwZXIgVGlja2V0LVR5cGUgYW5kIFByaW9yaXR5LjwvVGl0bGU+CjxVc2VBc1ZhbHVlU2VyaWVzIEVsZW1lbnQ9IlByaW9yaXR5SURzIiBGaXhlZD0iMSI+CjwvVXNlQXNWYWx1ZVNlcmllcz4KPFVzZUFzWHZhbHVlIEVsZW1lbnQ9IlR5cGVJRHMiIEZpeGVkPSIxIj4KPC9Vc2VBc1h2YWx1ZT4KPFZhbGlkPjE8L1ZhbGlkPgo8L290cnNfc3RhdHM+Cg==</File>
