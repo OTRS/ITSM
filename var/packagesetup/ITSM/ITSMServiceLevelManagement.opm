@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMServiceLevelManagement</Name>
-    <Version>5.0.18</Version>
+    <Version>5.0.19</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>http://otrs.org/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <ChangeLog Date="2017-05-03 18:31:57" Version="5.0.19">Build for OTRS::ITSM 5 patch level 19.</ChangeLog>
     <ChangeLog Date="2017-03-24 10:54:46" Version="5.0.18">Build for OTRS::ITSM 5 patch level 18.</ChangeLog>
     <ChangeLog Date="2017-03-01 14:29:06" Version="5.0.17">Build for OTRS::ITSM 5 patch level 17.</ChangeLog>
     <ChangeLog Date="2017-01-17 22:02:13" Version="5.0.16">Build for OTRS::ITSM 5 patch level 16.</ChangeLog>
@@ -31,7 +32,7 @@
     <Description Lang="de">Das OTRS::ITSM Service Level Management Paket.</Description>
     <Description Lang="es">El paquete OTRS::ITSM Service Level Management.</Description>
     <Description Lang="hu">Az OTRS::ITSM szolgáltatásszint-menedzsment csomag.</Description>
-    <Framework Minimum="5.0.18">5.0.x</Framework>
+    <Framework Minimum="5.0.19">5.0.x</Framework>
     <IntroInstall Lang="en" Title="Install Information" Type="pre">
 
         &lt;br/&gt;
@@ -43,7 +44,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.18&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.19&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -61,7 +62,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.18&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.19&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -79,7 +80,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.18&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.19&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -97,7 +98,7 @@
         &lt;br/&gt;
         &lt;strong&gt;SZÜKSÉGES OTRS CSOMAGOK&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.18&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.19&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -219,7 +220,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.18&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.19&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -237,7 +238,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.18&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.19&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -255,7 +256,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.18&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.19&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -273,14 +274,14 @@
         &lt;br/&gt;
         &lt;strong&gt;SZÜKSÉGES OTRS CSOMAGOK&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.18&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.19&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
         &lt;br/&gt;
 
     </IntroUpgrade>
-    <PackageRequired Version="5.0.18">ITSMCore</PackageRequired>
+    <PackageRequired Version="5.0.19">ITSMCore</PackageRequired>
     <CodeInstall Type="post">
 
         # create the package name
@@ -320,7 +321,7 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeReinstall();
 
     </CodeReinstall>
-    <BuildDate>2017-03-24 10:54:46</BuildDate>
+    <BuildDate>2017-05-03 18:31:57</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="var/stats/ITSMStats-001-Ticket.xml" Permission="644" Encode="Base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KCjxvdHJzX3N0YXRzPgo8Q2FjaGU+MDwvQ2FjaGU+CjxEZXNjcmlwdGlvbj5Ub3RhbCBudW1iZXIgb2YgYWxsIHRpY2tldHMgZXZlciBjcmVhdGVkIHBlciBUaWNrZXQtVHlwZSBhbmQgUHJpb3JpdHkuCgpYLUF4aXM6IFRpY2tldC1UeXBlClktQXhpczogUHJpb3JpdHkKClJlc3RyaWN0aW9uczoKICAgIC1ub25lPC9EZXNjcmlwdGlvbj4KPEZpbGU+PC9GaWxlPgo8Rm9ybWF0PkNTVjwvRm9ybWF0Pgo8Rm9ybWF0PkV4Y2VsPC9Gb3JtYXQ+CjxGb3JtYXQ+UHJpbnQ8L0Zvcm1hdD4KPEZvcm1hdD5EMzo6QmFyQ2hhcnQ8L0Zvcm1hdD4KPEZvcm1hdD5EMzo6TGluZUNoYXJ0PC9Gb3JtYXQ+CjxGb3JtYXQ+RDM6OlN0YWNrZWRBcmVhQ2hhcnQ8L0Zvcm1hdD4KPEdyYXBoU2l6ZT48L0dyYXBoU2l6ZT4KPE9iamVjdD5UaWNrZXQ8L09iamVjdD4KPE9iamVjdE1vZHVsZT5LZXJuZWw6OlN5c3RlbTo6U3RhdHM6OkR5bmFtaWM6OlRpY2tldDwvT2JqZWN0TW9kdWxlPgo8UGVybWlzc2lvbj5zdGF0czwvUGVybWlzc2lvbj4KPFN0YXRUeXBlPmR5bmFtaWM8L1N0YXRUeXBlPgo8U3VtQ29sPjE8L1N1bUNvbD4KPFN1bVJvdz4xPC9TdW1Sb3c+CjxUaXRsZT5Ub3RhbCBudW1iZXIgb2YgYWxsIHRpY2tldHMgZXZlciBjcmVhdGVkIHBlciBUaWNrZXQtVHlwZSBhbmQgUHJpb3JpdHkuPC9UaXRsZT4KPFVzZUFzVmFsdWVTZXJpZXMgRWxlbWVudD0iUHJpb3JpdHlJRHMiIEZpeGVkPSIxIj4KPC9Vc2VBc1ZhbHVlU2VyaWVzPgo8VXNlQXNYdmFsdWUgRWxlbWVudD0iVHlwZUlEcyIgRml4ZWQ9IjEiPgo8L1VzZUFzWHZhbHVlPgo8VmFsaWQ+MTwvVmFsaWQ+Cjwvb3Ryc19zdGF0cz4K</File>
