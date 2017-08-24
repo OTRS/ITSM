@@ -21,7 +21,7 @@ our @ObjectDependencies = (
 
 =head1 NAME
 
-ITSM.pm - code to excecute during package installation
+ITSM.pm - code to execute during package installation
 
 =head1 SYNOPSIS
 
