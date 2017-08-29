@@ -24,10 +24,6 @@ ITSM.pm - code to execute during package installation
 
 =head1 PUBLIC INTERFACE
 
-=over 4
-
-=cut
-
 =head2 new()
 
 create an object
