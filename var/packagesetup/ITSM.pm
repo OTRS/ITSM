@@ -426,8 +426,6 @@ sub _CheckVersion {
 
 =end Internal:
 
-=back
-
 =head1 TERMS AND CONDITIONS
 
 This software is part of the OTRS project (L<http://otrs.org/>).
