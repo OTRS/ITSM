@@ -16,7 +16,6 @@ our @ObjectDependencies = (
     'Kernel::System::Log',
     'Kernel::System::Main',
     'Kernel::System::Package',
-    'Kernel::System::SysConfig',
 );
 
 =head1 NAME
