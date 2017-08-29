@@ -22,17 +22,13 @@ our @ObjectDependencies = (
 
 ITSM.pm - code to execute during package installation
 
-=head1 SYNOPSIS
-
-All functions
-
 =head1 PUBLIC INTERFACE
 
 =over 4
 
 =cut
 
-=item new()
+=head2 new()
 
 create an object
 
@@ -74,7 +70,7 @@ sub new {
     ];
 
     # define the version of the included packages
-    $Self->{PackageVersion} = '5.0.22';
+    $Self->{PackageVersion} = '5.0.91';
 
     # define miminum required itsm version (if installed already)
     $Self->{MinimumITSMVersion} = '1.3.1';
@@ -87,7 +83,7 @@ sub new {
     return $Self;
 }
 
-=item CodeInstall()
+=head2 CodeInstall()
 
 run the code install part
 
@@ -127,7 +123,7 @@ sub CodeInstall {
     return 1;
 }
 
-=item CodeUpgrade()
+=head2 CodeUpgrade()
 
 run the code upgrade part
 
@@ -167,7 +163,7 @@ sub CodeUpgrade {
     return 1;
 }
 
-=item CodeUninstall()
+=head2 CodeUninstall()
 
 run the code uninstall part
 
@@ -192,7 +188,7 @@ sub CodeUninstall {
 
 =begin Internal:
 
-=item _InstallITSMPackages()
+=head2 _InstallITSMPackages()
 
 installes the itsm packages
 
@@ -231,7 +227,7 @@ sub _InstallITSMPackages {
     return 1;
 }
 
-=item _CheckRequirements()
+=head2 _CheckRequirements()
 
 check requirements
 
@@ -320,7 +316,7 @@ sub _CheckRequirements {
     return 1;
 }
 
-=item _UninstallPackage()
+=head2 _UninstallPackage()
 
 uninstalls packages, but only if the packages match the given package version
 
@@ -376,7 +372,7 @@ sub _UninstallPackage {
     return 1;
 }
 
-=item _CheckVersion()
+=head2 _CheckVersion()
 
 checks if Version2 is at least Version1
 
