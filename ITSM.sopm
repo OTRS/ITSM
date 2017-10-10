@@ -59,7 +59,7 @@
         <br>
         <br>
         You are about to install the OTRS package ITSM.
-        This package will install OTRS::ITSM 5.0.91 on your system.
+        This package will install OTRS::ITSM 5.0.92 on your system.
         <br>
         <br>
         If you already installed some OTRS::ITSM packages on your system, please make sure first
@@ -69,13 +69,13 @@
         After a successful installation, the following packages will be installed and shown by the package manager:
         <br>
         <ul>
-        <li>GeneralCatalog 5.0.91</li>
-        <li>ITSMCore 5.0.91</li>
-        <li>ITSMIncidentProblemManagement 5.0.91</li>
-        <li>ITSMConfigurationManagement 5.0.91</li>
-        <li>ITSMChangeManagement 5.0.91</li>
-        <li>ITSMServiceLevelManagement 5.0.91</li>
-        <li>ImportExport 5.0.91</li>
+        <li>GeneralCatalog 5.0.92</li>
+        <li>ITSMCore 5.0.92</li>
+        <li>ITSMIncidentProblemManagement 5.0.92</li>
+        <li>ITSMConfigurationManagement 5.0.92</li>
+        <li>ITSMChangeManagement 5.0.92</li>
+        <li>ITSMServiceLevelManagement 5.0.92</li>
+        <li>ImportExport 5.0.92</li>
         </ul>
         <br>
         <br>
@@ -129,7 +129,7 @@
         <br>
         <br>
         Sie sind im Begriff das OTRS-Paket ITSM zu installieren.
-        Dieses Paket installiert OTRS::ITSM 5.0.91 auf Ihrem System.
+        Dieses Paket installiert OTRS::ITSM 5.0.92 auf Ihrem System.
         <br>
         <br>
         Wenn auf Ihrem System bereits OTRS::ITSM-Pakete installiert
@@ -140,13 +140,13 @@
         Nach erfolgreicher Installation sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
         <br>
         <ul>
-        <li>GeneralCatalog 5.0.91</li>
-        <li>ITSMCore 5.0.91</li>
-        <li>ITSMIncidentProblemManagement 5.0.91</li>
-        <li>ITSMConfigurationManagement 5.0.91</li>
-        <li>ITSMChangeManagement 5.0.91</li>
-        <li>ITSMServiceLevelManagement 5.0.91</li>
-        <li>ImportExport 5.0.91</li>
+        <li>GeneralCatalog 5.0.92</li>
+        <li>ITSMCore 5.0.92</li>
+        <li>ITSMIncidentProblemManagement 5.0.92</li>
+        <li>ITSMConfigurationManagement 5.0.92</li>
+        <li>ITSMChangeManagement 5.0.92</li>
+        <li>ITSMServiceLevelManagement 5.0.92</li>
+        <li>ImportExport 5.0.92</li>
         </ul>
         <br>
         <br>
@@ -202,7 +202,7 @@
         <br>
         <br>
         Ön az OTRS::ITSM csomag telepítésére készül.
-        Ez a csomag az OTRS::ITSM 5.0.91 verzióját fogja telepíteni a rendszerre.
+        Ez a csomag az OTRS::ITSM 5.0.92 verzióját fogja telepíteni a rendszerre.
         <br>
         <br>
         Ha már telepítette valamelyik OTRS::ITSM csomagot a rendszerre, akkor először győződjön
@@ -213,13 +213,13 @@
         csomagkezelő:
         <br>
         <ul>
-        <li>GeneralCatalog 5.0.91</li>
-        <li>ITSMCore 5.0.91</li>
-        <li>ITSMIncidentProblemManagement 5.0.91</li>
-        <li>ITSMConfigurationManagement 5.0.91</li>
-        <li>ITSMChangeManagement 5.0.91</li>
-        <li>ITSMServiceLevelManagement 5.0.91</li>
-        <li>ImportExport 5.0.91</li>
+        <li>GeneralCatalog 5.0.92</li>
+        <li>ITSMCore 5.0.92</li>
+        <li>ITSMIncidentProblemManagement 5.0.92</li>
+        <li>ITSMConfigurationManagement 5.0.92</li>
+        <li>ITSMChangeManagement 5.0.92</li>
+        <li>ITSMServiceLevelManagement 5.0.92</li>
+        <li>ImportExport 5.0.92</li>
         </ul>
         <br>
         <br>
@@ -279,19 +279,19 @@
         <br>
         <br>
         You are about to upgrade the OTRS package ITSM.<br>
-        This package will upgrade your system to OTRS::ITSM 5.0.91.
+        This package will upgrade your system to OTRS::ITSM 5.0.92.
         <br>
         <br>
         After a successful upgrade, the following packages will be installed and shown by the package manager:
         <br>
         <ul>
-        <li>GeneralCatalog 5.0.91</li>
-        <li>ITSMCore 5.0.91</li>
-        <li>ITSMIncidentProblemManagement 5.0.91</li>
-        <li>ITSMConfigurationManagement 5.0.91</li>
-        <li>ITSMChangeManagement 5.0.91</li>
-        <li>ITSMServiceLevelManagement 5.0.91</li>
-        <li>ImportExport 5.0.91</li>
+        <li>GeneralCatalog 5.0.92</li>
+        <li>ITSMCore 5.0.92</li>
+        <li>ITSMIncidentProblemManagement 5.0.92</li>
+        <li>ITSMConfigurationManagement 5.0.92</li>
+        <li>ITSMChangeManagement 5.0.92</li>
+        <li>ITSMServiceLevelManagement 5.0.92</li>
+        <li>ImportExport 5.0.92</li>
         </ul>
         <br>
         <br>
@@ -316,19 +316,19 @@
         <br>
         <br>
         Sie sind im Begriff das OTRS-Paket ITSM zu aktualisieren.
-        Dieses Paket aktualisiert Ihr System auf OTRS::ITSM 5.0.91.
+        Dieses Paket aktualisiert Ihr System auf OTRS::ITSM 5.0.92.
         <br>
         <br>
         Nach erfolgreicher Aktualisierung sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
         <br>
         <ul>
-        <li>GeneralCatalog 5.0.91</li>
-        <li>ITSMCore 5.0.91</li>
-        <li>ITSMIncidentProblemManagement 5.0.91</li>
-        <li>ITSMConfigurationManagement 5.0.91</li>
-        <li>ITSMChangeManagement 5.0.91</li>
-        <li>ITSMServiceLevelManagement 5.0.91</li>
-        <li>ImportExport 5.0.91</li>
+        <li>GeneralCatalog 5.0.92</li>
+        <li>ITSMCore 5.0.92</li>
+        <li>ITSMIncidentProblemManagement 5.0.92</li>
+        <li>ITSMConfigurationManagement 5.0.92</li>
+        <li>ITSMChangeManagement 5.0.92</li>
+        <li>ITSMServiceLevelManagement 5.0.92</li>
+        <li>ImportExport 5.0.92</li>
         </ul>
         <br>
         <br>
@@ -353,20 +353,20 @@
         <br>
         <br>
         Ön az OTRS::ITSM csomag frissítésére készül.
-        Ez a csomag frissíteni fogja a rendszerét az OTRS::ITSM 5.0.91 verziójára.
+        Ez a csomag frissíteni fogja a rendszerét az OTRS::ITSM 5.0.92 verziójára.
         <br>
         <br>
         Egy sikeres frissítés után a következő csomagokat fogja telepíteni és megjeleníteni a
         csomagkezelő:
         <br>
         <ul>
-        <li>GeneralCatalog 5.0.91</li>
-        <li>ITSMCore 5.0.91</li>
-        <li>ITSMIncidentProblemManagement 5.0.91</li>
-        <li>ITSMConfigurationManagement 5.0.91</li>
-        <li>ITSMChangeManagement 5.0.91</li>
-        <li>ITSMServiceLevelManagement 5.0.91</li>
-        <li>ImportExport 5.0.91</li>
+        <li>GeneralCatalog 5.0.92</li>
+        <li>ITSMCore 5.0.92</li>
+        <li>ITSMIncidentProblemManagement 5.0.92</li>
+        <li>ITSMConfigurationManagement 5.0.92</li>
+        <li>ITSMChangeManagement 5.0.92</li>
+        <li>ITSMServiceLevelManagement 5.0.92</li>
+        <li>ImportExport 5.0.92</li>
         </ul>
         <br>
         <br>
@@ -392,13 +392,13 @@
         <br>
         If you uninstall this package, the following packages will be uninstalled automatically:
         <ul>
-        <li>GeneralCatalog 5.0.91</li>
-        <li>ITSMCore 5.0.91</li>
-        <li>ITSMIncidentProblemManagement 5.0.91</li>
-        <li>ITSMConfigurationManagement 5.0.91</li>
-        <li>ITSMChangeManagement 5.0.91</li>
-        <li>ITSMServiceLevelManagement 5.0.91</li>
-        <li>ImportExport 5.0.91</li>
+        <li>GeneralCatalog 5.0.92</li>
+        <li>ITSMCore 5.0.92</li>
+        <li>ITSMIncidentProblemManagement 5.0.92</li>
+        <li>ITSMConfigurationManagement 5.0.92</li>
+        <li>ITSMChangeManagement 5.0.92</li>
+        <li>ITSMServiceLevelManagement 5.0.92</li>
+        <li>ImportExport 5.0.92</li>
         </ul>
         <br>
         All database tables that were created during installation will be deleted.
@@ -429,13 +429,13 @@
         <br>
         Wenn Sie dieses Paket deinstallieren, werden die folgenden Pakete automatisch gelöscht:
         <ul>
-        <li>GeneralCatalog 5.0.91</li>
-        <li>ITSMCore 5.0.91</li>
-        <li>ITSMIncidentProblemManagement 5.0.91</li>
-        <li>ITSMConfigurationManagement 5.0.91</li>
-        <li>ITSMChangeManagement 5.0.91</li>
-        <li>ITSMServiceLevelManagement 5.0.91</li>
-        <li>ImportExport 5.0.91</li>
+        <li>GeneralCatalog 5.0.92</li>
+        <li>ITSMCore 5.0.92</li>
+        <li>ITSMIncidentProblemManagement 5.0.92</li>
+        <li>ITSMConfigurationManagement 5.0.92</li>
+        <li>ITSMChangeManagement 5.0.92</li>
+        <li>ITSMServiceLevelManagement 5.0.92</li>
+        <li>ImportExport 5.0.92</li>
         </ul>
         <br>
         Bei der Deinstallation werden die von diesen Paketen angelegten Datenbank-Tabellen gelöscht.
@@ -466,13 +466,13 @@
         <br>
         Ha eltávolítja ezt a csomagot, akkor a következő csomagok lesznek automatikusan eltávolítva:
         <ul>
-        <li>GeneralCatalog 5.0.91</li>
-        <li>ITSMCore 5.0.91</li>
-        <li>ITSMIncidentProblemManagement 5.0.91</li>
-        <li>ITSMConfigurationManagement 5.0.91</li>
-        <li>ITSMChangeManagement 5.0.91</li>
-        <li>ITSMServiceLevelManagement 5.0.91</li>
-        <li>ImportExport 5.0.91</li>
+        <li>GeneralCatalog 5.0.92</li>
+        <li>ITSMCore 5.0.92</li>
+        <li>ITSMIncidentProblemManagement 5.0.92</li>
+        <li>ITSMConfigurationManagement 5.0.92</li>
+        <li>ITSMChangeManagement 5.0.92</li>
+        <li>ITSMServiceLevelManagement 5.0.92</li>
+        <li>ImportExport 5.0.92</li>
         </ul>
         <br>
         A telepítés során létrehozott összes adatbázistábla törlésre kerül.
