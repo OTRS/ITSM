@@ -12,7 +12,6 @@
     <Description Lang="hu">Az összes OTRS::ITSM csomag egyben.</Description>
     <Filelist>
         <File Permission="660" Location="Kernel/Config/Files/XML/FrameworkITSM.xml" />
-        <File Permission="660" Location="Kernel/Config/Files/FrameworkITSM.xml" />
         <File Permission="660" Location="var/packagesetup/ITSM/GeneralCatalog.opm" />
         <File Permission="660" Location="var/packagesetup/ITSM/ImportExport.opm" />
         <File Permission="660" Location="var/packagesetup/ITSM/ITSMChangeManagement.opm" />
