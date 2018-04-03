@@ -20,7 +20,7 @@ our @ObjectDependencies = (
 
 =head1 NAME
 
-ITSM.pm - code to execute during package installation
+var::packagesetup::ITSM - code to execute during package installation
 
 =head1 PUBLIC INTERFACE
 
