@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ImportExport</Name>
-    <Version>6.0.8</Version>
+    <Version>6.0.9</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>http://otrs.org/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <ChangeLog Date="2018-07-17 13:18:38" Version="6.0.9">Build for OTRS::ITSM 6 patch level 9.</ChangeLog>
     <ChangeLog Date="2018-06-06 16:17:06" Version="6.0.8">Build for OTRS::ITSM 6 patch level 8.</ChangeLog>
     <ChangeLog Date="2018-04-24 16:45:16" Version="6.0.7">Build for OTRS::ITSM 6 patch level 7.</ChangeLog>
     <ChangeLog Date="2018-03-06 19:58:43" Version="6.0.6">Build for OTRS::ITSM 6 patch level 6.</ChangeLog>
@@ -21,7 +22,7 @@
     <Description Lang="de">Das ImportExport Paket.</Description>
     <Description Lang="es">El paquete ImportExport.</Description>
     <Description Lang="hu">Az ImportExport csomag.</Description>
-    <Framework Minimum="6.0.8">6.0.x</Framework>
+    <Framework Minimum="6.0.9">6.0.x</Framework>
     <IntroUninstall Lang="en" Title="Uninstallation Information" Type="pre">
 
         &lt;/br&gt;
@@ -108,7 +109,7 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeUpgradeFromLowerThan_4_0_91();
 
     </CodeUpgrade>
-    <BuildDate>2018-06-06 16:17:06</BuildDate>
+    <BuildDate>2018-07-17 13:18:38</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="doc/import-export-database.dia" Permission="660" Encode="Base64">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</File>
