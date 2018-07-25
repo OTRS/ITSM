@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMCore</Name>
-    <Version>4.0.30</Version>
+    <Version>4.0.31</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>http://otrs.org/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <ChangeLog Date="2018-07-25 21:25:06" Version="4.0.31">Build for OTRS::ITSM 4 patch level 31.</ChangeLog>
     <ChangeLog Date="2018-06-06 12:02:09" Version="4.0.30">Build for OTRS::ITSM 4 patch level 30.</ChangeLog>
     <ChangeLog Date="2018-03-07 09:57:59" Version="4.0.29">Build for OTRS::ITSM 4 patch level 29.</ChangeLog>
     <ChangeLog Date="2017-12-12 16:13:22" Version="4.0.28">Build for OTRS::ITSM 4 patch level 28.</ChangeLog>
@@ -43,7 +44,7 @@
     <ChangeLog Date="2014-09-04 00:25:53" Version="3.3.91">Build for OTRS::ITSM 4 beta1.</ChangeLog>
     <Description Lang="en">The OTRS::ITSM Core package.</Description>
     <Description Lang="de">Das OTRS::ITSM Core Paket.</Description>
-    <Framework Minimum="4.0.30">4.0.x</Framework>
+    <Framework Minimum="4.0.31">4.0.x</Framework>
     <IntroInstall Lang="en" Title="Install Information" Type="pre">
 
         &lt;br/&gt;
@@ -55,7 +56,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 4.0.30&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 4.0.31&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -74,7 +75,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 4.0.30&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 4.0.31&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -93,7 +94,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 4.0.30&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 4.0.31&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -213,7 +214,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 4.0.30&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 4.0.31&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -232,7 +233,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 4.0.30&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 4.0.31&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -251,7 +252,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 4.0.30&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 4.0.31&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -259,7 +260,7 @@
         &lt;br/&gt;
 
     </IntroUpgrade>
-    <PackageRequired Version="4.0.30">GeneralCatalog</PackageRequired>
+    <PackageRequired Version="4.0.31">GeneralCatalog</PackageRequired>
     <CodeInstall Type="post">
 
         # create the package name
@@ -326,7 +327,7 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeReinstall();
 
     </CodeReinstall>
-    <BuildDate>2018-06-06 12:02:09</BuildDate>
+    <BuildDate>2018-07-25 21:25:06</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="bin/otrs.AddService.pl" Permission="755" Encode="Base64">IyEvdXNyL2Jpbi9wZXJsCiMgLS0KIyBDb3B5cmlnaHQgKEMpIDIwMDEtMjAxOCBPVFJTIEFHLCBodHRwOi8vb3Rycy5jb20vCiMgLS0KIyAkb3JpZ2luOiBvdHJzIC0gYTQ1MTI2MzZmYzExZWZmNDhiNTg2NGIyMDhlMDY0YmIxY2NlMjlmMyAtIGJpbi9vdHJzLkFkZFNlcnZpY2UucGwKIyAtLQojIFRoaXMgcHJvZ3JhbSBpcyBmcmVlIHNvZnR3YXJlOyB5b3UgY2FuIHJlZGlzdHJpYnV0ZSBpdCBhbmQvb3IgbW9kaWZ5CiMgaXQgdW5kZXIgdGhlIHRlcm1zIG9mIHRoZSBHTlUgQUZGRVJPIEdlbmVyYWwgUHVibGljIExpY2Vuc2UgYXMgcHVibGlzaGVkIGJ5CiMgdGhlIEZyZWUgU29mdHdhcmUgRm91bmRhdGlvbjsgZWl0aGVyIHZlcnNpb24gMyBvZiB0aGUgTGljZW5zZSwgb3IKIyBhbnkgbGF0ZXIgdmVyc2lvbi4KIwojIFRoaXMgcHJvZ3JhbSBpcyBkaXN0cmlidXRlZCBpbiB0aGUgaG9wZSB0aGF0IGl0IHdpbGwgYmUgdXNlZnVsLAojIGJ1dCBXSVRIT1VUIEFOWSBXQVJSQU5UWTsgd2l0aG91dCBldmVuIHRoZSBpbXBsaWVkIHdhcnJhbnR5IG9mCiMgTUVSQ0hBTlRBQklMSVRZIG9yIEZJVE5FU1MgRk9SIEEgUEFSVElDVUxBUiBQVVJQT1NFLiBTZWUgdGhlCiMgR05VIEdlbmVyYWwgUHVibGljIExpY2Vuc2UgZm9yIG1vcmUgZGV0YWlscy4KIwojIFlvdSBzaG91bGQgaGF2ZSByZWNlaXZlZCBhIGNvcHkgb2YgdGhlIEdOVSBBZmZlcm8gR2VuZXJhbCBQdWJsaWMgTGljZW5zZQojIGFsb25nIHdpdGggdGhpcyBwcm9ncmFtOyBpZiBub3QsIHdyaXRlIHRvIHRoZSBGcmVlIFNvZnR3YXJlCiMgRm91bmRhdGlvbiwgSW5jLiwgNTEgRnJhbmtsaW4gU3QsIEZpZnRoIEZsb29yLCBCb3N0b24sIE1BIDAyMTEwLTEzMDEgVVNBCiMgb3Igc2VlIGh0dHA6Ly93d3cuZ251Lm9yZy9saWNlbnNlcy9hZ3BsLnR4dC4KIyAtLQoKdXNlIHN0cmljdDsKdXNlIHdhcm5pbmdzOwoKdXNlIEZpbGU6OkJhc2VuYW1lOwp1c2UgRmluZEJpbiBxdygkUmVhbEJpbik7CnVzZSBsaWIgZGlybmFtZSgkUmVhbEJpbik7CnVzZSBsaWIgZGlybmFtZSgkUmVhbEJpbikgLiAnL0tlcm5lbC9jcGFuLWxpYic7CnVzZSBsaWIgZGlybmFtZSgkUmVhbEJpbikgLiAnL0N1c3RvbSc7Cgp1c2UgR2V0b3B0OjpTdGQ7Cgp1c2UgS2VybmVsOjpTeXN0ZW06Ok9iamVjdE1hbmFnZXI7CiMgLS0tCiMgSVRTTUNvcmUKIyAtLS0KdXNlIEtlcm5lbDo6U3lzdGVtOjpWYXJpYWJsZUNoZWNrIHF3KDphbGwpOwojIC0tLQoKbXkgJVBhcmFtOwoKIyBjcmVhdGUgb2JqZWN0IG1hbmFnZXIKbG9jYWwgJEtlcm5lbDo6T00gPSBLZXJuZWw6OlN5c3RlbTo6T2JqZWN0TWFuYWdlci0+bmV3KAogICAgJ0tlcm5lbDo6U3lzdGVtOjpMb2cnID0+IHsKICAgICAgICBMb2dQcmVmaXggPT4gJ09UUlMtb3Rycy5BZGRTZXJ2aWNlJywKICAgIH0sCik7CgpteSAkTm9PcHRpb25zID0gJEFSR1ZbMF0gPyAwIDogMTsKCiMgZ2V0IG9wdGlvbnMKbXkgJU9wdHM7CiMgLS0tCiMgSVRTTUNvcmUKIyAtLS0KI2dldG9wdHMoICdobjpwOmM6JywgXCVPcHRzICk7CmdldG9wdHMoICdobjpwOmM6Qzp0OicsIFwlT3B0cyApOwojIC0tLQoKaWYgKCAkT3B0c3tofSB8fCAkTm9PcHRpb25zICkgewojIC0tLQojIElUU01Db3JlCiMgLS0tCiMgICAgcHJpbnQgU1RERVJSICJVc2FnZTogJEZpbmRCaW46OlNjcmlwdCAtbiA8TmFtZT4gLXAgPFBhcmVudD4gLWMgPENvbW1lbnQ+XG4iOwogICAgcHJpbnQgU1RERVJSICJVc2FnZTogJEZpbmRCaW46OlNjcmlwdCAtbiA8TmFtZT4gLXAgPFBhcmVudD4gLWMgPENvbW1lbnQ+IC1DIDxDcml0aWNhbGl0eT4gLXQgPFR5cGU+XG5cbiI7CiMgLS0tCiAgICBleGl0Owp9CgppZiAoICEkT3B0c3tufSApIHsKICAgIHByaW50IFNUREVSUiAiRVJST1I6IE5lZWQgLW4gPE5hbWU+XG4iOwogICAgZXhpdCAxOwp9CgpteSAkU2VydmljZU5hbWU7CgojIGxvb2t1cCBwYXJlbnQgc2VydmljZSBpZiBnaXZlbgppZiAoICRPcHRze3B9ICkgewogICAgJFBhcmFte1BhcmVudElEfSA9ICRLZXJuZWw6Ok9NLT5HZXQoJ0tlcm5lbDo6U3lzdGVtOjpTZXJ2aWNlJyktPlNlcnZpY2VMb29rdXAoCiAgICAgICAgTmFtZSAgID0+ICRPcHRze3B9LAogICAgICAgIFVzZXJJRCA9PiAxLAogICAgKTsKICAgIGlmICggISRQYXJhbXtQYXJlbnRJRH0gKSB7CiAgICAgICAgcHJpbnQgU1RERVJSICJFUlJPUjogQ2FuJ3QgYWRkIFNlcnZpY2U6IFBhcmVudCAnJE9wdHN7cH0nIGRvZXMgbm90IGV4aXN0IVxuIjsKICAgICAgICBleGl0IDE7CiAgICB9CiAgICAkU2VydmljZU5hbWUgPSAkT3B0c3twfSAuICc6Oic7Cn0KCiRTZXJ2aWNlTmFtZSAuPSAkT3B0c3tufTsKCiMgY2hlY2sgaWYgc2VydmljZSBhbHJlYWR5IGV4aXN0cwpteSAlU2VydmljZUxpc3QgPSAkS2VybmVsOjpPTS0+R2V0KCdLZXJuZWw6OlN5c3RlbTo6U2VydmljZScpLT5TZXJ2aWNlTGlzdCgKICAgIFZhbGlkICA9PiAwLAogICAgVXNlcklEID0+IDEsCik7Cm15ICVSZXZlcnNlID0gcmV2ZXJzZSAlU2VydmljZUxpc3Q7CmlmICggJFJldmVyc2V7JFNlcnZpY2VOYW1lfSApIHsKICAgIHByaW50IFNUREVSUiAiRVJST1I6IENhbid0IGFkZCBTZXJ2aWNlOiBTZXJ2aWNlICckU2VydmljZU5hbWUnIGFscmVhZHkgZXhpc3RzIVxuIjsKICAgIGV4aXQgMTsKfQojIC0tLQojIElUU01Db3JlCiMgLS0tCgojIGdldCB0aGUgZHluYW1pYyBmaWVsZCBjb25maWcgZm9yIElUU01Dcml0aWNhbGl0eQpteSAkRHluYW1pY0ZpZWxkQ29uZmlnQXJyYXlSZWYgPSAkS2VybmVsOjpPTS0+R2V0KCdLZXJuZWw6OlN5c3RlbTo6RHluYW1pY0ZpZWxkJyktPkR5bmFtaWNGaWVsZExpc3RHZXQoCiAgICBWYWxpZCAgICAgICA9PiAxLAogICAgT2JqZWN0VHlwZSAgPT4gWyAnVGlja2V0JyBdLAogICAgRmllbGRGaWx0ZXIgPT4gewogICAgICAgIElUU01Dcml0aWNhbGl0eSA9PiAxLAogICAgfSwKKTsKCiMgZ2V0IHRoZSBkeW5hbWljIGZpZWxkIHZhbHVlcyBmb3IgSVRTTUNyaXRpY2FsaXR5Cm15ICVQb3NzaWJsZVZhbHVlczsKRFlOQU1JQ0ZJRUxEOgpmb3IgbXkgJER5bmFtaWNGaWVsZENvbmZpZyAoIEB7ICREeW5hbWljRmllbGRDb25maWdBcnJheVJlZiB9ICkgewogICAgbmV4dCBEWU5BTUlDRklFTEQgaWYgIUlzSGFzaFJlZldpdGhEYXRhKCREeW5hbWljRmllbGRDb25maWcpOwoKICAgICMgZ2V0IFBvc3NpYmxlVmFsdWVzCiAgICAkUG9zc2libGVWYWx1ZXN7ICREeW5hbWljRmllbGRDb25maWctPntOYW1lfSB9ID0gICREeW5hbWljRmllbGRDb25maWctPntDb25maWd9LT57UG9zc2libGVWYWx1ZXN9IHx8IHt9Owp9CgpteSAlQ3JpdGljYWxpdHkgPSAleyAkUG9zc2libGVWYWx1ZXN7SVRTTUNyaXRpY2FsaXR5fSB9OwoKJFBhcmFte0NyaXRpY2FsaXR5fSA9ICRDcml0aWNhbGl0eXsgJE9wdHN7Q30gfHwgJycgfTsKaWYgKCAhZGVmaW5lZCAkUGFyYW17Q3JpdGljYWxpdHl9ICkgewogICAgaWYgKCAhJE9wdHN7Q30gKSB7CiAgICAgICAgcHJpbnQgU1RERVJSICJFcnJvcjogQ2FuJ3QgYWRkIFNlcnZpY2U6IE5vIGNyaXRpY2FsaXR5IGdpdmVuIHZpYSAtQyBvcHRpb24hXG4iOwogICAgfQogICAgZWxzaWYgKCAhZGVmaW5lZCAkUGFyYW17Q3JpdGljYWxpdHl9ICkgewogICAgICAgIHByaW50IFNUREVSUiAiRXJyb3I6IENhbid0IGFkZCBTZXJ2aWNlOiBDcml0aWNhbGl0eSAnJE9wdHN7Q30nIHVua25vd24hXG4iOwogICAgfQogICAgcHJpbnQgIlxuQXZhaWxhYmxlIG9wdGlvbnMgYXJlOlxuXG4iOwogICAgZm9yIG15ICRDcml0aWNhbGl0eSAoIHNvcnQga2V5cyAlQ3JpdGljYWxpdHkgKSB7CiAgICAgICAgcHJpbnQgIlx0JyRDcml0aWNhbGl0eSdcbiI7CiAgICB9CiAgICBleGl0IDE7Cn0KCiMgZ2V0IHNlcnZpY2UgdHlwZSBsaXN0Cm15ICRTZXJ2aWNlVHlwZUxpc3QgPSAkS2VybmVsOjpPTS0+R2V0KCdLZXJuZWw6OlN5c3RlbTo6R2VuZXJhbENhdGFsb2cnKS0+SXRlbUxpc3QoCiAgICBDbGFzcyA9PiAnSVRTTTo6U2VydmljZTo6VHlwZScsCik7CgpteSAlU2VydmljZVR5cGUgPSByZXZlcnNlICV7JFNlcnZpY2VUeXBlTGlzdH07CiRQYXJhbXtUeXBlSUR9ID0gJFNlcnZpY2VUeXBleyAkT3B0c3t0fSB8fCAnJyB9OwppZiAoICFkZWZpbmVkICRQYXJhbXtUeXBlSUR9ICkgewogICAgaWYgKCAhJE9wdHN7dH0gKSB7CiAgICAgICAgcHJpbnQgU1RERVJSICJFcnJvcjogQ2FuJ3QgYWRkIFNlcnZpY2U6IE5vIHNlcnZpY2UgdHlwZSBnaXZlbiB2aWEgLXQgb3B0aW9uIVxuIjsKICAgIH0KICAgIGVsc2lmICggIWRlZmluZWQgJFBhcmFte1R5cGVJRH0gKSB7CiAgICAgICAgcHJpbnQgU1RERVJSICJFcnJvcjogQ2FuJ3QgYWRkIFNlcnZpY2U6IFNlcnZpY2UgdHlwZSAnJE9wdHN7dH0nIHVua25vd24hXG4iOwogICAgfQogICAgcHJpbnQgIlxuQXZhaWxhYmxlIG9wdGlvbnMgYXJlOlxuXG4iOwogICAgZm9yIG15ICRTZXJ2aWNlVHlwZSAoIHNvcnQga2V5cyAlU2VydmljZVR5cGUgKSB7CiAgICAgICAgcHJpbnQgIlx0JyRTZXJ2aWNlVHlwZSdcbiI7CiAgICB9CiAgICBleGl0IDE7Cn0KCiMgLS0tCgojIHVzZXIgaWQgb2YgdGhlIHBlcnNvbiBhZGRpbmcgdGhlIHJlY29yZAokUGFyYW17VXNlcklEfSA9ICcxJzsKCiMgVmFsaWRyZWNvcmQKJFBhcmFte1ZhbGlkSUR9ID0gJzEnOwokUGFyYW17TmFtZX0gICAgPSAkT3B0c3tufSB8fCAnJzsKJFBhcmFte0NvbW1lbnR9ID0gJE9wdHN7Y307CgppZiAoIG15ICRJRCA9ICRLZXJuZWw6Ok9NLT5HZXQoJ0tlcm5lbDo6U3lzdGVtOjpTZXJ2aWNlJyktPlNlcnZpY2VBZGQoJVBhcmFtKSApIHsKICAgIHByaW50ICJTZXJ2aWNlICckU2VydmljZU5hbWUnIGFkZGVkLiBJRCBpcyAnJElEJ1xuIjsKfQplbHNlIHsKICAgIHByaW50IFNUREVSUiAiRVJST1I6IENhbid0IGFkZCBTZXJ2aWNlXG4iOwogICAgZXhpdCAxOwp9CgpleGl0KDApOwo=</File>
