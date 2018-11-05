@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMConfigurationManagement</Name>
-    <Version>4.0.32</Version>
+    <Version>4.0.33</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>https://otrs.com/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
-    <ChangeLog Date="2018-09-14 17:57:08" Version="4.0.32">Build for OTRS::ITSM 4 patch level 32.</ChangeLog>
+    <ChangeLog Date="2018-11-05 16:07:29" Version="4.0.33">Build for OTRS::ITSM 4 patch level 33.</ChangeLog>
+    <ChangeLog Date="2018-09-14 17:57:09" Version="4.0.32">Build for OTRS::ITSM 4 patch level 32.</ChangeLog>
     <ChangeLog Date="2018-07-25 21:25:55" Version="4.0.31">Build for OTRS::ITSM 4 patch level 31.</ChangeLog>
     <ChangeLog Date="2018-06-06 12:02:48" Version="4.0.30">Build for OTRS::ITSM 4 patch level 30.</ChangeLog>
     <ChangeLog Date="2018-03-07 09:58:59" Version="4.0.29">Build for OTRS::ITSM 4 patch level 29.</ChangeLog>
@@ -46,7 +47,7 @@
     <Description Lang="en">The OTRS::ITSM Configuration Management package.</Description>
     <Description Lang="de">Das OTRS::ITSM Configuration Management Paket.</Description>
     <Description Lang="es">El paquete OTRS::ITSM Configuration Management.</Description>
-    <Framework Minimum="4.0.32">4.0.x</Framework>
+    <Framework Minimum="4.0.33">4.0.x</Framework>
     <IntroInstall Lang="en" Title="Install Information" Type="pre">
 
         &lt;br/&gt;
@@ -58,7 +59,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.32&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.33&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -76,7 +77,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.32&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.33&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -94,7 +95,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.32&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.33&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -234,7 +235,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.32&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.33&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -252,7 +253,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.32&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.33&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -270,14 +271,14 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 4.0.32&lt;/li&gt;
+        &lt;li&gt;ITSMCore 4.0.33&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
         &lt;br/&gt;
 
     </IntroUpgrade>
-    <PackageRequired Version="4.0.32">ITSMCore</PackageRequired>
+    <PackageRequired Version="4.0.33">ITSMCore</PackageRequired>
     <CodeInstall Type="post">
 
         # create the package name
@@ -373,7 +374,7 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeReinstall();
 
     </CodeReinstall>
-    <BuildDate>2018-09-14 17:57:08</BuildDate>
+    <BuildDate>2018-11-05 16:07:29</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="bin/otrs.ITSMConfigItemDelete.pl" Permission="755" Encode="Base64">IyEvdXNyL2Jpbi9wZXJsCiMgLS0KIyBDb3B5cmlnaHQgKEMpIDIwMDEtMjAxOCBPVFJTIEFHLCBodHRwczovL290cnMuY29tLwojIC0tCiMgVGhpcyBwcm9ncmFtIGlzIGZyZWUgc29mdHdhcmU6IHlvdSBjYW4gcmVkaXN0cmlidXRlIGl0IGFuZC9vciBtb2RpZnkKIyBpdCB1bmRlciB0aGUgdGVybXMgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlIGFzIHB1Ymxpc2hlZCBieQojIHRoZSBGcmVlIFNvZnR3YXJlIEZvdW5kYXRpb24sIGVpdGhlciB2ZXJzaW9uIDMgb2YgdGhlIExpY2Vuc2UsIG9yCiMgKGF0IHlvdXIgb3B0aW9uKSBhbnkgbGF0ZXIgdmVyc2lvbi4KIwojIFRoaXMgcHJvZ3JhbSBpcyBkaXN0cmlidXRlZCBpbiB0aGUgaG9wZSB0aGF0IGl0IHdpbGwgYmUgdXNlZnVsLAojIGJ1dCBXSVRIT1VUIEFOWSBXQVJSQU5UWTsgd2l0aG91dCBldmVuIHRoZSBpbXBsaWVkIHdhcnJhbnR5IG9mCiMgTUVSQ0hBTlRBQklMSVRZIG9yIEZJVE5FU1MgRk9SIEEgUEFSVElDVUxBUiBQVVJQT1NFLiBTZWUgdGhlCiMgR05VIEdlbmVyYWwgUHVibGljIExpY2Vuc2UgZm9yIG1vcmUgZGV0YWlscy4KIwojIFlvdSBzaG91bGQgaGF2ZSByZWNlaXZlZCBhIGNvcHkgb2YgdGhlIEdOVSBHZW5lcmFsIFB1YmxpYyBMaWNlbnNlCiMgYWxvbmcgd2l0aCB0aGlzIHByb2dyYW0uIElmIG5vdCwgc2VlIGh0dHBzOi8vd3d3LmdudS5vcmcvbGljZW5zZXMvZ3BsLTMuMC50eHQuCiMgLS0KCnVzZSBzdHJpY3Q7CnVzZSB3YXJuaW5nczsKCiMgdXNlIC4uLyBhcyBsaWIgbG9jYXRpb24KdXNlIEZpbGU6OkJhc2VuYW1lOwp1c2UgRmluZEJpbiBxdygkUmVhbEJpbik7CnVzZSBsaWIgZGlybmFtZSgkUmVhbEJpbik7Cgp1c2UgR2V0b3B0OjpMb25nOwoKdXNlIEtlcm5lbDo6U3lzdGVtOjpPYmplY3RNYW5hZ2VyOwoKIyBjcmVhdGUgb2JqZWN0IG1hbmFnZXIgb2JqZWN0CmxvY2FsICRLZXJuZWw6Ok9NID0gS2VybmVsOjpTeXN0ZW06Ok9iamVjdE1hbmFnZXItPm5ldygKICAgICdLZXJuZWw6OlN5c3RlbTo6TG9nJyA9PiB7CiAgICAgICAgTG9nUHJlZml4ID0+ICdPVFJTLUNvbmZpZ0l0ZW1EZWxldGUucGwnLAogICAgfSwKKTsKCnByaW50ICJcbiI7CnByaW50ICJvdHJzLklUU01Db25maWdJdGVtRGVsZXRlLnBsXG4iOwpwcmludCAiZGVsZXRlIGNvbmZpZyBpdGVtcyAoYWxsLCBieSBjbGFzcyAoYW5kIGRlcGxveW1lbnQgc3RhdGUpIG9yIGJ5IG51bWJlcikuXG4iOwpwcmludCAiQ29weXJpZ2h0IChDKSAyMDAxLTIwMTggT1RSUyBBRywgaHR0cHM6Ly9vdHJzLmNvbS9cblxuIjsKCm15ICRIZWxwICAgICAgICAgICAgICA9ICcnOwpteSAkQWxsICAgICAgICAgICAgICAgPSAnJzsKbXkgJENsYXNzICAgICAgICAgICAgID0gJyc7Cm15ICREZXBsb3ltZW50U3RhdGUgICA9ICcnOwpteSBAQ29uZmlnSXRlbU51bWJlcnMgPSAoKTsKCkdldE9wdGlvbnMoCiAgICAnaGVscCcgICAgICAgICAgICAgICAgICA9PiBcJEhlbHAsCiAgICAnYWxsJyAgICAgICAgICAgICAgICAgICA9PiBcJEFsbCwKICAgICdjbGFzcz1zJyAgICAgICAgICAgICAgID0+IFwkQ2xhc3MsCiAgICAnZGVwbG95bWVudHN0YXRlPXMnICAgICA9PiBcJERlcGxveW1lbnRTdGF0ZSwKICAgICdDb25maWdJdGVtTnVtYmVyPXN7LH0nID0+IFxAQ29uZmlnSXRlbU51bWJlcnMsCik7CgojIGRlbGV0ZSBhbGwgY29uZmlnIGl0ZW1zCmlmICgkQWxsKSB7CgogICAgIyBnZXQgYWxsIGNvbmZpZyBpdGVtcyBpZHMKICAgIG15IEBDb25maWdJdGVtc0lEcyA9IEB7ICRLZXJuZWw6Ok9NLT5HZXQoJ0tlcm5lbDo6U3lzdGVtOjpJVFNNQ29uZmlnSXRlbScpLT5Db25maWdJdGVtU2VhcmNoKCkgfTsKCiAgICAjIGdldCBudW1iZXIgb2YgY29uZmlnIGl0ZW1zCiAgICBteSAkQ0lDb3VudCA9IHNjYWxhciBAQ29uZmlnSXRlbXNJRHM7CgogICAgIyBpZiB0aGVyZSBhcmUgYW55IENJIHRvIGRlbGV0ZQogICAgaWYgKCRDSUNvdW50KSB7CgogICAgICAgIHByaW50ICJBcmUgeW91IHN1cmUgdGhhdCB5b3Ugd2FudCB0byBkZWxldGUgQUxMICRDSUNvdW50IGNvbmZpZyBpdGVtcz8gIjsKICAgICAgICBwcmludCAiVGhpcyBpcyBpcnJldm9jYWJsZS4gW3kvbl0gIjsKICAgICAgICBjaG9tcCggbXkgJENvbmZpcm1hdGlvbiA9IGxjIDxTVERJTj4gKTsKCiAgICAgICAgIyBpZiB0aGUgdXNlciBjb25maXJtcyB0aGUgZGVsZXRpb24KICAgICAgICBpZiAoICRDb25maXJtYXRpb24gZXEgJ3knICkgewoKICAgICAgICAgICAgIyBkZWxldGUgY29uZmlnIGl0ZW1zCiAgICAgICAgICAgIHByaW50ICJEZWxldGluZyBhbGwgY29uZmlnIGl0ZW1zLi4uXG4iOwogICAgICAgICAgICBEZWxldGVDb25maWdJdGVtcyggQ29uZmlnSXRlbXNJRHMgPT4gXEBDb25maWdJdGVtc0lEcyApOwogICAgICAgIH0KICAgICAgICBlbHNlIHsKICAgICAgICAgICAgZXhpdCAxOwogICAgICAgIH0KICAgIH0KICAgIGVsc2UgewogICAgICAgIHByaW50ICJUaGVyZSBhcmUgTk8gY29uZmlnIGl0ZW1zIHRvIGRlbGV0ZS5cbiI7CiAgICB9Cn0KCiMgZGVsZXRlIGxpc3RlZCBjb25maWcgaXRlbXMKZWxzaWYgKEBDb25maWdJdGVtTnVtYmVycykgewoKICAgIG15IEBDb25maWdJdGVtc0lEczsKCiAgICBmb3IgbXkgJENvbmZpZ0l0ZW1OdW1iZXIgKEBDb25maWdJdGVtTnVtYmVycykgewoKICAgICAgICAjIGNoZWNrcyB0aGUgdmFsaWRpdHkgb2YgdGhlIGNvbmZpZyBpdGVtIGlkCiAgICAgICAgbXkgJElEID0gJEtlcm5lbDo6T00tPkdldCgnS2VybmVsOjpTeXN0ZW06OklUU01Db25maWdJdGVtJyktPkNvbmZpZ0l0ZW1Mb29rdXAoCiAgICAgICAgICAgIENvbmZpZ0l0ZW1OdW1iZXIgPT4gJENvbmZpZ0l0ZW1OdW1iZXIsCiAgICAgICAgKTsKCiAgICAgICAgaWYgKCRJRCkgewogICAgICAgICAgICBwdXNoIEBDb25maWdJdGVtc0lEcywgJElEOwogICAgICAgIH0KICAgICAgICBlbHNlIHsKICAgICAgICAgICAgcHJpbnQgIlVuYWJsZSB0byBmaW5kIGNvbmZpZyBpdGVtICRDb25maWdJdGVtTnVtYmVyLlxuIjsKICAgICAgICB9CiAgICB9CgogICAgIyBkZWxldGUgY29uZmlnIGl0ZW1zIChpZiBhbnkgdmFsaWQgbnVtYmVyIHdhcyBnaXZlbikKICAgIGlmIChAQ29uZmlnSXRlbXNJRHMpIHsKICAgICAgICBwcmludCAiRGVsZXRpbmcgc3BlY2lmaWVkIGNvbmZpZyBpdGVtcy4uLlxuIjsKICAgICAgICBEZWxldGVDb25maWdJdGVtcyggQ29uZmlnSXRlbXNJRHMgPT4gXEBDb25maWdJdGVtc0lEcyApOwogICAgfQp9CgojIGRlbGV0ZSBjb25maWcgaXRlbXMgdGhhdCBiZWxvbmcgdG8gdGhlIGNsYXNzCmVsc2lmICgkQ2xhc3MpIHsKCiAgICBteSBAQ29uZmlnSXRlbXNJRHM7CgogICAgIyBnZXQgY2xhc3MgbGlzdAogICAgbXkgJENsYXNzTGlzdCA9ICRLZXJuZWw6Ok9NLT5HZXQoJ0tlcm5lbDo6U3lzdGVtOjpHZW5lcmFsQ2F0YWxvZycpLT5JdGVtTGlzdCgKICAgICAgICBDbGFzcyA9PiAnSVRTTTo6Q29uZmlnSXRlbTo6Q2xhc3MnLAogICAgICAgIFZhbGlkID0+IDAsCiAgICApOwoKICAgICMgaW52ZXJ0IHRoZSBoYXNoIHRvIGhhdmUgdGhlIGNsYXNzZXMgbmFtZXMgYXMga2V5cwogICAgbXkgJUNsYXNzTmFtZTJJRCA9IHJldmVyc2UgJXskQ2xhc3NMaXN0fTsKCiAgICBpZiAoICRDbGFzc05hbWUySUR7JENsYXNzfSApIHsKICAgICAgICBteSAkSUQgPSAkQ2xhc3NOYW1lMklEeyRDbGFzc307CgogICAgICAgICMgZGVmaW5lIHRoZSBzZWFyY2ggcGFyYW0gZm9yIHRoZSBjbGFzcyBzZWFyY2gKICAgICAgICBteSAlU2VhcmNoUGFyYW0gPSAoCiAgICAgICAgICAgIENsYXNzSURzID0+IFskSURdLAogICAgICAgICk7CgogICAgICAgICMgYWxzbyBhIGRlcGxveW1lbnQgc3RhdGUgaXMgZ2l2ZW4KICAgICAgICBpZiAoJERlcGxveW1lbnRTdGF0ZSkgewoKICAgICAgICAgICAgIyBnZXQgZGVwbG95bWVudCBzdGF0ZSBsaXN0CiAgICAgICAgICAgIG15ICREZXBsb3ltZW50U3RhdGVMaXN0ID0gJEtlcm5lbDo6T00tPkdldCgnS2VybmVsOjpTeXN0ZW06OkdlbmVyYWxDYXRhbG9nJyktPkl0ZW1MaXN0KAogICAgICAgICAgICAgICAgQ2xhc3MgPT4gJ0lUU006OkNvbmZpZ0l0ZW06OkRlcGxveW1lbnRTdGF0ZScsCiAgICAgICAgICAgICk7CgogICAgICAgICAgICAjIGludmVydCB0aGUgaGFzaCB0byBoYXZlIHRoZSBkZXBsb3ltZW50IHN0YXRlIG5hbWVzIGFzIGtleXMKICAgICAgICAgICAgbXkgJURlcGxveW1lbnRTdGF0ZTJJRCA9IHJldmVyc2UgJXskRGVwbG95bWVudFN0YXRlTGlzdH07CgogICAgICAgICAgICAjIGlmIHRoZSBkZXBsb3ltZW50IHN0YXRlIGlzIHZhbGlkCiAgICAgICAgICAgIGlmICggJERlcGxveW1lbnRTdGF0ZTJJRHskRGVwbG95bWVudFN0YXRlfSApIHsKCiAgICAgICAgICAgICAgICAjIGdldCB0aGUgZGVwbG95bWVudCBzdGF0ZSBpZAogICAgICAgICAgICAgICAgbXkgJElEID0gJERlcGxveW1lbnRTdGF0ZTJJRHskRGVwbG95bWVudFN0YXRlfTsKCiAgICAgICAgICAgICAgICAjIGFkZCBzZWFyY2ggcGFyYW1ldGVyCiAgICAgICAgICAgICAgICAkU2VhcmNoUGFyYW17RGVwbFN0YXRlSURzfSA9IFskSURdOwogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsc2UgewogICAgICAgICAgICAgICAgcHJpbnQgIlVuYWJsZSB0byBmaW5kIGRlcGxveW1lbnQgc3RhdGUgJERlcGxveW1lbnRTdGF0ZS5cbiI7CiAgICAgICAgICAgICAgICBleGl0IDE7CiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgICMgZ2V0IGlkcyBvZiB0aGlzIGNsYXNzIChhbmQgbWF5YmUgZGVwbG95bWVudCBzdGF0ZSkgY29uZmlnIGl0ZW1zCiAgICAgICAgQENvbmZpZ0l0ZW1zSURzID0gQHsKICAgICAgICAgICAgJEtlcm5lbDo6T00tPkdldCgnS2VybmVsOjpTeXN0ZW06OklUU01Db25maWdJdGVtJyktPkNvbmZpZ0l0ZW1TZWFyY2goJVNlYXJjaFBhcmFtKQogICAgICAgIH07CiAgICB9CiAgICBlbHNlIHsKICAgICAgICBwcmludCAiVW5hYmxlIHRvIGZpbmQgY2xhc3MgbmFtZSAkQ2xhc3MuXG4iOwogICAgfQoKICAgICMgZGVsZXRlIGNvbmZpZyBpdGVtcyAoaWYgYW55IHZhbGlkIG51bWJlciB3YXMgZ2l2ZW4pCiAgICBpZiAoQENvbmZpZ0l0ZW1zSURzKSB7CiAgICAgICAgcHJpbnQgIkRlbGV0aW5nIGNvbmZpZyBpdGVtcyB0aGF0IGJlbG9uZyB0byB0aGUgY2xhc3MgJENsYXNzLi4uXG4iOwogICAgICAgIERlbGV0ZUNvbmZpZ0l0ZW1zKCBDb25maWdJdGVtc0lEcyA9PiBcQENvbmZpZ0l0ZW1zSURzICk7CiAgICB9CiAgICBlbHNlIHsKICAgICAgICBwcmludCAiVGhlcmUgYXJlIG5vIGNvbmZpZyBpdGVtcyB0aGF0IGJlbG9uZyB0byB0aGUgY2xhc3MgJENsYXNzLi4uXG4iOwogICAgfQp9CgojIHNob3cgdXNhZ2UKZWxzZSB7CiAgICBwcmludCAiVXNhZ2U6ICQwIFtvcHRpb25zXSBcblxuIjsKICAgIHByaW50ICIgIE9wdGlvbnMgYXJlIGFzIGZvbGxvd3M6XG4iOwogICAgcHJpbnQgIiAgLS1oZWxwICAgICAgICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5IHRoaXMgb3B0aW9uIGhlbHBcbiI7CiAgICBwcmludCAiICAtLWFsbCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGRlbGV0ZSBhbGwgY29uZmlnIGl0ZW1zXG4iOwogICAgcHJpbnQgIiAgLS1jbGFzcyBuYW1lICAgICAgICAgICAgICAgICAgICAgICBkZWxldGUgYWxsIGNvbmZpZyBpdGVtcyBvZiB0aGlzIGNsYXNzXG4iOwogICAgcHJpbnQKICAgICAgICAiICAtLWRlcGxveW1lbnRzdGF0ZSBuYW1lICAgICAgICAgICAgIGRlbGV0ZSBhbGwgY29uZmlnIGl0ZW1zIHdpdGggdGhpcyBkZXBsb3ltZW50IHN0YXRlIChPTkxZIFRPR0VUSEVSIHdpdGggdGhlIC0tY2xhc3MgcGFyYW1ldGVyKVxuIjsKICAgIHByaW50ICIgIC0tQ29uZmlnSXRlbU51bWJlciBubzEgbm8yIG5vMyAgICAgZGVsZXRlIGxpc3RlZCBjb25maWcgaXRlbXNcblxuIjsKICAgIGV4aXQgMTsKfQoKc3ViIERlbGV0ZUNvbmZpZ0l0ZW1zIHsKCiAgICAjIGdldCBwYXJhbWV0ZXJzCiAgICBteSAoJVBhcmFtKSA9IEBfOwoKICAgIG15ICREZWxldGVkQ0k7CgogICAgIyBkZWxldGUgc3BlY2lmaWVkIGNvbmZpZyBpdGVtcwogICAgZm9yIG15ICRDb25maWdJdGVtSUQgKCBAeyAkUGFyYW17Q29uZmlnSXRlbXNJRHN9IH0gKSB7CiAgICAgICAgbXkgJFRydWUgPSAkS2VybmVsOjpPTS0+R2V0KCdLZXJuZWw6OlN5c3RlbTo6SVRTTUNvbmZpZ0l0ZW0nKS0+Q29uZmlnSXRlbURlbGV0ZSgKICAgICAgICAgICAgQ29uZmlnSXRlbUlEID0+ICRDb25maWdJdGVtSUQsCiAgICAgICAgICAgIFVzZXJJRCAgICAgICA9PiAxLAogICAgICAgICk7CiAgICAgICAgaWYgKCAhJFRydWUgKSB7CiAgICAgICAgICAgIHByaW50ICJVbmFibGUgdG8gZGVsZXRlIGNvbmZpZyBpdGVtIHdpdGggaWQgJENvbmZpZ0l0ZW1JRFxuIjsKICAgICAgICB9CiAgICAgICAgZWxzZSB7CiAgICAgICAgICAgICREZWxldGVkQ0krKzsKICAgICAgICB9CiAgICB9CiAgICBwcmludCAiRGVsZXRlZCAkRGVsZXRlZENJIGNvbmZpZyBpdGVtKHMpLlxuXG4iOwoKICAgIHJldHVybiAxOwp9Cg==</File>
