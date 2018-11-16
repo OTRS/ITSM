@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMCore</Name>
-    <Version>6.0.13</Version>
+    <Version>6.0.14</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>https://otrs.com/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
+    <ChangeLog Date="2018-11-16 10:27:01" Version="6.0.14">Build for OTRS::ITSM 6 patch level 14.</ChangeLog>
     <ChangeLog Date="2018-11-05 14:46:11" Version="6.0.13">Build for OTRS::ITSM 6 patch level 13.</ChangeLog>
     <ChangeLog Date="2018-09-28 18:55:59" Version="6.0.12">Build for OTRS::ITSM 6 patch level 12.</ChangeLog>
     <ChangeLog Date="2018-09-14 14:58:30" Version="6.0.11">Build for OTRS::ITSM 6 patch level 11.</ChangeLog>
@@ -25,7 +26,7 @@
     <Description Lang="en">The OTRS::ITSM Core package.</Description>
     <Description Lang="de">Das OTRS::ITSM Core Paket.</Description>
     <Description Lang="hu">Az OTRS::ITSM alapcsomag.</Description>
-    <Framework Minimum="6.0.13">6.0.x</Framework>
+    <Framework Minimum="6.0.14">6.0.x</Framework>
     <IntroInstall Lang="en" Title="Install Information" Type="pre">
 
         &lt;br/&gt;
@@ -37,7 +38,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 6.0.13&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 6.0.14&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -56,7 +57,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 6.0.13&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 6.0.14&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -75,7 +76,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 6.0.13&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 6.0.14&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -94,7 +95,7 @@
         &lt;br/&gt;
         &lt;strong&gt;SZÜKSÉGES OTRS CSOMAGOK&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 6.0.13&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 6.0.14&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -248,7 +249,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 6.0.13&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 6.0.14&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -267,7 +268,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 6.0.13&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 6.0.14&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -286,7 +287,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 6.0.13&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 6.0.14&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -305,7 +306,7 @@
         &lt;br/&gt;
         &lt;strong&gt;SZÜKSÉGES OTRS CSOMAGOK&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;GeneralCatalog 6.0.13&lt;/li&gt;
+        &lt;li&gt;GeneralCatalog 6.0.14&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         &lt;br/&gt;
@@ -313,7 +314,7 @@
         &lt;br/&gt;
 
     </IntroUpgrade>
-    <PackageRequired Version="6.0.13">GeneralCatalog</PackageRequired>
+    <PackageRequired Version="6.0.14">GeneralCatalog</PackageRequired>
     <CodeInstall Type="post">
 
         # create the package name
@@ -388,7 +389,7 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeReinstall();
 
     </CodeReinstall>
-    <BuildDate>2018-11-05 14:46:11</BuildDate>
+    <BuildDate>2018-11-16 10:27:01</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="doc/itsm-core-database.dia" Permission="660" Encode="Base64">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</File>
