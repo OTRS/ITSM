@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMServiceLevelManagement</Name>
-    <Version>6.0.23</Version>
+    <Version>6.0.24</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>https://otrs.com/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
+    <ChangeLog Date="2019-11-04 13:40:52" Version="6.0.24">Build for OTRS::ITSM 6 patch level 24.</ChangeLog>
     <ChangeLog Date="2019-09-23 14:15:42" Version="6.0.23">Build for OTRS::ITSM 6 patch level 23.</ChangeLog>
     <ChangeLog Date="2019-09-02 14:35:02" Version="6.0.22">Build for OTRS::ITSM 6 patch level 22.</ChangeLog>
     <ChangeLog Date="2019-08-12 15:17:23" Version="6.0.21">Build for OTRS::ITSM 6 patch level 21.</ChangeLog>
@@ -36,7 +37,7 @@
     <Description Lang="de">Das OTRS::ITSM Service Level Management Paket.</Description>
     <Description Lang="es">El paquete OTRS::ITSM Service Level Management.</Description>
     <Description Lang="hu">Az OTRS::ITSM szolgáltatásszint-menedzsment csomag.</Description>
-    <Framework Minimum="6.0.23">6.0.x</Framework>
+    <Framework Minimum="6.0.24">6.0.x</Framework>
     <IntroInstall Lang="en" Title="Install Information" Type="pre">
 
         &lt;br/&gt;
@@ -48,7 +49,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 6.0.23&lt;/li&gt;
+        &lt;li&gt;ITSMCore 6.0.24&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -66,7 +67,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 6.0.23&lt;/li&gt;
+        &lt;li&gt;ITSMCore 6.0.24&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -84,7 +85,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 6.0.23&lt;/li&gt;
+        &lt;li&gt;ITSMCore 6.0.24&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -102,7 +103,7 @@
         &lt;br/&gt;
         &lt;strong&gt;SZÜKSÉGES OTRS CSOMAGOK&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 6.0.23&lt;/li&gt;
+        &lt;li&gt;ITSMCore 6.0.24&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -224,7 +225,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 6.0.23&lt;/li&gt;
+        &lt;li&gt;ITSMCore 6.0.24&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -242,7 +243,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 6.0.23&lt;/li&gt;
+        &lt;li&gt;ITSMCore 6.0.24&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -260,7 +261,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 6.0.23&lt;/li&gt;
+        &lt;li&gt;ITSMCore 6.0.24&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -278,14 +279,14 @@
         &lt;br/&gt;
         &lt;strong&gt;SZÜKSÉGES OTRS CSOMAGOK&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 6.0.23&lt;/li&gt;
+        &lt;li&gt;ITSMCore 6.0.24&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
         &lt;br/&gt;
 
     </IntroUpgrade>
-    <PackageRequired Version="6.0.23">ITSMCore</PackageRequired>
+    <PackageRequired Version="6.0.24">ITSMCore</PackageRequired>
     <CodeInstall Type="post">
 
         # create the package name
@@ -325,8 +326,8 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeReinstall();
 
     </CodeReinstall>
-    <BuildCommitID>14ab905fb6170eadefc61745cd3640aee85c7c4d</BuildCommitID>
-    <BuildDate>2019-09-23 14:15:42</BuildDate>
+    <BuildCommitID>c1a38c79647ceaf72817732486f4a2d49329d140</BuildCommitID>
+    <BuildDate>2019-11-04 13:40:52</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="var/stats/ITSMStats-001-Ticket.xml" Permission="660" Encode="Base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KCjxvdHJzX3N0YXRzPgo8Q2FjaGU+MDwvQ2FjaGU+CjxEZXNjcmlwdGlvbj5Ub3RhbCBudW1iZXIgb2YgYWxsIHRpY2tldHMgZXZlciBjcmVhdGVkIHBlciBUaWNrZXQtVHlwZSBhbmQgUHJpb3JpdHkuCgpYLUF4aXM6IFRpY2tldC1UeXBlClktQXhpczogUHJpb3JpdHkKClJlc3RyaWN0aW9uczoKICAgIC1ub25lPC9EZXNjcmlwdGlvbj4KPEZpbGU+PC9GaWxlPgo8Rm9ybWF0PkNTVjwvRm9ybWF0Pgo8Rm9ybWF0PkV4Y2VsPC9Gb3JtYXQ+CjxGb3JtYXQ+UHJpbnQ8L0Zvcm1hdD4KPEZvcm1hdD5EMzo6QmFyQ2hhcnQ8L0Zvcm1hdD4KPEZvcm1hdD5EMzo6TGluZUNoYXJ0PC9Gb3JtYXQ+CjxGb3JtYXQ+RDM6OlN0YWNrZWRBcmVhQ2hhcnQ8L0Zvcm1hdD4KPEdyYXBoU2l6ZT48L0dyYXBoU2l6ZT4KPE9iamVjdD5UaWNrZXQ8L09iamVjdD4KPE9iamVjdE1vZHVsZT5LZXJuZWw6OlN5c3RlbTo6U3RhdHM6OkR5bmFtaWM6OlRpY2tldDwvT2JqZWN0TW9kdWxlPgo8UGVybWlzc2lvbj5zdGF0czwvUGVybWlzc2lvbj4KPFN0YXRUeXBlPmR5bmFtaWM8L1N0YXRUeXBlPgo8U3VtQ29sPjE8L1N1bUNvbD4KPFN1bVJvdz4xPC9TdW1Sb3c+CjxUaXRsZT5Ub3RhbCBudW1iZXIgb2YgYWxsIHRpY2tldHMgZXZlciBjcmVhdGVkIHBlciBUaWNrZXQtVHlwZSBhbmQgUHJpb3JpdHk8L1RpdGxlPgo8VXNlQXNWYWx1ZVNlcmllcyBFbGVtZW50PSJQcmlvcml0eUlEcyIgRml4ZWQ9IjEiPgo8L1VzZUFzVmFsdWVTZXJpZXM+CjxVc2VBc1h2YWx1ZSBFbGVtZW50PSJUeXBlSURzIiBGaXhlZD0iMSI+CjwvVXNlQXNYdmFsdWU+CjxWYWxpZD4xPC9WYWxpZD4KPC9vdHJzX3N0YXRzPgo=</File>
