@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>GeneralCatalog</Name>
-    <Version>6.0.24</Version>
+    <Version>6.0.25</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>https://otrs.com/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
+    <ChangeLog Date="2019-12-17 15:20:41" Version="6.0.25">Build for OTRS::ITSM 6 patch level 25.</ChangeLog>
     <ChangeLog Date="2019-11-04 13:39:07" Version="6.0.24">Build for OTRS::ITSM 6 patch level 24.</ChangeLog>
     <ChangeLog Date="2019-09-23 14:13:31" Version="6.0.23">Build for OTRS::ITSM 6 patch level 23.</ChangeLog>
     <ChangeLog Date="2019-09-02 14:33:08" Version="6.0.22">Build for OTRS::ITSM 6 patch level 22.</ChangeLog>
@@ -37,7 +38,7 @@
     <Description Lang="de">Das General Catalog Paket.</Description>
     <Description Lang="es">El paquete General Catalog.</Description>
     <Description Lang="hu">Az általános katalógus csomag.</Description>
-    <Framework Minimum="6.0.24">6.0.x</Framework>
+    <Framework Minimum="6.0.25">6.0.x</Framework>
     <IntroUninstall Lang="en" Title="Uninstallation Information" Type="pre">
 
         &lt;br/&gt;
@@ -140,8 +141,8 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeReinstall();
 
     </CodeReinstall>
-    <BuildCommitID>f9dfb8cd11dd6298517b27fc4b0be678dd83c345</BuildCommitID>
-    <BuildDate>2019-11-04 13:39:07</BuildDate>
+    <BuildCommitID>242a7dadc6e4e6ef54e26c8ee23dd6957b2f0368</BuildCommitID>
+    <BuildDate>2019-12-17 15:20:41</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="doc/general-catalog-database.dia" Permission="660" Encode="Base64">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</File>
