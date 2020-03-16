@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>ITSMServiceLevelManagement</Name>
-    <Version>5.0.41</Version>
+    <Version>5.0.42</Version>
     <Vendor>OTRS AG</Vendor>
     <URL>https://otrs.com/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
+    <ChangeLog Date="2020-03-16 15:20:46" Version="5.0.42">Build for OTRS::ITSM 5 patch level 42.</ChangeLog>
     <ChangeLog Date="2020-01-27 14:34:58" Version="5.0.41">Build for OTRS::ITSM 5 patch level 41.</ChangeLog>
     <ChangeLog Date="2019-12-17 17:58:12" Version="5.0.40">Build for OTRS::ITSM 5 patch level 40.</ChangeLog>
     <ChangeLog Date="2019-11-04 13:44:13" Version="5.0.39">Build for OTRS::ITSM 5 patch level 39.</ChangeLog>
@@ -54,7 +55,7 @@
     <Description Lang="de">Das OTRS::ITSM Service Level Management Paket.</Description>
     <Description Lang="es">El paquete OTRS::ITSM Service Level Management.</Description>
     <Description Lang="hu">Az OTRS::ITSM szolgáltatásszint-menedzsment csomag.</Description>
-    <Framework Minimum="5.0.41">5.0.x</Framework>
+    <Framework Minimum="5.0.42">5.0.x</Framework>
     <IntroInstall Lang="en" Title="Install Information" Type="pre">
 
         &lt;br/&gt;
@@ -66,7 +67,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.41&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.42&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -84,7 +85,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.41&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.42&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -102,7 +103,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.41&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.42&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -120,7 +121,7 @@
         &lt;br/&gt;
         &lt;strong&gt;SZÜKSÉGES OTRS CSOMAGOK&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.41&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.42&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -242,7 +243,7 @@
         &lt;br/&gt;
         &lt;strong&gt;REQUIRED OTRS PACKAGES&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.41&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.42&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -260,7 +261,7 @@
         &lt;br/&gt;
         &lt;strong&gt;BENÖTIGTE OTRS-PAKETE&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.41&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.42&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -278,7 +279,7 @@
         &lt;br/&gt;
         &lt;strong&gt;PAQUETES OTRS REQUERIDOS&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.41&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.42&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
@@ -296,14 +297,14 @@
         &lt;br/&gt;
         &lt;strong&gt;SZÜKSÉGES OTRS CSOMAGOK&lt;/strong&gt;
         &lt;ul&gt;
-        &lt;li&gt;ITSMCore 5.0.41&lt;/li&gt;
+        &lt;li&gt;ITSMCore 5.0.42&lt;/li&gt;
         &lt;/ul&gt;
         &lt;br/&gt;
         ((enjoy))&lt;br/&gt;
         &lt;br/&gt;
 
     </IntroUpgrade>
-    <PackageRequired Version="5.0.41">ITSMCore</PackageRequired>
+    <PackageRequired Version="5.0.42">ITSMCore</PackageRequired>
     <CodeInstall Type="post">
 
         # create the package name
@@ -343,8 +344,8 @@
         $Kernel::OM-&gt;Get($CodeModule)-&gt;CodeReinstall();
 
     </CodeReinstall>
-    <BuildCommitID>0175cd5aba510c7e2318b2d74d907f26511f1443</BuildCommitID>
-    <BuildDate>2020-01-27 14:34:58</BuildDate>
+    <BuildCommitID>a9f51641758fc7e93d4c2549aeec028724afec2d</BuildCommitID>
+    <BuildDate>2020-03-16 15:20:46</BuildDate>
     <BuildHost>opms.otrs.com</BuildHost>
     <Filelist>
         <File Location="var/stats/ITSMStats-001-Ticket.xml" Permission="644" Encode="Base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KCjxvdHJzX3N0YXRzPgo8Q2FjaGU+MDwvQ2FjaGU+CjxEZXNjcmlwdGlvbj5Ub3RhbCBudW1iZXIgb2YgYWxsIHRpY2tldHMgZXZlciBjcmVhdGVkIHBlciBUaWNrZXQtVHlwZSBhbmQgUHJpb3JpdHkuCgpYLUF4aXM6IFRpY2tldC1UeXBlClktQXhpczogUHJpb3JpdHkKClJlc3RyaWN0aW9uczoKICAgIC1ub25lPC9EZXNjcmlwdGlvbj4KPEZpbGU+PC9GaWxlPgo8Rm9ybWF0PkNTVjwvRm9ybWF0Pgo8Rm9ybWF0PkV4Y2VsPC9Gb3JtYXQ+CjxGb3JtYXQ+UHJpbnQ8L0Zvcm1hdD4KPEZvcm1hdD5EMzo6QmFyQ2hhcnQ8L0Zvcm1hdD4KPEZvcm1hdD5EMzo6TGluZUNoYXJ0PC9Gb3JtYXQ+CjxGb3JtYXQ+RDM6OlN0YWNrZWRBcmVhQ2hhcnQ8L0Zvcm1hdD4KPEdyYXBoU2l6ZT48L0dyYXBoU2l6ZT4KPE9iamVjdD5UaWNrZXQ8L09iamVjdD4KPE9iamVjdE1vZHVsZT5LZXJuZWw6OlN5c3RlbTo6U3RhdHM6OkR5bmFtaWM6OlRpY2tldDwvT2JqZWN0TW9kdWxlPgo8UGVybWlzc2lvbj5zdGF0czwvUGVybWlzc2lvbj4KPFN0YXRUeXBlPmR5bmFtaWM8L1N0YXRUeXBlPgo8U3VtQ29sPjE8L1N1bUNvbD4KPFN1bVJvdz4xPC9TdW1Sb3c+CjxUaXRsZT5Ub3RhbCBudW1iZXIgb2YgYWxsIHRpY2tldHMgZXZlciBjcmVhdGVkIHBlciBUaWNrZXQtVHlwZSBhbmQgUHJpb3JpdHk8L1RpdGxlPgo8VXNlQXNWYWx1ZVNlcmllcyBFbGVtZW50PSJQcmlvcml0eUlEcyIgRml4ZWQ9IjEiPgo8L1VzZUFzVmFsdWVTZXJpZXM+CjxVc2VBc1h2YWx1ZSBFbGVtZW50PSJUeXBlSURzIiBGaXhlZD0iMSI+CjwvVXNlQXNYdmFsdWU+CjxWYWxpZD4xPC9WYWxpZD4KPC9vdHJzX3N0YXRzPgo=</File>
