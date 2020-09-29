@@ -3,7 +3,7 @@
     <Name>ITSM</Name>
 <!-- nofilter(TidyAll::Plugin::OTRS::SOPM::DocumentationPresent) -->
     <Version>0.0.0</Version>
-    <Framework Minimum="6.0.29">6.0.x</Framework>
+    <Framework Minimum="6.0.30">6.0.x</Framework>
     <Vendor>OTRS AG</Vendor>
     <URL>https://otrs.com/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
@@ -58,7 +58,7 @@
         <br>
         <br>
         You are about to install the OTRS package ITSM.
-        This package will install OTRS::ITSM 6.0.29 on your system.
+        This package will install OTRS::ITSM 6.0.30 on your system.
         <br>
         <br>
         If you already installed some OTRS::ITSM packages on your system, please make sure first
@@ -68,13 +68,13 @@
         After a successful installation, the following packages will be installed and shown by the package manager:
         <br>
         <ul>
-        <li>GeneralCatalog 6.0.29</li>
-        <li>ITSMCore 6.0.29</li>
-        <li>ITSMIncidentProblemManagement 6.0.29</li>
-        <li>ITSMConfigurationManagement 6.0.29</li>
-        <li>ITSMChangeManagement 6.0.29</li>
-        <li>ITSMServiceLevelManagement 6.0.29</li>
-        <li>ImportExport 6.0.29</li>
+        <li>GeneralCatalog 6.0.30</li>
+        <li>ITSMCore 6.0.30</li>
+        <li>ITSMIncidentProblemManagement 6.0.30</li>
+        <li>ITSMConfigurationManagement 6.0.30</li>
+        <li>ITSMChangeManagement 6.0.30</li>
+        <li>ITSMServiceLevelManagement 6.0.30</li>
+        <li>ImportExport 6.0.30</li>
         </ul>
         <br>
         <br>
@@ -128,7 +128,7 @@
         <br>
         <br>
         Sie sind im Begriff das OTRS-Paket ITSM zu installieren.
-        Dieses Paket installiert OTRS::ITSM 6.0.29 auf Ihrem System.
+        Dieses Paket installiert OTRS::ITSM 6.0.30 auf Ihrem System.
         <br>
         <br>
         Wenn auf Ihrem System bereits OTRS::ITSM-Pakete installiert
@@ -139,13 +139,13 @@
         Nach erfolgreicher Installation sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
         <br>
         <ul>
-        <li>GeneralCatalog 6.0.29</li>
-        <li>ITSMCore 6.0.29</li>
-        <li>ITSMIncidentProblemManagement 6.0.29</li>
-        <li>ITSMConfigurationManagement 6.0.29</li>
-        <li>ITSMChangeManagement 6.0.29</li>
-        <li>ITSMServiceLevelManagement 6.0.29</li>
-        <li>ImportExport 6.0.29</li>
+        <li>GeneralCatalog 6.0.30</li>
+        <li>ITSMCore 6.0.30</li>
+        <li>ITSMIncidentProblemManagement 6.0.30</li>
+        <li>ITSMConfigurationManagement 6.0.30</li>
+        <li>ITSMChangeManagement 6.0.30</li>
+        <li>ITSMServiceLevelManagement 6.0.30</li>
+        <li>ImportExport 6.0.30</li>
         </ul>
         <br>
         <br>
@@ -201,7 +201,7 @@
         <br>
         <br>
         Ön az OTRS::ITSM csomag telepítésére készül.
-        Ez a csomag az OTRS::ITSM 6.0.29 verzióját fogja telepíteni a rendszerre.
+        Ez a csomag az OTRS::ITSM 6.0.30 verzióját fogja telepíteni a rendszerre.
         <br>
         <br>
         Ha már telepítette valamelyik OTRS::ITSM csomagot a rendszerre, akkor először győződjön
@@ -212,13 +212,13 @@
         csomagkezelő:
         <br>
         <ul>
-        <li>GeneralCatalog 6.0.29</li>
-        <li>ITSMCore 6.0.29</li>
-        <li>ITSMIncidentProblemManagement 6.0.29</li>
-        <li>ITSMConfigurationManagement 6.0.29</li>
-        <li>ITSMChangeManagement 6.0.29</li>
-        <li>ITSMServiceLevelManagement 6.0.29</li>
-        <li>ImportExport 6.0.29</li>
+        <li>GeneralCatalog 6.0.30</li>
+        <li>ITSMCore 6.0.30</li>
+        <li>ITSMIncidentProblemManagement 6.0.30</li>
+        <li>ITSMConfigurationManagement 6.0.30</li>
+        <li>ITSMChangeManagement 6.0.30</li>
+        <li>ITSMServiceLevelManagement 6.0.30</li>
+        <li>ImportExport 6.0.30</li>
         </ul>
         <br>
         <br>
@@ -278,19 +278,19 @@
         <br>
         <br>
         You are about to upgrade the OTRS package ITSM.<br>
-        This package will upgrade your system to OTRS::ITSM 6.0.29.
+        This package will upgrade your system to OTRS::ITSM 6.0.30.
         <br>
         <br>
         After a successful upgrade, the following packages will be installed and shown by the package manager:
         <br>
         <ul>
-        <li>GeneralCatalog 6.0.29</li>
-        <li>ITSMCore 6.0.29</li>
-        <li>ITSMIncidentProblemManagement 6.0.29</li>
-        <li>ITSMConfigurationManagement 6.0.29</li>
-        <li>ITSMChangeManagement 6.0.29</li>
-        <li>ITSMServiceLevelManagement 6.0.29</li>
-        <li>ImportExport 6.0.29</li>
+        <li>GeneralCatalog 6.0.30</li>
+        <li>ITSMCore 6.0.30</li>
+        <li>ITSMIncidentProblemManagement 6.0.30</li>
+        <li>ITSMConfigurationManagement 6.0.30</li>
+        <li>ITSMChangeManagement 6.0.30</li>
+        <li>ITSMServiceLevelManagement 6.0.30</li>
+        <li>ImportExport 6.0.30</li>
         </ul>
         <br>
         <br>
@@ -315,19 +315,19 @@
         <br>
         <br>
         Sie sind im Begriff das OTRS-Paket ITSM zu aktualisieren.
-        Dieses Paket aktualisiert Ihr System auf OTRS::ITSM 6.0.29.
+        Dieses Paket aktualisiert Ihr System auf OTRS::ITSM 6.0.30.
         <br>
         <br>
         Nach erfolgreicher Aktualisierung sind folgende Pakete installiert und werden entsprechend im Paketmanager angezeigt:
         <br>
         <ul>
-        <li>GeneralCatalog 6.0.29</li>
-        <li>ITSMCore 6.0.29</li>
-        <li>ITSMIncidentProblemManagement 6.0.29</li>
-        <li>ITSMConfigurationManagement 6.0.29</li>
-        <li>ITSMChangeManagement 6.0.29</li>
-        <li>ITSMServiceLevelManagement 6.0.29</li>
-        <li>ImportExport 6.0.29</li>
+        <li>GeneralCatalog 6.0.30</li>
+        <li>ITSMCore 6.0.30</li>
+        <li>ITSMIncidentProblemManagement 6.0.30</li>
+        <li>ITSMConfigurationManagement 6.0.30</li>
+        <li>ITSMChangeManagement 6.0.30</li>
+        <li>ITSMServiceLevelManagement 6.0.30</li>
+        <li>ImportExport 6.0.30</li>
         </ul>
         <br>
         <br>
@@ -352,20 +352,20 @@
         <br>
         <br>
         Ön az OTRS::ITSM csomag frissítésére készül.
-        Ez a csomag frissíteni fogja a rendszerét az OTRS::ITSM 6.0.29 verziójára.
+        Ez a csomag frissíteni fogja a rendszerét az OTRS::ITSM 6.0.30 verziójára.
         <br>
         <br>
         Egy sikeres frissítés után a következő csomagokat fogja telepíteni és megjeleníteni a
         csomagkezelő:
         <br>
         <ul>
-        <li>GeneralCatalog 6.0.29</li>
-        <li>ITSMCore 6.0.29</li>
-        <li>ITSMIncidentProblemManagement 6.0.29</li>
-        <li>ITSMConfigurationManagement 6.0.29</li>
-        <li>ITSMChangeManagement 6.0.29</li>
-        <li>ITSMServiceLevelManagement 6.0.29</li>
-        <li>ImportExport 6.0.29</li>
+        <li>GeneralCatalog 6.0.30</li>
+        <li>ITSMCore 6.0.30</li>
+        <li>ITSMIncidentProblemManagement 6.0.30</li>
+        <li>ITSMConfigurationManagement 6.0.30</li>
+        <li>ITSMChangeManagement 6.0.30</li>
+        <li>ITSMServiceLevelManagement 6.0.30</li>
+        <li>ImportExport 6.0.30</li>
         </ul>
         <br>
         <br>
@@ -391,13 +391,13 @@
         <br>
         If you uninstall this package, the following packages will be uninstalled automatically:
         <ul>
-        <li>GeneralCatalog 6.0.29</li>
-        <li>ITSMCore 6.0.29</li>
-        <li>ITSMIncidentProblemManagement 6.0.29</li>
-        <li>ITSMConfigurationManagement 6.0.29</li>
-        <li>ITSMChangeManagement 6.0.29</li>
-        <li>ITSMServiceLevelManagement 6.0.29</li>
-        <li>ImportExport 6.0.29</li>
+        <li>GeneralCatalog 6.0.30</li>
+        <li>ITSMCore 6.0.30</li>
+        <li>ITSMIncidentProblemManagement 6.0.30</li>
+        <li>ITSMConfigurationManagement 6.0.30</li>
+        <li>ITSMChangeManagement 6.0.30</li>
+        <li>ITSMServiceLevelManagement 6.0.30</li>
+        <li>ImportExport 6.0.30</li>
         </ul>
         <br>
         All database tables that were created during installation will be deleted.
@@ -428,13 +428,13 @@
         <br>
         Wenn Sie dieses Paket deinstallieren, werden die folgenden Pakete automatisch gelöscht:
         <ul>
-        <li>GeneralCatalog 6.0.29</li>
-        <li>ITSMCore 6.0.29</li>
-        <li>ITSMIncidentProblemManagement 6.0.29</li>
-        <li>ITSMConfigurationManagement 6.0.29</li>
-        <li>ITSMChangeManagement 6.0.29</li>
-        <li>ITSMServiceLevelManagement 6.0.29</li>
-        <li>ImportExport 6.0.29</li>
+        <li>GeneralCatalog 6.0.30</li>
+        <li>ITSMCore 6.0.30</li>
+        <li>ITSMIncidentProblemManagement 6.0.30</li>
+        <li>ITSMConfigurationManagement 6.0.30</li>
+        <li>ITSMChangeManagement 6.0.30</li>
+        <li>ITSMServiceLevelManagement 6.0.30</li>
+        <li>ImportExport 6.0.30</li>
         </ul>
         <br>
         Bei der Deinstallation werden die von diesen Paketen angelegten Datenbank-Tabellen gelöscht.
@@ -465,13 +465,13 @@
         <br>
         Ha eltávolítja ezt a csomagot, akkor a következő csomagok lesznek automatikusan eltávolítva:
         <ul>
-        <li>GeneralCatalog 6.0.29</li>
-        <li>ITSMCore 6.0.29</li>
-        <li>ITSMIncidentProblemManagement 6.0.29</li>
-        <li>ITSMConfigurationManagement 6.0.29</li>
-        <li>ITSMChangeManagement 6.0.29</li>
-        <li>ITSMServiceLevelManagement 6.0.29</li>
-        <li>ImportExport 6.0.29</li>
+        <li>GeneralCatalog 6.0.30</li>
+        <li>ITSMCore 6.0.30</li>
+        <li>ITSMIncidentProblemManagement 6.0.30</li>
+        <li>ITSMConfigurationManagement 6.0.30</li>
+        <li>ITSMChangeManagement 6.0.30</li>
+        <li>ITSMServiceLevelManagement 6.0.30</li>
+        <li>ImportExport 6.0.30</li>
         </ul>
         <br>
         A telepítés során létrehozott összes adatbázistábla törlésre kerül.
